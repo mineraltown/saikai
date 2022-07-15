@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="mobile.css">
-    <title>村庄</title>
+    <link rel="stylesheet" type="text/css" href="saikai.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <title>事件</title>
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
 </head>
+
 <body>
-    <div class="resident">
-        <div class="sub_title">重聚矿石镇</div>
-            <a href="/saikai/Knowledge/Summary.html" class="link"><div class="sub_link">游戏概要</div></a>
-            <a href="/saikai/Knowledge/Basic.html" class="link"><div class="sub_link">基础知识</div></a>
-            <a href="/saikai/Event/Annual_calendar.html" class="link"><div class="sub_link">年度日历</div></a>
-            <a href="/saikai/Life/Guide.html" class="link"><div class="sub_link">牧场生活指南</div></a>
-            <a href="/saikai/Quick_reference.html" class="link2"><div class="sub_link">居民喜好速查</div></a>
-    </div>
-    <div class="resident">
-        <div class="sub_title">村庄设施</div>
-        <a href="/saikai/Life/Map.html" class="link"><div class="sub_link">地图</div></a>
-        <a href="/saikai/Life/Villa.html" class="link"><div class="sub_link">别墅</div></a>
-        <a href="/saikai/Life/Store.html" class="link2"><div class="sub_link">商店</div></a>
+    <div class="mobile" id="wiki" v-cloak>
+        <div class="sub_link">重聚矿石镇</div>
+        <template v-for="(i,n) in menu['重聚矿石镇']">
+            <a :href="i.href" class="link" v-if="n < menu['重聚矿石镇'].length-1">
+                <div v-text="i.name"></div>
+            </a>
+            <a :href="i.href" class="link" style="border: none;" v-else>
+                <div v-text="i.name"></div>
+            </a>
+        </template>
+        <div class="sub_link">村庄设施</div>
+        <template v-for="(i,n) in menu['村庄居民']">
+            <template v-if="i.name.length <= 2">
+                <a :href="i.href" class="link" v-if="n < menu['村庄居民'].length-1">
+                    <div v-text="i.name"></div>
+                </a>
+                <a :href="i.href" class="link" style="border: none;" v-else>
+                    <div v-text="i.name"></div>
+                </a>
+            </template>
+        </template>
+
     </div>
 </body>
+<script>
+    const App = {
+        data() {
+            return {
+                year: new Date().getFullYear(),
+                menu: "",
+                menu_mobile: "",
+                link: window.location.hash.slice(1)
+            }
+        },
+        created() {
+            axios.get('menu.json')
+                .then((response) => {
+                    this.menu = response.data[0]
+                    this.menu_mobile = response.data[1]
+                })
+        },
+        methods: {}
+    }
+    const app = Vue.createApp(App)
+    const vm = app.mount("#wiki")
+</script>
+
 </html>

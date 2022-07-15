@@ -1,563 +1,815 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" href="/saikai/saikai.css">
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
     <title>饲育动物</title>
+    <style>
+        @media only screen and (min-width: 801px) {
+            .animal {
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
+            .animal img {
+                width: auto;
+                max-width: 180px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .animal {
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .animal img {
+                width: auto;
+                max-width: 7em;
+            }
+        }
+
+        .left1em {
+            margin-left: 1em;
+        }
+    </style>
 </head>
+
 <body>
-<h1 id="饲育动物">饲育动物</h1>
-<p>与农作一样，饲育动物也是牧场非常重要的工作。<br>
-在牧场能够饲育的动物有5个种类。<br>
-牛有咖啡奶牛、草莓奶牛等4个种类的变种，副产品各不相同。<br>
-鸡有两个种类，颜色不同但副产品相同。<br>
-不管是哪一种动物，最初的一只都要去「小鸡与莉莉娅」、「约德尔牧场」购买。</p>
-<h2 id="动物的种类">动物的种类</h2>
-<div class="animal">
-<img src="bird.png" class="animal_img">
-<img src="cow.png" class="animal_img">
-<img src="sheep.png" class="animal_img">
-<img src="alpaca.png" class="animal_img">
-<img src="rabit.png" class="animal_img">
-</div>
-<ul>
-<li><strong>鸡</strong><br>
-鸡、茶色鸡</li>
-<li><strong>牛</strong><br>
-牛、咖啡奶牛、草莓奶牛、水果奶牛</li>
-<li><strong>羊</strong></li>
-<li><strong>羊驼</strong></li>
-<li><strong>安哥拉兔</strong></li>
-</ul>
-<h2 id="贩卖店铺和饲育场所">贩卖店铺和饲育场所</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>动物</th>
-<th>贩卖店</th>
-<th>饲育场所</th>
-<th>饲育数量<br>（增筑前）</th>
-<th>饲育数量<br>（增筑后）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>鸡</td>
-<td rowspan="2">小鸡与莉莉娅</td>
-<td rowspan="2">「鸡兔小屋」</td>
-<td rowspan="2">4只</td>
-<td rowspan="2">8只</td>
-</tr>
-<tr>
-<td>安哥拉兔</td>
-</tr>
-<tr>
-<td>牛</td>
-<td rowspan="3">约德尔牧场</td>
-<td rowspan="3">动物小屋</td>
-<td rowspan="3">8只</td>
-<td rowspan="3">16只</td>
-</tr>
-<tr>
-<td>羊</td>
-</tr>
-<tr>
-<td>羊驼</td>
-</tr>
-</tbody>
-</table>
-<p>最初就购买价格最合适的鸡来尝试饲育吧！</p>
-<p>在动物小屋的照料使用穿透功能（按住 R 键跑步，可以不被卡位）会很便利。<br>
-动物小屋饲育的动物数量增多时可以灵活运用。<br>
-而且，在狭窄的小路与居民挤在一起时也可以用按 R 键穿过居民后继续前进。</p>
-<h2 id="从动物身上取得的副产品">从动物身上取得的副产品</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>动物</th>
-<th>副产品</th>
-<th>采集频率</th>
-<th>必要的道具</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>鸡、茶色鸡</td>
-<td>蛋</td>
-<td rowspan="5">每天</td>
-<td>无</td>
-</tr>
-<tr>
-<td>牛</td>
-<td>牛奶</td>
-<td rowspan="4">挤奶器</td>
-</tr>
-<tr>
-<td>咖啡奶牛</td>
-<td>咖啡牛奶</td>
-</tr>
-<tr>
-<td>草莓奶牛</td>
-<td>草莓牛奶</td>
-</tr>
-<tr>
-<td>水果奶牛</td>
-<td>水果牛奶</td>
-</tr>
-<tr>
-<td>安哥拉兔</td>
-<td>安哥拉兔毛</td>
-<td>5天</td>
-<td rowspan="3">剃毛剪</td>
-</tr>
-<tr>
-<td>羊</td>
-<td>羊毛</td>
-<td rowspan="2">7天</td>
-</tr>
-<tr>
-<td>羊驼</td>
-<td>羊驼毛</td>
-</tr>
-</tbody>
-</table>
-<h2 id="照料动物的方法">照料动物的方法</h2>
-<p>动物们是不会死亡的，但是想要获得副产品，每天给予饲料是很重要的。<br>
-说话、刷毛、放牧的话动物的好感度会提高，所以每天都这样做吧。<br>
-另外，为动物刷毛需要去锻造店购入「毛刷」。</p>
-<h3 id="基本的照料">基本的照料</h3>
-<ul>
-<li><strong>说话</strong><br>
-和饲育中的动物一只只地说话吧。</li>
-<li><strong>喂饲料</strong><br>
-想要取得副产品，喂饲料是必须的。</li>
-<li><strong>刷毛</strong><br>
-针对对牛、羊、羊驼进行的照料。</li>
-<li><strong>放牧</strong><br>
-节约饲料的同时还可以提升好感度。</li>
-</ul>
-<h3 id="喂饲料的3种方法">喂饲料的3种方法</h3>
-<ul>
-<li><strong>直接喂饲料</strong><br>
-手持饲料对着动物说话，可以提升好感度。</li>
-<li><strong>放到饲料放置处</strong><br>
-手持饲料放到饲料放置处，需要放置相应动物数量的饲料</li>
-<li><strong>4小时以上的放牧</strong><br>
-放牧出去的动物会在 PM8：00 回到小屋，尽早地摇铃吧。<br>
-放牧可以在晴天或是下雪的日子进行，摇动小屋前面的摇铃就可以了。</li>
-</ul>
-<h4 id="获取动物们的饲料">获取动物们的饲料</h4>
-<p>饲料有「鸡兔饲料」和「干草饲料」 两种，根据动物种类所需的饲料是不同的。<br>
-培养「玉米」、「牧草」来补充饲料更为实惠。</p>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>动物</th>
-<th>所需饲料</th>
-<th>获得方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>鸡</td>
-<td rowspan="2">鸡兔饲料</td>
-<td rowspan="2">在「小鸡与莉莉娅」购买（1个10G）<br>向「水车小屋」投入「玉米」（1根可获得30份）</td>
-</tr>
-<tr>
-<td>安哥拉兔</td>
-</tr>
-<tr>
-<td>牛</td>
-<td rowspan="3">干草饲料</td>
-<td rowspan="3">在「约德尔牧场」购买（1个20G）<br>收割田地里的「牧草」（1个牧草可获得1份）</td>
-</tr>
-<tr>
-<td>羊</td>
-</tr>
-<tr>
-<td>羊驼</td>
-</tr>
-</tbody>
-</table>
-<h4 id="饲料可以储存在水车小屋和筒仓">饲料可以储存在「水车小屋」和「筒仓」</h4>
-<p>「鸡兔饲料」可以放入「鸡兔小屋」的饲料放置处进行补充，想用「玉米」补充则需要投入「水车小屋」。<br>
-另外，「干草饲料」可以放入饲料放置处、「筒仓」进行补充。</p>
-<p>想取出饲料的时候对着饲料放置处按A，想放入的时候则手持饲料对着饲料放置处按A。<br>
-「筒仓」与动物小屋的饲料放置处联动，可以在「筒仓」拿放饲料。<br>
-手持「玉米」投入「水车小屋」，1根「玉米」可以补充30份饲料</p>
-<h4 id="通过放牧节约鸡兔饲料">通过放牧节约鸡兔饲料</h4>
-<p>在通过放牧给予饲料的情况下，牛、羊、羊驼需要田地中长有足够数量的「牧草」。<br>
-但是，鸡和安哥拉兔不需要任何东西，只要每天放牧4小时以上就能节约下饲料。<br>
-不过下雨的日子无法放牧，还是需要储备饲料的。</p>
-<h2 id="动物的好感度">动物的好感度</h2>
-<p>动物的好感度会影响产出的副产品的品质。<br>
-好感度的数值可以通过每天的照料稍微提升，数值每上升25则增加1颗心升级至下一阶段。</p>
-<h3 id="提高动物好感度的方法">提高动物好感度的方法</h3>
-<ul>
-<li><b>说话</b>：+1</li>
-<li><b>刷毛（牛、羊、羊驼）</b>：+1</li>
-<li><b>5小时以上的放牧</b>：+1</li>
-<li><b>直接给予饲料</b>：+1</li>
-</ul>
-<p>牛、羊、羊驼一天最多+4。<br>
-鸡、安哥拉兔无法刷毛，所以一天最多+3。</p>
-<h3 id="好感度与数值对应">好感度与数值对应</h3>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>好感度</th>
-<th>数值对应</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>0</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>1</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>2</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>3</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>4</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>5</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>6</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>7</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>8</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-none.svg"></td>
-<td>9</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"><img src="/saikai/svg/heart-red.svg"></td>
-<td>10</td>
-</tr>
-</tbody>
-</table>
-<h3 id="副产品的品质升级">副产品的品质升级</h3>
-<p>动物的副产品可以从S上升直到变成X。动物的好感度决定了能取获得的产物。<br>
-想获得G以上的品质，除了好感度以外还需要在斗鸡节、评牛节、软绵绵节的活动上获胜。</p>
-<h4 id="各品质的取得条件">各品质的取得条件</h4>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>品质</th>
-<th>好感度</th>
-<th>特殊条件</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>S</td>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">0-3</span></td>
-<td>-</td>
-</tr>
-<tr>
-<td>M</td>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">4-7</span></td>
-<td>-</td>
-</tr>
-<tr>
-<td>L</td>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">8-10</span></td>
-<td>-</td>
-</tr>
-<tr>
-<td>G</td>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">8-10</span></td>
-<td>该动物在相应节日获胜</td>
-</tr>
-<tr>
-<td>P</td>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">8-10</span></td>
-<td>该动物在相应节日获胜/放牧时间合计1000小时以上</td>
-</tr>
-<tr>
-<td>X</td>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">8-10</span></td>
-<td>在能够取得P品质的产物后有0.4%的概率取得</td>
-</tr>
-</tbody>
-</table>
-<p>鸡蛋：S=普通品质蛋、M=高品质蛋、L=超高品质蛋、G=金蛋、P=白金蛋</p>
-<h3 id="检查交流资讯中动物的状态">检查「交流资讯」中动物的状态</h3>
-<p>在动物的好感度菜单「动物资讯」中能够检查动物。<br>
-「动物」界面中除了好感度外还会标记当天是否进行过说话、刷毛、取得副产品。<br>
-该动物在相应节日获胜的话，会显示王冠的标志。</p>
-<h2 id="动物的繁殖">动物的繁殖</h2>
-<p>可以在牧场中对动物进行繁殖。<br>
-鸡的繁殖只需将蛋放在孵化箱。<br>
-除此以外的动物需要使用配种道具进行妊娠，经过一定天数后生下幼崽。<br>
-安哥拉兔、羊、羊驼在剪毛以后无法使用配种道具。<br>
-想要繁殖安哥拉兔需要增筑「鸡兔小屋」。</p>
-<h3 id="繁殖方法">繁殖方法</h3>
-<ul>
-<li>鸡 蛋放入小屋内的孵化箱，没有品质上的差异，即使不是当天产下的蛋也没关系。</li>
-<li>鸡以外的动物 在「小鸡与莉莉娅」、「约德尔牧场」购入与动物相符的配种道具，按Y键使用。</li>
-</ul>
-<h3 id="喂食饲料的注意事项">喂食饲料的注意事项</h3>
-<p>孕期的动物无法放牧。直接给予饲料或放置于孕期饲料箱。</p>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th rowspan="2">动物</th>
-<th colspan="2">妊娠天数</th>
-</tr>
-<tr>
-<th>喂饲料</th>
-<th>不喂饲料</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>鸡</td>
-<td>3天</td>
-<td>3天</td>
-</tr>
-<tr>
-<td>安哥拉兔</td>
-<td>5天</td>
-<td>10天</td>
-</tr>
-<tr>
-<td>牛</td>
-<td rowspan="4">21天</td>
-<td rowspan="4">30天</td>
-</tr>
-<tr>
-<td>咖啡奶牛</td>
-</tr>
-<tr>
-<td>草莓奶牛</td>
-</tr>
-<tr>
-<td>水果奶牛</td>
-</tr>
-<tr>
-<td>羊</td>
-<td>21天</td>
-<td>30天</td>
-</tr>
-<tr>
-<td>羊驼</td>
-<td>21天</td>
-<td>30天</td>
-</tr>
-</tbody>
-</table>
-<h3 id="经过一定天数后成年">经过一定天数后成年</h3>
-<p>生下的幼崽在经过一定天数后会长大成年。<br>
-副产品只能从成年的动物身上取得，所以每天好好照料等待成年吧。<br>
-是否喂食不会影响小鸡成长所需日数的长短，直接给予饲料的话好感度会升高。<br>
-另外，因为在约德尔牧场购入的牛是中型牛，所以想要取得副产品最短也需要经过9天。</p>
-<h3 id="动物的成长天数">动物的成长天数</h3>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th rowspan="2">动物</th>
-<th colspan="2">成长天数</th>
-</tr>
-<tr>
-<th>喂饲料</th>
-<th>不喂饲料</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>鸡</td>
-<td>7天</td>
-<td>7天</td>
-</tr>
-<tr>
-<td>安哥拉兔</td>
-<td>10天</td>
-<td>15天</td>
-</tr>
-<tr>
-<td>牛</td>
-<td>14天</td>
-<td>20天</td>
-</tr>
-<tr>
-<td>羊</td>
-<td>14天</td>
-<td>20天</td>
-</tr>
-<tr>
-<td>羊驼</td>
-<td>14天</td>
-<td>20天</td>
-</tr>
-</tbody>
-</table>
-<p>※ 小牛经过14天长大成为中牛（不可产奶），再经过9天变成大牛（可产奶）</p>
-<h3 id="次世代增加好感度的上限">次世代增加好感度的上限</h3>
-<p>经过繁殖出生的幼崽最初的好感度即为3心，特征是好感度的上限增加1颗心。<br>
-因此，在幼崽成年后重复繁殖的流程，最高可以提高好感度至10心。<br>
-并且，小鸡的好感度上限是在好感度上限最高的鸡的上限基础上+1。</p>
-<h3 id="诞生的幼崽的特征">诞生的幼崽的特征</h3>
-<p>最初的好感度即为3心。<br>
-在母亲的好感度上限基础上增加1。<br>
-第6世代的幼崽好感度上限可以达到最高的10。</p>
-<h2 id="副产品的加工">副产品的加工</h2>
-<p>在锻造店赛巴拉那里获得加工机后可以对副产品进行加工。<br>
-不同加工机所加工出的副产品不同，所以购入想要获得的加工品对应的加工机吧。<br>
-加工机的使用方法是手持副产品，投入对应的加工机。<br>
-并且在加工品中，奶油是唯一不能出荷的，作为料理的材料、居民的礼物任意使用吧。</p>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>加工机</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>蛋黄酱加工机</td>
-<td>将鸡蛋加工成蛋黄酱</td>
-</tr>
-<tr>
-<td>起司加工机</td>
-<td>将牛奶加工成起司</td>
-</tr>
-<tr>
-<td>奶油加工机</td>
-<td>将牛奶加工成奶油</td>
-</tr>
-<tr>
-<td>毛线团加工机</td>
-<td>将安哥拉兔毛、羊毛、羊驼毛加工成毛线团</td>
-</tr>
-</tbody>
-</table>
-<p>※ 请注意奶油无法出售</p>
-<h3 id="加工机的获得步骤">加工机的获得步骤</h3>
-<ol type="1">
-<li>获得精金石 泉洞穴的地下10层以后，用锤子破坏石头有一定几率出现。</li>
-<li>委托锻造店赛巴拉 准备「精金石」和钱，委托锻造店赛巴拉进行加工</li>
-<li>5天后设置设施 经过5天后，将订购的加工机设置在牧场的设备内。</li>
-</ol>
-<h3 id="加工的出荷额变化">加工的出荷额变化</h3>
-<p>蛋加工为「蛋黄酱」、牛奶加工为「起司」时，无论品质如何都能提高出荷额。<br>
-另一方面，「安哥拉兔毛」、「羊毛」、「羊驼毛」会加工出对应品质的「毛线团」，出荷额也相同。<br>
-要记住，品质为G以上的「羊毛」和「羊驼毛」不加工直接出荷所获得的的钱反而更多。<br>
-「起司」只能通过加工牛奶获得，意外的贵重。<br>
-「安哥拉兔毛」无论什么品质，加工成「毛线团」后出荷额都会提高。</p>
-<h3 id="副产品加工品的出荷额">副产品加工品的出荷额</h3>
-<table cellspacing="0" border="0" cellpadding="5" rules="all" id="Breeding">
-<thead>
-<tr>
-<th>品质</th>
-<th>蛋</th>
-<th>蛋黄酱</th>
-<th>牛奶</th>
-<th>牛奶※</th>
-<th>起司</th>
-<th>安哥拉兔毛</th>
-<th>羊毛</th>
-<th>羊驼毛</th>
-<th>毛线团</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>S</td>
-<td>50</td>
-<td>100</td>
-<td>100</td>
-<td>120</td>
-<td>250</td>
-<td>240</td>
-<td>400</td>
-<td>420</td>
-<td>530</td>
-</tr>
-<tr>
-<td>M</td>
-<td>80</td>
-<td>150</td>
-<td>220</td>
-<td>240</td>
-<td>380</td>
-<td>400</td>
-<td>700</td>
-<td>740</td>
-<td>920</td>
-</tr>
-<tr>
-<td>L</td>
-<td>150</td>
-<td>230</td>
-<td>360</td>
-<td>400</td>
-<td>540</td>
-<td>720</td>
-<td>1300</td>
-<td>1360</td>
-<td>1400</td>
-</tr>
-<tr>
-<td>G</td>
-<td>200</td>
-<td>300</td>
-<td>500</td>
-<td>550</td>
-<td>700</td>
-<td>1000</td>
-<td>2500</td>
-<td>2700</td>
-<td>2000</td>
-</tr>
-<tr>
-<td>P</td>
-<td>240</td>
-<td>450</td>
-<td>600</td>
-<td>660</td>
-<td>820</td>
-<td>1500</td>
-<td>3200</td>
-<td>3500</td>
-<td>2800</td>
-</tr>
-<tr>
-<td>X</td>
-<td>350</td>
-<td>800</td>
-<td>800</td>
-<td>900</td>
-<td>1500</td>
-<td>1800</td>
-<td>3600</td>
-<td>4000</td>
-<td>3200</td>
-</tr>
-</tbody>
-</table>
-<p>※ 牛奶：咖啡牛奶、草莓牛奶、水果牛奶</p>
+    <h1>饲育动物</h1>
+    <p>与农作一样，饲育动物也是牧场生活中非常重要的工作。<br>
+        在矿石镇中，能够饲育的动物有5个种类。<br>
+        牛有咖啡奶牛、草莓奶牛等4个种类的变种，副产品各不相同。<br>
+        鸡有两个种类，颜色不同，但副产品相同。<br>
+        不管是哪一种动物，最初的一只都要去「小鸡与莉莉娅」、「约德尔牧场」购买。</p>
+    <ul class="link">
+        <li><a href="#动物的种类">动物种类</a></li>
+        <li><a href="#贩卖店铺和饲育场所">贩卖店铺和饲育场所</a></li>
+        <li><a href="#从动物身上取得的副产品">取得副产品</a></li>
+        <li><a href="#照顾动物的方法">照顾方法</a></li>
+        <li><a href="#获取动物们的饲料">获取饲料</a></li>
+        <li><a href="#动物的好感度">好感度</a></li>
+        <li><a href="#动物的繁殖">繁殖</a></li>
+        <li><a href="#副产品的加工">副产品加工</a></li>
+    </ul>
+    <h2 id="动物的种类">动物的种类</h2>
+    <div class="animal">
+        <img src="bird.png">
+        <img src="cow.png">
+        <img src="sheep.png">
+        <img src="alpaca.png">
+        <img src="rabit.png">
+    </div>
+    <ul>
+        <li><span class="bold">鸡</span><br>
+            鸡、茶色鸡</li>
+        <li><span class="bold">牛</span><br>
+            牛、咖啡奶牛、草莓奶牛、水果奶牛</li>
+        <li><span class="bold">羊</span></li>
+        <li><span class="bold">羊驼</span></li>
+        <li><span class="bold">安哥拉兔</span></li>
+    </ul>
+    <h2 id="贩卖店铺和饲育场所">贩卖店铺和饲育场所</h2>
+    <p>最初就购买价格最合适的鸡来尝试饲育吧！</p>
+    <table>
+        <thead>
+            <tr>
+                <th>动物</th>
+                <th>贩卖店铺</th>
+                <th>饲育场所</th>
+                <th>饲育数量<br>（扩建前）</th>
+                <th>饲育数量<br>（扩建后）</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>鸡</td>
+                <td rowspan="2">小鸡与莉莉娅</td>
+                <td rowspan="2">鸡兔笼舍</td>
+                <td rowspan="2">4只</td>
+                <td rowspan="2">8只</td>
+            </tr>
+            <tr>
+                <td>安哥拉兔</td>
+            </tr>
+            <tr>
+                <td>牛</td>
+                <td rowspan="3">约德尔牧场</td>
+                <td rowspan="3">动物小屋</td>
+                <td rowspan="3">8只</td>
+                <td rowspan="3">16只</td>
+            </tr>
+            <tr>
+                <td>羊</td>
+            </tr>
+            <tr>
+                <td>羊驼</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class="note">
+        <p class="gamepad">在动物小屋的照料使用穿透功能（按住<img src="/icon/switch/R.png" alt="R键">跑步，可以不被卡位）会很便利。</p>
+        <p class="gamepad">动物小屋饲育的动物数量增多时可以灵活运用。</p>
+        <p class="gamepad">而且，在狭窄的小路与居民挤在一起时也可以用按<img src="/icon/switch/R.png" alt="R键">穿过居民后继续前进。</p>
+    </div>
+    <h2 id="从动物身上取得的副产品">从动物身上取得的副产品</h2>
+    <p>可以从动物的身上采集到下表中的副产品，表中的采集频率是指每天都喂食的情况下。<br>
+        安哥拉兔、羊、羊驼如果不喂食，则下一次可以采集的天数会增加。<br>
+        另外，鸡以外的动物的副产品需要专门的工具采集。
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th>动物</th>
+                <th>副产品</th>
+                <th>采集频率</th>
+                <th>必要的道具</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>鸡、茶色鸡</td>
+                <td>蛋</td>
+                <td rowspan="5">每天</td>
+                <td>无</td>
+            </tr>
+            <tr>
+                <td>牛</td>
+                <td>牛奶</td>
+                <td rowspan="4">挤奶器</td>
+            </tr>
+            <tr>
+                <td>咖啡奶牛</td>
+                <td>咖啡牛奶</td>
+            </tr>
+            <tr>
+                <td>草莓奶牛</td>
+                <td>草莓牛奶</td>
+            </tr>
+            <tr>
+                <td>水果奶牛</td>
+                <td>水果牛奶</td>
+            </tr>
+            <tr>
+                <td>安哥拉兔</td>
+                <td>安哥拉兔毛</td>
+                <td>5天</td>
+                <td rowspan="3">剃毛剪</td>
+            </tr>
+            <tr>
+                <td>羊</td>
+                <td>羊毛</td>
+                <td rowspan="2">7天</td>
+            </tr>
+            <tr>
+                <td>羊驼</td>
+                <td>羊驼毛</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 id="照顾动物的方法">照顾动物的方法</h2>
+    <p>重聚矿石镇的<strong>动物们是不会死亡的</strong>，但是想要获得副产品，每天都需要给动物喂饲料。<br>
+        说话、刷毛、放牧的话动物的好感度会提高，所以每天都这样做吧。<br>
+        另外，为动物刷毛需要去铁匠铺购入「毛刷」。</p>
+    <h3>基本的照顾</h3>
+    <ul>
+        <li><span class="bold">说话</span><br>
+            和饲育中的动物一只只地说话吧。</li>
+        <li><span class="bold">喂饲料</span><br>
+            想要取得副产品，喂饲料是必须的。</li>
+        <li><span class="bold">刷毛</span><br>
+            仅可以对牛、羊、羊驼进行的操作。</li>
+        <li><span class="bold">放牧</span><br>
+            节约饲料的同时还可以提升好感度。</li>
+    </ul>
+    <h3>喂饲料的3种方法</h3>
+    <ul>
+        <li><span class="bold">直接喂饲料</span><br>
+            手持饲料对着动物说话，可以提升好感度。</li>
+        <li><span class="bold">放到饲料放置处</span><br>
+            手持饲料放到饲料放置处，需要放置相应动物数量的饲料。</li>
+        <li><span class="bold">放牧4小时以上</span><br>
+            放牧出去的动物会在 PM8：00 回到小屋，尽早地摇铃吧。<br>
+            放牧可以在晴天或是下雪的日子进行，摇动小屋前面的铃铛就可以了。</li>
+    </ul>
+    <h2 id="获取动物们的饲料">获取动物们的饲料</h2>
+    <p>饲料有「鸡兔饲料」和「干草饲料」 两种，根据动物种类所需的饲料是不同的。<br>
+        培养「玉米」、「牧草」来补充饲料更为实惠。</p>
+    <table>
+        <thead>
+            <tr>
+                <th>动物</th>
+                <th>所需饲料</th>
+                <th>获得方法</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>鸡</td>
+                <td rowspan="2">鸡兔饲料</td>
+                <td rowspan="2">在「小鸡与莉莉娅」购买（1个10G）<br>向「水车磨坊」投入「玉米」（1根可获得30份）</td>
+            </tr>
+            <tr>
+                <td>安哥拉兔</td>
+            </tr>
+            <tr>
+                <td>牛</td>
+                <td rowspan="3">干草饲料</td>
+                <td rowspan="3">在「约德尔牧场」购买（1个20G）<br>收割田地里的「牧草」（1个牧草可获得1份）</td>
+            </tr>
+            <tr>
+                <td>羊</td>
+            </tr>
+            <tr>
+                <td>羊驼</td>
+            </tr>
+        </tbody>
+    </table>
+    <h4>饲料可以储存在「水车磨坊」和「筒仓」</h4>
+    <p>「鸡兔饲料」可以放入「鸡兔笼舍」的饲料放置处进行补充，想用「玉米」补充则需要投入「水车磨坊」。<br>
+        另外，「干草饲料」可以放入饲料放置处、「筒仓」进行补充。</p>
+    <p class="gamepad">想取出饲料的时候对着饲料放置处按<img src="/icon/switch/A.png" alt="A键"></p>
+    <p class="gamepad">想放入的时候则手持饲料对着饲料放置处按<img src="/icon/switch/A.png" alt="A键"></p>
+    <p>「筒仓」与动物小屋的饲料放置处联动，可以在「筒仓」拿放饲料。<br>
+        手持「玉米」投入「水车磨坊」，<strong>1个「玉米」可以补充30份饲料</strong>。</p>
+    <div class="note">
+        <h4>通过放牧节约鸡兔饲料</h4>
+        <p>在通过放牧喂饲料的情况下，牛、羊、羊驼需要田地中长有足够数量的「牧草」。<br>
+            但是，鸡和安哥拉兔不需要任何东西，只要每天放牧4小时以上就可以不需要喂饲料。<br>
+            不过下雨的日子无法放牧，还是需要储备一些饲料的。</p>
+    </div>
+    <h2 id="动物的好感度">动物的好感度</h2>
+    <p>动物的好感度会影响产出的副产品的品质。<br>
+        好感度的数值可以通过每天的照料稍微提升。<br>
+        数值每上升25则增加1颗心升级至下一阶段。<br>
+        牛、羊、羊驼一天最多+4。<br>
+        鸡、安哥拉兔无法刷毛，所以一天最多+3。</p>
+    <h3>提高动物好感度的方法</h3>
+    <ul>
+        <li><span class="bold">说话</span>：+1</li>
+        <li><span class="bold">刷毛（牛、羊、羊驼）</span>：+1</li>
+        <li><span class="bold">放牧5小时以上</span>：+1</li>
+        <li><span class="bold">直接喂饲料</span>：+1</li>
+    </ul>
+    <p>
+        <h3>好感度与数值对应</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">好感度</th>
+                    <th>数值对应</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>0</td>
+                    <td>0~24</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>1</td>
+                    <td>25~49</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>2</td>
+                    <td>50~74</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>3</td>
+                    <td>75~99</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>4</td>
+                    <td>100~124</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>5</td>
+                    <td>125~149</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>6</td>
+                    <td>150~174</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>7</td>
+                    <td>175~199</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>8</td>
+                    <td>200~224</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-none.svg">
+                    </td>
+                    <td>9</td>
+                    <td>225~249</td>
+                </tr>
+                <tr>
+                    <td><img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                        <img src="/icon/heart-red.svg">
+                    </td>
+                    <td>10</td>
+                    <td>250+</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>副产品的品质升级</h3>
+        <p>动物的副产品可以从S上升直到变成X。<br>
+            动物的好感度决定了能取获得的产物。<br>
+            想获得G以上的品质，除了好感度以外还需要在斗鸡节、评牛节、软绵绵节的活动上获胜。</p>
+        <h4>各品质的取得条件</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>品质</th>
+                    <th style="min-width: 8em;">好感度</th>
+                    <th>特殊条件</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S</td>
+                    <td><img src="/icon/heart-red.svg"><span class="left1em">0-3</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td><img src="/icon/heart-red.svg"><span class="left1em">4-7</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td><img src="/icon/heart-red.svg"><span class="left1em">8-10</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td><img src="/icon/heart-red.svg"><span class="left1em">8-10</span></td>
+                    <td>该动物在相应节日获胜</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td><img src="/icon/heart-red.svg"><span class="left1em">8-10</span></td>
+                    <td>该动物在相应节日获胜<br>放牧时间合计1000小时以上</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td><img src="/icon/heart-red.svg"><span class="left1em">8-10</span></td>
+                    <td>在能够取得P品质的产物后有0.4%的概率取得</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>※ 鸡蛋：S=普通品质的蛋、M=高品质的蛋、L=优良品质的蛋、G=金蛋、P=白金蛋</p>
+        <h3>检查「关系状况」中动物的状态</h3>
+        <p>动物的好感度可以在菜单「关系状况」中查看。<br>
+            「动物」界面中除了好感度外，还会标记当天是否进行过说话、刷毛、采集过副产品。<br>
+            该动物在相应节日获胜的话，会显示王冠的标记。</p>
+        <h2 id="动物的繁殖">动物的繁殖</h2>
+        <p>可以在牧场中对动物进行繁殖。<br>
+            鸡的繁殖只需将蛋放在孵化箱。<br>
+            除此以外的动物需要使用「人工配种器」进行妊娠，经过一定天数后生下幼崽。<br>
+            安哥拉兔、羊、羊驼在剪毛以后无法使用「人工配种器」。<br>
+            想要繁殖安哥拉兔需要扩建「鸡兔笼舍」。</p>
+        <h3>繁殖方法</h3>
+        <ul>
+            <li>鸡蛋放入小屋内的孵化箱，没有品质上的差异，即使不是当天产下的蛋也没关系。</li>
+            <li>
+                <p class="gamepad">鸡以外的动物 在「小鸡与莉莉娅」、「约德尔牧场」购入与动物相符的「人工配种器」，按<img src="/icon/switch/Y.png" alt="Y键">使用。
+                </p>
+            </li>
+        </ul>
+        <h3>喂食饲料的注意事项</h3>
+        <p>孕期的动物无法放牧。<br>
+            直接喂饲料或放置于孕期饲料箱。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">动物</th>
+                    <th colspan="2">妊娠天数</th>
+                </tr>
+                <tr>
+                    <th>喂饲料</th>
+                    <th>不喂饲料</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>鸡</td>
+                    <td>3天</td>
+                    <td>3天</td>
+                </tr>
+                <tr>
+                    <td>安哥拉兔</td>
+                    <td>5天</td>
+                    <td>10天</td>
+                </tr>
+                <tr>
+                    <td>牛</td>
+                    <td rowspan="4">21天</td>
+                    <td rowspan="4">30天</td>
+                </tr>
+                <tr>
+                    <td>咖啡奶牛</td>
+                </tr>
+                <tr>
+                    <td>草莓奶牛</td>
+                </tr>
+                <tr>
+                    <td>水果奶牛</td>
+                </tr>
+                <tr>
+                    <td>羊</td>
+                    <td>21天</td>
+                    <td>30天</td>
+                </tr>
+                <tr>
+                    <td>羊驼</td>
+                    <td>21天</td>
+                    <td>30天</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>经过一定天数后成年</h3>
+        <p>生下的幼崽在经过一定天数后会长大成年。<br>
+            副产品只能从成年的动物身上取得，所以每天好好照料等待成年吧。<br>
+            是否喂食不会影响小鸡成长所需日数的长短，直接喂饲料的话好感度会升高。<br>
+            另外，因为在「约德尔牧场」购入的牛是中型牛，所以想要取得副产品最短也需要经过9天。</p>
+        <h3>动物的成长天数</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">动物</th>
+                    <th colspan="2">成长天数</th>
+                </tr>
+                <tr>
+                    <th>喂饲料</th>
+                    <th>不喂饲料</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>鸡</td>
+                    <td>7天</td>
+                    <td>7天</td>
+                </tr>
+                <tr>
+                    <td>安哥拉兔</td>
+                    <td>10天</td>
+                    <td>15天</td>
+                </tr>
+                <tr>
+                    <td>小牛 -&gt; 中型牛</td>
+                    <td>14天</td>
+                    <td>20天</td>
+                </tr>
+                <tr>
+                    <td>中型牛 -&gt; 成年牛</td>
+                    <td>9天</td>
+                    <td>14天</td>
+                </tr>
+                <tr>
+                    <td>羊</td>
+                    <td>14天</td>
+                    <td>20天</td>
+                </tr>
+                <tr>
+                    <td>羊驼</td>
+                    <td>14天</td>
+                    <td>20天</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>※ 喂饲料指每天都喂饲料，不喂饲料指一次都没有喂过。<br>
+            ※ 小牛会先成长为中型牛（不可产奶），再长大成为成年牛（可产奶）</p>
+        <h3>次世代增加好感度的上限</h3>
+        <p>经过繁殖出生的幼崽最初的好感度即为3颗心，特征是好感度的上限增加1颗心。<br>
+            因此，在幼崽成年后重复繁殖的流程，最高可以提高好感度至10颗心。<br>
+            并且，小鸡的好感度上限是在好感度上限最高的成年鸡的上限基础上增加1颗心。<br>
+            如果在没有养鸡或者只有小鸡的情况下孵蛋，孵出的小鸡好感度为6颗心。（基础5颗心+1）
+        </p>
+        <h3>诞生的幼崽的特征</h3>
+        <p>最初的好感度即为3颗心。<br>
+            在母亲的好感度上限基础上增加1颗心。<br>
+            第6世代的动物幼崽，好感度上限可以达到最高的10颗心。</p>
+        <h2 id="副产品的加工">副产品的加工</h2>
+        <p>在「赛巴拉铁匠铺」那里获得加工机后，可以对副产品进行加工。<br>
+            不同加工机所加工出的副产品不同，所以购入想要获得的加工品对应的加工机吧。<br>
+            加工机的使用方法是手持副产品，投入对应的加工机。<br>
+            并且在加工品中，黄油是唯一不能出售的，作为料理的材料或送给居民的礼物来使用吧。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>加工机</th>
+                    <th>效果</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>蛋黄酱加工机</td>
+                    <td>将鸡蛋加工成蛋黄酱</td>
+                </tr>
+                <tr>
+                    <td>芝士加工机</td>
+                    <td>将牛奶加工成芝士</td>
+                </tr>
+                <tr>
+                    <td>黄油加工机</td>
+                    <td>将牛奶加工成黄油</td>
+                </tr>
+                <tr>
+                    <td>毛线团加工机</td>
+                    <td>将安哥拉兔毛、羊毛、羊驼毛加工成毛线团</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>※ 请注意黄油无法出售</strong></p>
+        <h3>加工机的获得步骤</h3>
+        <ol type="1">
+            <li>「泉之采矿场」的地下10层以后，用锤子破坏石头有一定几率出现「精金」。</li>
+            <li>委托「赛巴拉铁匠铺」准备「精金」和钱，委托赛巴拉进行加工</li>
+            <li>经过5天后，订购的加工机会设置在牧场的设施内。</li>
+        </ol>
+        <h3>副产品的售价变化</h3>
+        <p>鸡蛋加工为「蛋黄酱」、牛奶加工为「芝士」时，无论品质如何都能提高售价。<br>
+            另一方面，「安哥拉兔毛」、「羊毛」、「羊驼毛」会加工出对应品质的「毛线团」，售价也相同。<br>
+            要记住，品质为G以上的「羊毛」和「羊驼毛」不加工直接出售所获得的的钱反而更多。<br>
+            「芝士」只能通过加工牛奶获得，意外的贵重。<br>
+            「安哥拉兔毛」无论什么品质，加工成「毛线团」后售价都会提高。</p>
+        <h3>副产品加工品的售价</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>品质</th>
+                    <th>蛋</th>
+                    <th>蛋黄酱</th>
+                    <th>牛奶</th>
+                    <th>牛奶※</th>
+                    <th>芝士</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S</td>
+                    <td>50</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>80</td>
+                    <td>150</td>
+                    <td>220</td>
+                    <td>240</td>
+                    <td>380</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>150</td>
+                    <td>230</td>
+                    <td>360</td>
+                    <td>400</td>
+                    <td>540</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>200</td>
+                    <td>300</td>
+                    <td>500</td>
+                    <td>550</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>240</td>
+                    <td>450</td>
+                    <td>600</td>
+                    <td>660</td>
+                    <td>820</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>350</td>
+                    <td>800</td>
+                    <td>800</td>
+                    <td>900</td>
+                    <td>1500</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>品质</th>
+                    <th>安哥拉兔毛</th>
+                    <th>羊毛</th>
+                    <th>羊驼毛</th>
+                    <th>毛线团</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>S</td>
+                    <td>240</td>
+                    <td>400</td>
+                    <td>420</td>
+                    <td>530</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>400</td>
+                    <td>700</td>
+                    <td>740</td>
+                    <td>920</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>720</td>
+                    <td>1300</td>
+                    <td>1360</td>
+                    <td>1400</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>1000</td>
+                    <td>2500</td>
+                    <td>2700</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>1500</td>
+                    <td>3200</td>
+                    <td>3500</td>
+                    <td>2800</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>1800</td>
+                    <td>3600</td>
+                    <td>4000</td>
+                    <td>3200</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>※ 牛奶：咖啡牛奶、草莓牛奶、水果牛奶</p>
+        <div class="key">
+            <h3>饲育的动物在活动中出场</h3>
+            <p>动物可以出场的活动有3种。<br>
+                获胜能获得奖品，除此之外在斗鸡节、评牛节、软绵绵节获胜还能提高副产物的品质。<br>
+                评牛节、软绵绵节在好感度8心以上时，能够获胜。</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>活动</th>
+                        <th>对应的动物</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>斗鸡节</td>
+                        <td>鸡、茶色鸡</td>
+                    </tr>
+                    <tr>
+                        <td>评牛节</td>
+                        <td>牛、咖啡乳牛、草莓乳牛、水果乳牛</td>
+                    </tr>
+                    <tr>
+                        <td>软绵绵节</td>
+                        <td>安哥拉兔、羊、羊驼</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
 </body>
+
 </html>

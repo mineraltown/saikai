@@ -1,13 +1,2199 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" href="/saikai/saikai.css">
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
     <title>居民事件</title>
+    <style>
+        @media only screen and (min-width: 801px) {
+            .event_list {
+                font-size: 0.9em;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .event_list {
+                font-size: 0.9em;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<p style="text-align: center;margin-top: 5em;">UNDER CONSTRUCTION</p>
+    <h1>居民事件</h1>
+    <p>能够深入了解居民的事件。也能获得菜谱和物品。</p>
+    <div class="event_list note">
+        <ul>
+            <li><a href="#里克与凯的争吵">里克与凯的争吵</a></li>
+            <li><a href="#格雷与凯的友情">格雷与凯的友情</a></li>
+            <li><a href="#与家人的回忆">与家人的回忆</a></li>
+            <li><a href="#多特误诊">多特误诊</a></li>
+            <li><a href="#克里夫倒下">克里夫倒下</a></li>
+            <li><a href="#克里夫倒下（住院）">克里夫倒下（住院）</a></li>
+            <li><a href="#克里夫启程">克里夫启程</a></li>
+            <li><a href="#克里夫回归">克里夫回归</a></li>
+            <li><a href="#凯的登场">凯的登场</a></li>
+            <li><a href="#海之家繁盛日记">海之家繁盛日记</a></li>
+            <li><a href="#凯的问候">凯的问候</a></li>
+            <li><a href="#凯的离别">凯的离别</a></li>
+            <li><a href="#散步的布兰登">散步的布兰登</a></li>
+            <li><a href="#旅行商人登场">旅行商人登场</a></li>
+            <li><a href="#旅行商人的拜访（苹果）">旅行商人的拜访（苹果）</a></li>
+            <li><a href="#旅行商人的拜访（花瓶）">旅行商人的拜访（花瓶）</a></li>
+        </ul>
+        <ul>
+            <li><a href="#遗落苹果">遗落苹果</a></li>
+            <li><a href="#收购持有物">收购持有物</a></li>
+            <li><a href="#猜苹果小游戏">猜苹果小游戏</a></li>
+            <li><a href="#猜数字小游戏">猜数字小游戏</a></li>
+            <li><a href="#美食家的午餐">美食家的午餐</a></li>
+            <li><a href="#美食家的晚餐">美食家的晚餐</a></li>
+            <li><a href="#河童的供品1">河童的供品1</a></li>
+            <li><a href="#河童的供品2">河童的供品2</a></li>
+            <li><a href="#河童的供品3">河童的供品3</a></li>
+            <li><a href="#获得河童的秘宝">获得河童的秘宝</a></li>
+            <li><a href="#河童的灾难">河童的灾难</a></li>
+            <li><a href="#珀布莉网购">珀布莉网购</a></li>
+            <li><a href="#帮助巴吉尔">帮助巴吉尔</a></li>
+            <li><a href="#卡莲和狄克的果汁比拼">卡莲和狄克的果汁比拼</a></li>
+            <li><a href="#霍安的服务">霍安的服务</a></li>
+            <li><a href="#艾丽学习医学">艾丽学习医学</a></li>
+        </ul>
+        <ul>
+            <li><a href="#艾丽与优的姐弟情">艾丽与优的姐弟情</a></li>
+            <li><a href="#给父亲的礼物">给父亲的礼物</a></li>
+            <li><a href="#珍妮弗的礼物">珍妮弗的礼物</a></li>
+            <li><a href="#遇见女神大人">遇见女神大人</a></li>
+            <li><a href="#女神大人的供品1">女神大人的供品1</a></li>
+            <li><a href="#女神大人的供品2">女神大人的供品2</a></li>
+            <li><a href="#女神大人的供品3">女神大人的供品3</a></li>
+            <li><a href="#获得女神的秘宝">获得女神的秘宝</a></li>
+            <li><a href="#女神大人第1">女神大人第1</a></li>
+            <li><a href="#女神大人第2">女神大人第2</a></li>
+            <li><a href="#女神大人第3">女神大人第3</a></li>
+            <li><a href="#女神大人第4">女神大人第4</a></li>
+            <li><a href="#亲子爱">亲子爱</a></li>
+            <li><a href="#爸爸来的信">爸爸来的信</a></li>
+            <li><a href="#收留马">收留马</a></li>
+            <li><a href="#取回马">取回马</a></li>
+        </ul>
+        <ul>
+            <li><a href="#获得马">获得马</a></li>
+            <li><a href="#乔安娜的任性">乔安娜的任性</a></li>
+            <li><a href="#乔安娜打来的电话">乔安娜打来的电话</a></li>
+            <li><a href="#探望爱莲">探望爱莲</a></li>
+            <li><a href="#和爱莲的过去">和爱莲的过去</a></li>
+            <li><a href="#果树园打工委托">果树园打工委托</a></li>
+            <li><a href="#果树园打工">果树园打工</a></li>
+            <li><a href="#夫妻争执">夫妻争执</a></li>
+            <li><a href="#擅长购物的玛娜">擅长购物的玛娜</a></li>
+            <li><a href="#植物学家的倔强">植物学家的倔强</a></li>
+            <li><a href="#安娜的点心教室1">安娜的点心教室1</a></li>
+            <li><a href="#安娜的点心教室2">安娜的点心教室2</a></li>
+            <li><a href="#镇长的威严1">镇长的威严1</a></li>
+            <li><a href="#镇长的威严2">镇长的威严2</a></li>
+            <li><a href="#获得真实秘宝">获得真实秘宝</a></li>
+        </ul>
+        <ul>
+            <li><a href="#哈里斯的咨询1">哈里斯的咨询1</a></li>
+            <li><a href="#哈里斯的咨询2">哈里斯的咨询2</a></li>
+            <li><a href="#幸福之花1">幸福之花1</a></li>
+            <li><a href="#幸福之花2">幸福之花2</a></li>
+            <li><a href="#爷爷的信">爷爷的信</a></li>
+            <li><a href="#爱莲的袜子">爱莲的袜子</a></li>
+            <li><a href="#优的请求">优的请求</a></li>
+            <li><a href="#杰夫的绘画买卖">杰夫的绘画买卖</a></li>
+            <li><a href="#杰夫的决定">杰夫的决定</a></li>
+            <li><a href="#莎夏的人生咨询">莎夏的人生咨询</a></li>
+            <li><a href="#和杰夫的回忆">和杰夫的回忆</a></li>
+            <li><a href="#神谕之梦">神谕之梦</a></li>
+            <li><a href="#卡特的秘密">卡特的秘密</a></li>
+            <li><a href="#卡特的呼唤">卡特的呼唤</a></li>
+            <li><a href="#兰母亲的忌日">兰母亲的忌日</a></li>
+        </ul>
+        <ul>
+            <li><a href="#达特和狄克的争执">达特和狄克的争执</a></li>
+            <li><a href="#哥兹的低落">哥兹的低落</a></li>
+            <li><a href="#哥兹不再低落">哥兹不再低落</a></li>
+            <li><a href="#代替巡山">代替巡山</a></li>
+            <li><a href="#获得钓竿">获得钓竿</a></li>
+            <li><a href="#札克的爱情">札克的爱情</a></li>
+            <li><a href="#达成鱼图鉴">达成鱼图鉴</a></li>
+            <li><a href="#班的问候">班的问候</a></li>
+            <li><a href="#露的问候">露的问候</a></li>
+            <li><a href="#小精灵的茶会">小精灵的茶会</a></li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <h2 id="里克与凯的争吵">里克与凯的争吵</h2>
+    <p>夏季周日之外的PM1:00~PM5:00去矿石镇海岸，里克在给凯一些忠告。<br>
+        妹控的里克好像对珀布莉和凯的亲近不太满意。<br>
+        需要注意的是，札克在海岸的话事件不会发生。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：夏</li>
+                <li><b>星期</b>：一二三四五六</li>
+                <li><b>时间</b>：PM1:00~PM5:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：海边</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>未和珀布莉结婚</li>
+                        <li>札克不在海岸</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：里克、凯</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="格雷与凯的友情">格雷与凯的友情</h2>
+    <p>达到格雷和凯的友好度4<img src="/icon/music.svg">以上的话，在夏季AM11:00~PM1:00尝试去去海之家吧。<br>
+        可以知道格雷与凯意外的交友关系。<br>
+        凯只能在夏季才能提升友好度，因此一定要触发事件噢。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：夏</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：AM11:00~PM1:00</li>
+                <li><b>场所</b>：海之家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>分别和格雷、凯进行过一次以上对话</li>
+                        <li>未和格雷、凯任何结婚</li>
+                        <li>凯在海之家</li>
+                        <li>分别和格雷、凯有100以上友好度</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：格雷、凯</li>
+        <li><span class="bold">结果</span>：格雷、凯分别友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="与家人的回忆">与家人的回忆</h2>
+    <p>达到与多特的友好度4<img src="/icon/music.svg">以上，周三AM8:00~AM11:00去圣母山脉，在湖边遇见多特。<br>
+        注意即使满足上述条件，也只能在晴天触发。<br>
+        可以从多特处听到关于他父母的事情。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：AM8:00~AM11:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：后山</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>和多特进行过一次以上对话</li>
+                        <li>多特在圣母山脉的山麓</li>
+                        <li>多特友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：多特</li>
+        <li><span class="bold">结果</span>：多特友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="多特误诊">多特误诊</h2>
+    <p>多特对杰夫进行了误诊。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：二</li>
+                <li><b>时间</b>：PM1:00~PM4:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：医院</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>和多特进行过一次以上对话</li>
+                        <li>多特与杰夫在医院一楼</li>
+                        <li>多特友好度150以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：多特、杰夫、艾丽</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="克里夫倒下">克里夫倒下</h2>
+    <p>将晕倒在玫瑰广场的克里夫搬到医院。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 冬1~26日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM10:00~PM3:00</li>
+                <li><b>天气</b>：雪</li>
+                <li><b>场所</b>：广场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>和克里夫进行过一次以上对话</li>
+                        <li>克里夫友好度50以上</li>
+                        <li>未与克里夫或兰结婚</li>
+                        <li>背包有空格，且没有手持任何东西</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：克里夫、卡特、兰、达特</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>兰爱情度+3000</li>
+                <li>卡特、达特、多特友好度+20</li>
+                <li>获得「照片」</li>
+                <li>事件发生后，克里夫住院三天</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="克里夫倒下（住院）">克里夫倒下（住院）</h2>
+    <p>收下遗落的照片的克里夫，坦白了自己的过去。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 冬</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：医院</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「克里夫倒下」已发生</li>
+                        <li>事件「克里夫倒下」发生后，三日内去医院，将「照片」递给克里夫</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：克里夫</li>
+        <li><span class="bold">结果</span>：克里夫友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="克里夫启程">克里夫启程</h2>
+    <p>一年的牧场生活即将结束，克里夫从矿石镇离开。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 冬29日</li>
+                <li><b>星期</b>：</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：</li>
+                <li><b>场所</b>：海边</li>
+                <li><b>其他</b>：事件「果树园兼职的委托」中没有邀请克里夫。</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：克里夫</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>事件发生后，克里夫离开小镇。</li>
+                <li>即使未发生事件「克里夫启程」，只要满足条件克里夫也会离开。</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="克里夫回归">克里夫回归</h2>
+    <p>克里夫说还想着矿石镇的伙伴们，就回来了。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：每个月的29日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00～PM10:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：铁匠铺门口的路上</li>
+                <li><b>其他</b>：事件「克里夫启程」已发生</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：克里夫</li>
+        <li><span class="bold">结果</span>：事件发生后，克里夫回到小镇。</li>
+    </ul>
+    <hr>
+    <h2 id="凯的登场">凯的登场</h2>
+    <p>来打招呼的凯，告知矿石镇沙滩的海之家开门了。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 春30日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM9:00~PM7:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：小镇南侧</li>
+                <li><b>其他</b>：-</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：凯、珀布莉、梅</li>
+        <li><span class="bold">结果</span>：凯友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="海之家繁盛日记">海之家繁盛日记</h2>
+    <p>为了凯，珀布莉带了客人来海之家。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：夏</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：晴</li>
+                <li><b>天气</b>：PM5:00~PM7:00</li>
+                <li><b>场所</b>：海之家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>分别和凯、珀布莉进行过一次以上对话</li>
+                        <li>凯在海之家</li>
+                        <li>凯友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：凯、珀布莉、穆奇、卡特、哈里斯</li>
+        <li><span class="bold">结果</span>：凯友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="凯的问候">凯的问候</h2>
+    <p>进入夏季后，凯来告知他回来久违一年的小镇的事。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第二年以后 夏1日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>和凯进行过一次以上对话</li>
+                        <li>未与凯结婚</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：凯</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="凯的离别">凯的离别</h2>
+    <p>夏季结束，凯来告知他要离开小镇的事。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第二年以后 秋1日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>和凯进行过一次以上对话</li>
+                        <li>未与凯结婚</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：凯</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="散步的布兰登">散步的布兰登</h2>
+    <p>见到布兰登的玛娜与沙夏。两个人开始说布兰登的八卦，但是……</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：日一三四五</li>
+                <li><b>时间</b>：PM1:00~PM4:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：广场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>和布兰登进行过一次以上对话</li>
+                        <li>玛娜和沙夏在广场</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：布兰登、玛娜、沙夏</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="旅行商人登场">旅行商人登场</h2>
+    <p>旅行商人霍安来打招呼，借札克的家开店。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 春3日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：-</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：霍安</li>
+        <li><span class="bold">结果</span>：可以去开在札克家中的霍安的店了</li>
+    </ul>
+    <hr>
+    <h2 id="旅行商人的拜访（苹果）">旅行商人的拜访（苹果）</h2>
+    <p>所持金额达到一定数量的话，霍安会来卖三种苹果。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：每月4日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>所持金500G以上</li>
+                        <li>当天没和霍安说话</li>
+                        <li>霍安友好度100以上</li>
+                        <li>背包有空格</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：霍安</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>选择「购买」，能在「SUGDW苹果」、「HMSGB苹果」、「AEPFE苹果」中择一500G购买</li>
+                <li>事件发生后，满足条件霍安就会在每月4日来卖苹果</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="旅行商人的拜访（花瓶）">旅行商人的拜访（花瓶）</h2>
+    <p>所持金额达到一定数量的话，霍安会来推销「花瓶」。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：每月11日（※）</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>所持金达到5000G以上</li>
+                        <li>未购入「花瓶」</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：霍安</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>选择「购买」就能获得「花瓶」</li>
+                <li>买入「花瓶」之后事件不再发生</li>
+                <li>「花瓶」里可以放入花来装饰</li>
+                <li>※ 如果不购买「花瓶」，霍安最多来推销5次，那之后事件不会再发生。</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="遗落苹果">遗落苹果</h2>
+    <p>霍安将分好类的苹果弄乱了。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：札克家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>霍安爱情度10000以上</li>
+                        <li>背包有空格</li>
+                        <li>手上什么都没拿</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：霍安</li>
+        <li><span class="bold">结果</span>：随机获得「苹果」、「SUGDW苹果」、「HMSGB苹果」、「AEPFE苹果」中的任一一种</li>
+    </ul>
+    <hr>
+    <h2 id="收购持有物">收购持有物</h2>
+    <p>霍安可以收购物品了。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：札克家</li>
+                <li><b>其他</b>：霍安爱情度20000以上，或者友好度100以上</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：霍安</li>
+        <li><span class="bold">结果</span>：事件发生后，手持物品，越过柜台与霍安对话，可以让他收购物品。</li>
+    </ul>
+    <hr>
+    <h2 id="猜苹果小游戏">猜苹果小游戏</h2>
+    <p>从霍安处挑战猜苹果的小游戏。</p>
+    <p>游戏详细信息在「<a href="../Event/Apple.html#苹果的位置">这个页面</a>」查看。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：札克家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「收购持有物」已发生</li>
+                        <li>霍安爱情度30000以上，或友好度150以上</li>
+                        <li>背包有空格</li>
+                        <li>手上不持任何物品，越过柜台与霍安对话</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：霍安</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>可以玩猜苹果的小游戏了（一次100G）</li>
+                <li>在猜苹果小游戏中，答对1问以上即可霍安爱情度+10×答对数，另获得与答对数相应的「谜之票券」</li>
+                <li>若连续答对10题，霍安爱情度+1000，另获得「迷之花」</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="猜数字小游戏">猜数字小游戏</h2>
+    <p>使用「谜之票券」，可以挑战同数字小游戏。</p>
+    <p>游戏详细信息在「<a href="../Event/Apple.html#集齐三个数字">这个页面</a>」查看。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：札克家</li>
+                <li><b>其他</b>：将「谜之票券」交给霍安</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：霍安</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>中奖</b>：霍安爱情度+10，获得奖品</li>
+                <li><b>中大奖</b>：霍安爱情度+1000，获得奖品（※）</li>
+                <li>※若奖品「唱片16~20」已获得，霍安爱情度再+10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="美食家的午餐">美食家的午餐</h2>
+    <p>美食家拿出全部本领给你制作午餐。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM11:00~PM1:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：自宅</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与美食家结婚</li>
+                        <li>美食家爱情度60000以上</li>
+                        <li>进入自宅</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：美食家</li>
+        <li><span class="bold">结果</span>：进入自宅时，有1/4的概率，美食家在做饭</li>
+    </ul>
+    <hr>
+    <h2 id="美食家的晚餐">美食家的晚餐</h2>
+    <p>美食家拿出全部本领给你制作晚餐。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：</li>
+                <li><b>星期</b>：</li>
+                <li><b>时间</b>：PM8:00~PM10:00</li>
+                <li><b>天气</b>：</li>
+                <li><b>场所</b>：自宅</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与美食家结婚</li>
+                        <li>美食家爱情度60000以上</li>
+                        <li>进入自宅</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：美食家</li>
+        <li><span class="bold">结果</span>：进入自宅时，有1/4的概率，美食家在做饭</li>
+    </ul>
+    <hr>
+    <h2 id="河童的供品1">河童的供品1</h2>
+    <p>将供品投入湖中，河童会现身。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：湖</li>
+                <li><b>其他</b>：往湖里投「黄瓜」进去
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：河童</li>
+        <li><span class="bold">结果</span>：河童从湖中现身</li>
+    </ul>
+    <hr>
+    <h2 id="河童的供品2">河童的供品2</h2>
+    <p>河童从湖中现身，但不说一句话</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：湖</li>
+                <li><b>其他</b>：往湖里投「黄瓜」进去（1天仅限1次）
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：河童</li>
+        <li><span class="bold">结果</span>：河童从湖中现身（第一次和第十次，该事件不发生）</li>
+    </ul>
+    <hr>
+    <h2 id="河童的供品3">河童的供品3</h2>
+    <p>河童从湖里现身，送「不可思议树之果实」</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：湖</li>
+                <li><b>其他</b>：往湖里投入十次「黄瓜」（1天仅限1次）</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：河童</li>
+        <li><span class="bold">结果</span>：获得「不可思议树之果实」</li>
+    </ul>
+    <hr>
+    <h2 id="获得河童的秘宝">获得河童的秘宝</h2>
+    <p>集齐「河童之玉」，替换成「河童的秘宝」</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：湖矿</li>
+                <li><b>其他</b>：湖之采矿场地上1层、地下40层、60层、80层、120层、140层、160层、180层、255层中可以全部获得9个「河童之玉」</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：河童</li>
+        <li><span class="bold">结果</span>：找到9个的话，河童现身，获得「河童的秘宝」</li>
+    </ul>
+    <hr>
+    <h2 id="河童的灾难">河童的灾难</h2>
+    <p>在湖边钓鱼的话，虽然稀少但有可能会把河童钓上来</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：湖</li>
+                <li><b>其他</b>：在湖边钓鱼</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：河童</li>
+        <li><span class="bold">结果</span>：1/256的几率能钓上河童（1天仅限1次）</li>
+    </ul>
+    <hr>
+    <h2 id="珀布莉网购">珀布莉网购</h2>
+    <p>珀布莉向札克拜托了网购的货物，瞒着家人来取货</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM10:00~PM3:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：札克的家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与珀布莉、札克、霍安说过一次以上话</li>
+                        <li>珀布莉、札克、霍安在札克的家</li>
+                        <li>未与珀布莉结婚</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：珀布莉、札克、霍安</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选「好」</b>：珀布莉、札克友好度+20</li>
+                <li><b>选「不好」</b>：珀布莉、札克友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="帮助巴吉尔">帮助巴吉尔</h2>
+    <p>遇到了玛丽，她正在寻找好像能在父亲的研究中起作用的草。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：春、夏、秋</li>
+                <li><b>星期</b>：日二三四五六</li>
+                <li><b>时间</b>：AM10:00~PM6:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：伐木之家附近</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与玛丽对话过一次以上</li>
+                        <li>未与玛丽结婚</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选「好厉害」</b>：玛丽友好度+20</li>
+                <li><b>选「这样啊」</b>：玛丽友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="卡莲和狄克的果汁比拼">卡莲和狄克的果汁比拼</h2>
+    <p>卡莲提议和狄克进行果汁比拼，一决胜负。</p>
+    <p class="note">本来是拼酒的，强行改成果汁以后整个事件都诡异了起来。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：日</li>
+                <li><b>时间</b>：PM7:00~PM10:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：旅馆</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>未与卡莲结婚</li>
+                        <li>和卡莲对话过一次以上</li>
+                        <li>卡莲、达特、狄克在旅馆</li>
+                        <li>卡莲友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：卡莲、达特、狄克</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选「请不要做白痴的事」</b>：卡莲爱情度-2000</li>
+                <li><b>选「好呀」</b>：卡莲爱情度+3000</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="霍安的服务">霍安的服务</h2>
+    <p>卡莲顺路来到了霍安的店中。霍安沉浸于卡莲的美貌而无法思考……</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：一三四五六</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：札克家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「旅行商人登场」已发生</li>
+                        <li>与霍安、卡莲、札克对话过一次以上</li>
+                        <li>霍安与札克在札克的家中</li>
+                        <li>札克友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：卡莲、霍安、札克</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="艾丽学习医学">艾丽学习医学</h2>
+    <p>艾丽充满热情地向多特指教医学的学习。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：日一二四五六</li>
+                <li><b>时间</b>：PM12:00~PM7:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：医院</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与艾丽、多特对话过一次以上</li>
+                        <li>艾丽、多特爱情度10000以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：艾丽、多特</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选「一定会痊愈的」</b>：艾丽、多特友好度+20</li>
+                <li><b>选「让在镇上的医院住院的话？」</b>：艾丽、多特友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="艾丽与优的姐弟情">艾丽与优的姐弟情</h2>
+    <p>艾丽很担心有些异样的优。虽然优坚称自己很冷静</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：AM9:00~PM1:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：爱莲家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与艾丽、爱莲、优对话过一次以上</li>
+                        <li>主人公没有结婚</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：艾丽、优、爱莲、多特</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>艾丽爱情度+3000</li>
+                <li>爱莲、优、多特友好度+20</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="给父亲的礼物">给父亲的礼物</h2>
+    <p>达特的生日，兰送了生日礼物。礼物是……</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：冬11日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM7:00~PM9:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：旅馆</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与兰、达特对话过一次以上</li>
+                        <li>未与兰结婚</li>
+                        <li>兰友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：兰、达特</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="珍妮弗的礼物">珍妮弗的礼物</h2>
+    <p>珍妮弗送了受伤的哈里斯一个礼物</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM10:00~PM1:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：帐篷前</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与珍妮弗、哈里斯对话过一次以上</li>
+                        <li>哈里斯在伐木之家中</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：珍妮弗、哈里斯</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="遇见女神大人">遇见女神大人</h2>
+    <p>往泉中丢物品进去，女神大人会现身。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：泉</li>
+                <li><b>其他</b>：往泉里丢东西</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：女神大人从泉中现身</li>
+    </ul>
+    <hr>
+    <h2 id="女神大人的供品1">女神大人的供品1</h2>
+    <p>在圣母山脉的泉给女神大人献上供品</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：泉</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「遇见女神大人」已发生</li>
+                        <li>往泉里丢物品（1天仅限1次）</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：每次往泉里丢物品，女神大人都会现身。</li>
+    </ul>
+    <hr>
+    <h2 id="女神大人的供品2">女神大人的供品2</h2>
+    <p>女神大人向你打听想要与之关系变好的居民。<br>
+        所选结婚候补的爱情度会上升，所以请谨慎选择。<br>
+        但是请注意，若想和河童、女神大人结婚的话，在这里选择是条件之一。<br>
+        选择的居民爱情度大幅上升。<br>
+        选了女神大人的话可以收到礼物。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：泉</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「遇见女神大人」已发生</li>
+                        <li>往泉里丢20次物品（1天仅限1次）</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>女神大人向你打听想搞好关系的居民</li>
+                <li>选择的居民爱情度+3000</li>
+                <li>选择女神大人的话可以获得「放松茶的茶叶」</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="女神大人的供品3">女神大人的供品3</h2>
+    <p>向女神大人献上一定数量的供品</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：泉</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「遇见女神大人」已发生</li>
+                        <li>每往泉里丢10次物品（1天仅限1次）</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>事件发生后，每投入10次物品时发生</li>
+                <li>获得「力量果实」（仅限第1次）</li>
+                <li>每10次会获得一个「白草」</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="获得女神的秘宝">获得女神的秘宝</h2>
+    <p>集齐「女神之玉」，女神大人给替换成「女神的秘宝」。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：泉矿</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>集齐9个「女神之玉」</li>
+                        <li>道具包里有空格</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：获得「女神的秘宝」（失去「女神之玉」）</li>
+    </ul>
+    <hr>
+    <h2 id="女神大人第1">女神大人第1</h2>
+    <p>万步计达到一定步数，女神大人会来通知</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：-</li>
+                <li><b>其他</b>：万步计达到1万、10万、100万、1000万、1亿、10亿时发生</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：每次达成，女神爱情度+3000</li>
+    </ul>
+    <hr>
+    <h2 id="女神大人第2">女神大人第2</h2>
+    <p>出货数达到一定数量、全种类都有出货的话，女神大人会来通知</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：-</li>
+                <li><b>其他</b>：出货数达到1万、10万、100万、1000万、1亿、10亿，可以出货的物品全种类出货时发生。</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：每次达成，女神爱情度+3000</li>
+    </ul>
+    <hr>
+    <h2 id="女神大人第3">女神大人第3</h2>
+    <p>钓上的鱼达到一定数量、全种类都钓到的话，女神大人会来通知</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：-</li>
+                <li><b>其他</b>：钓上的鱼达到1万、10万、100万、1000万、1亿、10亿，钓到全种类的鱼时发生</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：每次达成，女神爱情度+3000</li>
+    </ul>
+    <hr>
+    <h2 id="女神大人第4">女神大人第4</h2>
+    <p>采矿场达到一定层数的话，女神大人会来通知</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：-</li>
+                <li><b>其他</b>：采矿场达到地下100层、200层、250层，泉和湖的采矿场中能获得的物品全都找到过时发生</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：女神大人</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>每次达成层数，女神大人爱情度+3000</li>
+                <li>泉和湖的采矿场中能获得的物品全都找到过时，女神大人爱情度+3000（仅限一次）</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="亲子爱">亲子爱</h2>
+    <p>里克为给莉莉娅买药而来。于是，珀布莉也……</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：夏</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM10:00~PM1:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：养鸡场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与莉莉娅对话过一次以上</li>
+                        <li>养鸡场里有莉莉娅、里克、珀布莉</li>
+                        <li>未与里克结婚</li>
+                        <li>莉莉娅友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：莉莉娅、里克、珀布莉</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="爸爸来的信">爸爸来的信</h2>
+    <p>在很远地方生活的丈夫来信了。莉莉娅非常高兴。信的内容是……</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第三年之后 夏</li>
+                <li><b>星期</b>：日一三四五六</li>
+                <li><b>时间</b>：AM10:00~PM1:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：养鸡场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与莉莉娅对话过一次以上</li>
+                        <li>未与里克结婚</li>
+                        <li>莉莉娅友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：莉莉娅、里克、珀布莉</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="收留马">收留马</h2>
+    <p>穆奇拜访了主人公的地盘，想让主人公养育小马</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 春</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：与穆奇对话过一次以上</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：穆奇</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「答应」</b>：穆奇友好度+10，获得宠物小马</li>
+                <li><b>直到最后选择「不答应」</b>：穆奇好感度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="取回马">取回马</h2>
+    <p>穆奇来看看小马的样子，是否得到了很好的照顾</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>收留小马90日后（与其他事件重合的话推迟1天）</li>
+                        <li>小马成长为大马</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：穆奇</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>马爱情度100以上：穆奇友好度+10</li>
+                <li>马爱情度100不到：穆奇好感度-10，失去马</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="获得马">获得马</h2>
+    <p>取回了小马的穆奇，来寄存大马</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第二年</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「取回马」已发生</li>
+                        <li>没有养马</li>
+                        <li>事件「取回马」发生一年以后</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：穆奇</li>
+        <li><span class="bold">结果</span>：获得大马</li>
+    </ul>
+    <hr>
+    <h2 id="乔安娜的任性">乔安娜的任性</h2>
+    <p>穆奇在给别镇生活的女儿乔安娜打电话。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第二年以后</li>
+                <li><b>星期</b>：五</li>
+                <li><b>时间</b>：PM4:00~PM7:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：旅馆</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>旅馆里有达特</li>
+                        <li>穆奇友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：穆奇、达特</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="乔安娜打来的电话">乔安娜打来的电话</h2>
+    <p>梅久违地与不在一起生活的母亲乔安娜通电话。但是……</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第三年以后</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：PM4:00~PM7:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：旅馆</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「乔安娜的任性」已发生</li>
+                        <li>旅馆里有达特</li>
+                        <li>梅友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：梅、穆奇、达特</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="探望爱莲">探望爱莲</h2>
+    <p>某个雨天，赛巴拉来探望爱莲了。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第二年以后</li>
+                <li><b>星期</b>：五</li>
+                <li><b>时间</b>：雨</li>
+                <li><b>天气</b>：AM8:00~PM5:00</li>
+                <li><b>场所</b>：爱莲家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与赛巴拉、爱莲、优进行过一次对话</li>
+                        <li>优在家</li>
+                        <li>赛巴拉、爱莲的友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：赛巴拉、爱莲、优</li>
+        <li><span class="bold">结果</span>：赛巴拉、爱莲、优的友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="和爱莲的过去">和爱莲的过去</h2>
+    <p>爱莲讲起与赛巴拉年轻时的愉快记忆。见到此景的赛巴拉会...</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第四年以后</li>
+                <li><b>星期</b>：一</li>
+                <li><b>时间</b>：AM8:00~PM5:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：爱莲家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「探望爱莲」发生以后</li>
+                        <li>优在家</li>
+                        <li>赛巴拉、爱莲的友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：赛巴拉、爱莲、优</li>
+        <li><span class="bold">结果</span>：赛巴拉、爱莲、优的友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="果树园打工委托">果树园打工委托</h2>
+    <p>第一年秋季，来自狄克的果树园打工的委托</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 秋14日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：和狄克进行过一次对话</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：狄克</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「帮忙」</b>:狄克的友好度+20</li>
+                <li><b>选择「没空！」</b>:狄克的友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <p class="note">※ 选择了「帮忙」之后，14日之内与克里夫交谈，可以邀请他去打工。<br>
+        不邀请克里夫的话，第一年的冬季克里夫就会离开矿石镇。 </p>
+    <hr>
+    <h2 id="果树园打工">果树园打工</h2>
+    <p>去安洁庄园的果树园帮忙打工</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第一年 秋15日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM10:00~PM3:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：果树园</li>
+                <li><b>其他</b>：事件「果树园打工委托」发生后</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：狄克、玛娜、克里夫（邀请后）</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>【事件「果树园打工委托」中邀请了克里夫】</b></li>
+                <ul>
+                    <li><b>选择「帮忙」:</b>狄克、玛娜、克里夫的友好度+20</li>
+                    <li><b>选择「拒绝」:</b>没有变化（邀请了克里夫的话，选择了「拒绝」克里夫也会留在矿石镇）</li>
+                    <li>获得打工费1000G</li>
+                </ul>
+                <li><b>【事件「果树园打工委托」中没有邀请克里夫】</b></li>
+                <ul>
+                    <li><b>选择「帮忙」:</b>狄克、玛娜的友好度+20</li>
+                    <li><b>选择「拒绝」:</b>狄克、玛娜的友好度-10</li>
+                </ul>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="夫妻争执">夫妻争执</h2>
+    <p>呵斥狄克的玛娜夫妻争执的原因到底是...？</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：六</li>
+                <li><b>时间</b>：PM8:00~PM10:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：果树园</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与狄克、玛娜进行过一次对话</li>
+                        <li>玛娜友好度200以上，狄克友好度100以上</li>
+                        <li>事件「果树园打工」中邀请了克里夫</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：玛娜、狄克</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="擅长购物的玛娜">擅长购物的玛娜</h2>
+    <p>来杂货店购买晚饭材料的玛娜她的购买技巧是...？</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：四五</li>
+                <li><b>时间</b>：PM1:00~PM4:00</li>
+                <li><b>天气</b>：雨、雪</li>
+                <li><b>场所</b>：杂货店</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与玛娜进行过一次对话</li>
+                        <li>玛娜在杂货店</li>
+                        <li>玛娜友好度100以上</li>
+                        <li>事件「果树园打工」中没有邀请克里夫</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：玛娜、杰夫</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="植物学家的倔强">植物学家的倔强</h2>
+    <p>对收到了来自读者对于以前写的书而抗议的信件的巴吉尔表明态度</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：春</li>
+                <li><b>星期</b>：日二三四五六</li>
+                <li><b>时间</b>：PM1:00~PM4:00</li>
+                <li><b>天气</b>：雨、雪</li>
+                <li><b>场所</b>：巴吉尔家 2楼</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与巴吉尔进行过一次对话</li>
+                        <li>巴吉尔的友好度200以上</li>
+                        <li>没有与玛丽结婚</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：巴吉尔</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「只是告知错误」:</b>巴吉尔友好度+20</li>
+                <li><b>选择「要道歉」:</b>巴吉尔友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="安娜的点心教室1">安娜的点心教室1</h2>
+    <p>来自玛娜的，去安娜那里学习制作点心的邀请</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：六</li>
+                <li><b>时间</b>：AM10:00~PM1:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：巴吉尔家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与安娜、玛娜进行过一次对话</li>
+                        <li>玛娜在巴吉尔家</li>
+                        <li>安娜友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：安娜、玛娜</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「请教我点心的做法」</b>:安娜、玛娜友好度+20、食谱「蛋糕」获得</li>
+                <li><b>选择「没空！」</b>:安娜、玛娜友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="安娜的点心教室2">安娜的点心教室2</h2>
+    <p>事件「安娜的点心教室1」种选择了「请教我点心的做法」后，<br>
+        每周六都可从安娜那学做点心，并且可入手点心的食谱也会有参加料理节的点心，请一定要参加获得。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：六</li>
+                <li><b>时间</b>：AM10:00~PM1:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：巴吉尔家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「安娜的点心教室1」选择了「请教我点心的做法」</li>
+                        <li>玛娜在巴吉尔家</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：安娜、玛娜</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>一共发生5次，每次事件发生安娜就会告诉料理的食谱</li>
+                <li>可入手的食谱有「曲奇」、「布丁」、「芝士蛋糕」、「苹果派」、「冰激凌」</li>
+                <li>5次发生后，安娜、玛娜友好度+20</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="镇长的威严1">镇长的威严1</h2>
+    <p>从作为镇长的托马斯那得到的委托物品入手后，在「镇长的威严2」中交货才算事件成功。<br>
+        物品比较难入手，交货时间也很短，推荐平日收集存入整理柜和冰箱中。<br>
+    </p>
+    <p class="note"><b>托马斯委托的物品:</b>（随机决定）<br>钻石、白草、手镯、松茸、黑草、青椒、月亮石、金蛋、AEPFE苹果、年糕</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：冬2日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：-</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：托马斯</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「接受」</b>:托马斯会告知玩家他想要的物品</li>
+                <li><b>选择「拒绝」</b>:托马斯友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="镇长的威严2">镇长的威严2</h2>
+    <p>将事件「镇长的威严1」中委托的物品交给托马斯</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：冬2日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM7:00~PM8:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：在事件「镇长的威严1」中选择「接受」</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：托马斯</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>拿着指定物品和托马斯对话后，托马斯友好度+20、获得「黄金资材」</li>
+                <li>指定时间过了以后才交货：托马斯友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="获得真实秘宝">获得真实秘宝</h2>
+    <p>「真实之玉」在以下8个场所收集后，在周一到周五之间去镇长家并试着调查冰箱找出最后的「真实之玉」，交换获得「真实秘宝」。<br>
+        因为入手场所包含山之别墅，难度有点高，去挑战试试吧！<br>
+        ※ 道具栏没有空位的话无法交换，空出一格道具栏，再去镇长家后发生</p>
+    <div class="key">
+        <h3>「真实之玉」入手方法</h3>
+        <ul>
+            <li>调查马小屋的水槽</li>
+            <li>调查教堂前的第二个路灯</li>
+            <li>调查教堂左侧的女神像</li>
+            <li>调查图书馆2楼右下角的书架</li>
+            <li>在霍安的店购买</li>
+            <li>春/秋季赛马时用奖章交换</li>
+            <li>镇中别墅的竞猜电视节目全部答对</li>
+            <li>调查山之别墅的日历</li>
+        </ul>
+    </div>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：一、二、三、四、五</li>
+                <li><b>时间</b>：-</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：镇长家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>「真实之玉」已获得8个</li>
+                        <li>道具栏有空位</li>
+                        <li>调查镇长家的冰箱</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：托马斯</li>
+        <li><span class="bold">结果</span>：整理柜和背包中的「真实之玉」消失，获得「真实秘宝」</li>
+    </ul>
+    <hr>
+    <h2 id="哈里斯的咨询1">哈里斯的咨询1</h2>
+    <p>抱着对结了婚的主人公的信赖，哈里斯来进行恋爱咨询了</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM7:00~PM9:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>主人公已有伴侣</li>
+                        <li>与哈里斯进行过一次对话</li>
+                        <li>哈里斯友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：哈里斯</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「请」→「传达自己的感情」</b>:哈里斯友好度+20</li>
+                <li><b>选择「请」→「想想自己吧」</b>:哈里斯友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="哈里斯的咨询2">哈里斯的咨询2</h2>
+    <p>哈里斯过来告知有一封来自安洁的回信，回信的内容是...？</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM7:00~PM9:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：事件「哈里斯的咨询1」中选择了「传达自己的感情」后，经过20天以上</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：哈里斯</li>
+        <li><span class="bold">结果</span>：哈里斯友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="幸福之花1">幸福之花1</h2>
+    <p>爱莲告诉主人公关于从没见过的梦幻之花「月下美人」的事情</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第五年以后 夏</li>
+                <li><b>星期</b>：四五六</li>
+                <li><b>时间</b>：PM1:00~PM4:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：爱莲家</li>
+                <li><b>其他</b>：与爱莲、巴吉尔进行过一次对话</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：爱莲、巴吉尔</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="幸福之花2">幸福之花2</h2>
+    <p>主人公向圣母山的山顶进发，寻找梦幻之花「月下美人」</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第五年以后 夏</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM9:00~AM12:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：山顶</li>
+                <li><b>其他</b>：事件「幸福之花1」发生后</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：爱莲、巴吉尔</li>
+        <li><span class="bold">结果</span>：发现「月下美人」后，爱莲、巴吉尔、优的好感度+20</li>
+    </ul>
+    <hr>
+    <h2 id="爷爷的信">爷爷的信</h2>
+    <p>艾丽发现了收信人为爱莲的信件寄信人是...</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：夏</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：AM9:00~PM1:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：爱莲家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与艾丽、爱莲、优进行过一次对话</li>
+                        <li>艾丽在爱莲家</li>
+                        <li>爱莲的友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：爱莲、艾丽、优</li>
+        <li><span class="bold">结果</span>：爱莲、艾丽、优的友好度+20</li>
+    </ul>
+    <hr>
+    <h2 id="爱莲的袜子">爱莲的袜子</h2>
+    <p>可获得事件「星夜的赠礼」中所必须的「袜子」。<br>
+        「袜子」的材料「毛线团」，加工需要用到「毛线团加工机」。<br>
+        拿着「毛线团」和爱莲对话后，便可获得。<br>
+        ※ 什么品质的「毛线团」都可以<br>
+        ※ 事件发生以后可以在自宅挂上「袜子」
+    </p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：冬1日~23日</li>
+                <li><b>星期</b>：日一二四五六</li>
+                <li><b>时间</b>：AM9:00~AM11:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：爱莲家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>送给爱莲「毛线团」</li>
+                        <li>爱莲友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：爱莲、（优）</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>爱莲的友好度+20</li>
+                <li>获得「袜子」</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="优的请求">优的请求</h2>
+    <p>顽皮的优请求与主人公一起玩耍</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：AM11:00~PM5:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：爱莲家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与优、爱莲、艾丽进行过一次对话</li>
+                        <li>艾丽在爱莲家</li>
+                        <li>主人公没有伴侣</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：优、爱莲、艾丽</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「玩」</b>:优、艾丽、爱莲友好度+20</li>
+                <li><b>选择「没空！」</b>:优、艾丽、爱莲友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="杰夫的绘画买卖">杰夫的绘画买卖</h2>
+    <p>杰夫因为兴趣而画画想要买这个画的人出现了！？</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：一</li>
+                <li><b>时间</b>：AM8:00~AM10:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：杂货店</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与杰夫、莎夏进行过一次对话</li>
+                        <li>杰夫、莎夏友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：杰夫、莎夏、霍安</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="杰夫的决定">杰夫的决定</h2>
+    <p>经营方式被莎夏所责备的杰夫作出了决定</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：PM1:00~PM4:00</li>
+                <li><b>天气</b>：雨</li>
+                <li><b>场所</b>：杂货店</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与杰夫、莎夏进行过一次对话</li>
+                        <li>杰夫、莎夏友好度250以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：杰夫、莎夏、狄克</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="莎夏的人生咨询">莎夏的人生咨询</h2>
+    <p>莎夏对于因女儿安洁而烦恼，寻求玛娜的建议。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：日、三、四、五、六</li>
+                <li><b>时间</b>：PM1:00~PM4:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：广场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>莎夏、安娜、玛娜在广场</li>
+                        <li>莎夏友好度100以上</li>
+                        <li>事件「果树园打工委托」没有发生，或者在「果树园打工委托」中，没有邀请克里夫。</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：莎夏、安娜、玛娜</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="和杰夫的回忆">和杰夫的回忆</h2>
+    <p>谈起杰夫幼年的莎夏两人似乎是青梅竹马...</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：二</li>
+                <li><b>时间</b>：AM10:00~PM1:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：养鸡场</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与莎夏、莉莉娅进行过一次对话</li>
+                        <li>莎夏和莉莉娅在养鸡场1楼</li>
+                        <li>莎夏友好度170以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：莎夏、莉莉娅</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="神谕之梦">神谕之梦</h2>
+    <p>卡特告诉主人公他在忏悔室里睡觉时做的梦</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：PM4:00~PM10:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：教堂</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与卡特进行过一次对话</li>
+                        <li>卡特的友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：卡特、札克</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="卡特的秘密">卡特的秘密</h2>
+    <p>总是冷静认真的卡特神父满足条件访问教堂后，可以知道他的乐趣的秘密事件发生以后，<br>
+        通过教堂右边的门去往教堂后部（北部森林），这里可以在秋季和冬季采集到的贵重的物品<br>
+        <br>
+        ※ 秋天可采集松茸，冬天可采集白色草
+    </p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：秋</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：PM4:00~PM10:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：教堂</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与卡特进行过一次对话</li>
+                        <li>卡特友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：卡特</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「好的」</b>:卡特友好度+20</li>
+                <li><b>选择「不行」</b>:卡特友好度-20</li>
+                <li>事件发生后，教堂右侧的门可以通往教堂后部</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="卡特的呼唤">卡特的呼唤</h2>
+    <p>悄悄的进入教堂后部，又再次进入教堂后...</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM10:00~AM6:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：教堂后部</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「卡特的秘密」发生后</li>
+                        <li>PM10:00前去教堂的后部，PM10:00以后再回到教堂后部的入口</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：卡特</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="兰母亲的忌日">兰母亲的忌日</h2>
+    <p>去往圣母山顶，站立着思念亡妻的达特的身形……</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：秋5日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM5:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：山顶</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与达特进行过一次对话</li>
+                        <li>没有与兰成为伴侣</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：达特</li>
+        <li><span class="bold">结果</span>：</li>
+    </ul>
+    <hr>
+    <h2 id="达特和狄克的争执">达特和狄克的争执</h2>
+    <p>被拜托去停止达特和狄克的争执，争执的原因是...？</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：六</li>
+                <li><b>时间</b>：PM2:00~PM4:00</li>
+                <li><b>天气</b>：雨、雪</li>
+                <li><b>场所</b>：旅馆</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与达特、狄克、兰、托马斯、哈里斯进行过一次对话</li>
+                        <li>达特、狄克、兰、托马斯、哈里斯在旅馆</li>
+                        <li>没有与兰成为伴侣</li>
+                        <li>兰的友好度100以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：达特、狄克、兰、托马斯、哈里斯</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li><b>选择「停下」</b>:兰的爱情度+3000，达特、狄克、托马斯、哈里斯友好度+20</li>
+                <li><b>选择「让他去吧」</b>:兰的爱情度-2000，达特、狄克、托马斯、哈里斯友好度-10</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 id="哥兹的低落">哥兹的低落</h2>
+    <p>没有干劲满脸抱怨的哥兹已经无法工作了</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第三年以后 夏</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM1:00~PM10:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：伐木之家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与哥兹进行过一次对话</li>
+                        <li>哥兹在伐木之家</li>
+                        <li>哥兹的友好度不满100</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：哥兹</li>
+        <li><span class="bold">结果</span>：本次事件发生后直到事件「哥兹不再低落」，都不可进行扩建</li>
+    </ul>
+    <hr>
+    <h2 id="哥兹不再低落">哥兹不再低落</h2>
+    <p>事件「哥兹的低落」发生后，直到本次事件发生，哥兹都无法接受比如自宅扩建之类的委托。<br>
+        送给哥兹他喜欢的东西，使友好度<img src="/icon/music.svg">6以上，秋季以后再去伐木之家拜访。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：春夏冬</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：PM1:00~PM10:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：伐木之家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>事件「哥兹的低落」发生后</li>
+                        <li>哥兹在伐木之家</li>
+                        <li>哥兹友好度150以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：哥兹</li>
+        <li><span class="bold">结果</span>：事件发生以后，可以委托哥兹进行扩建了</li>
+    </ul>
+    <hr>
+    <h2 id="代替巡山">代替巡山</h2>
+    <p>哥兹代替哈里斯进行巡山，理由是...？</p>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
+        src="//music.163.com/outchain/player?type=2&id=1430560150&auto=1&height=66"></iframe>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：日</li>
+                <li><b>时间</b>：AM11:00~PM1:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：伐木之家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与哥兹进行过一次对话</li>
+                        <li>哥兹在伐木之家</li>
+                        <li>哥兹友好度200以上</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：哥兹、哈里斯</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="获得钓竿">获得钓竿</h2>
+    <p>从心情很好的札克那获得了他不用的钓竿</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：日</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM11:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：札克家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>与札克进行过一次对话</li>
+                        <li>札克在家</li>
+                        <li>道具栏有一个以上的空位</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：札克</li>
+        <li><span class="bold">结果</span>：获得「钓竿」</li>
+    </ul>
+    <hr>
+    <h2 id="札克的爱情">札克的爱情</h2>
+    <p>札克担心生病的莉莉娅而来到了小鸡与莉莉娅</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：第四年以后 夏</li>
+                <li><b>星期</b>：日</li>
+                <li><b>时间</b>：AM11:00~PM1:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：养鸡场</li>
+                <li><b>其他</b>：与札克进行过一次对话 </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：札克、莉莉娅</li>
+        <li><span class="bold">结果</span>：-</li>
+    </ul>
+    <hr>
+    <h2 id="达成鱼图鉴">达成鱼图鉴</h2>
+    <p>所有种类的鱼都上钩后的第二日，札克来牧场拜访</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：所有种类的鱼都上钩</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：札克</li>
+        <li><span class="bold">结果</span>：札克友好度+10</li>
+    </ul>
+    <hr>
+    <h2 id="班的问候">班的问候</h2>
+    <p>旅行商人班拜访了自宅在矿石镇开始经营</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：三</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：向女神大人献上供品30次以上</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：班</li>
+        <li><span class="bold">结果</span>：事件发生后，班每周三在旅馆2楼出现，每月15日在广场出现。</li>
+    </ul>
+    <hr>
+    <h2 id="露的问候">露的问候</h2>
+    <p>来矿石镇购买食材的露，来牧场打招呼</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：-</li>
+                <li><b>星期</b>：日</li>
+                <li><b>时间</b>：AM6:00~PM12:00</li>
+                <li><b>天气</b>：晴</li>
+                <li><b>场所</b>：牧场</li>
+                <li><b>其他</b>：向女神大人献上供品50次以上</li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：露</li>
+        <li><span class="bold">结果</span>：事件发生后，露每周日在旅馆2楼出现</li>
+    </ul>
+    <hr>
+    <h2 id="小精灵的茶会">小精灵的茶会</h2>
+    <p>小精灵全体友好度<img src="/icon/music.svg">2个以上，邮箱里就能受到茶会的邀请函<br>
+        带着邀请函去精灵之家便可参加茶会<br>
+        不是全员都在的话是无法发生的，若是有进行中的工作委托就先终止吧。<br>
+        ※ 邀请函送给哪个小精灵都可以，被点心包围的快乐时间很快过去。</p>
+    <ul>
+        <li><span class="bold">发生条件</span>：
+            <ul>
+                <li><b>日期</b>：春</li>
+                <li><b>星期</b>：-</li>
+                <li><b>时间</b>：AM10:00~PM5:00</li>
+                <li><b>天气</b>：-</li>
+                <li><b>场所</b>：精灵之家</li>
+                <li><b>其他</b>：
+                    <ul>
+                        <li>小精灵全体友好度<img src="/icon/music.svg">2以上，并且背包和整理柜有空位，从牧场的邮箱里获得茶会的邀请函</li>
+                        <li>小精灵全员在家</li>
+                        <li>给小精灵邀请函</li>
+                        <li>※ 邀请函一年寄一次</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">登场居民</span>：卓卡克、纳比、波尔多、谢夫涅、阿库娅、古里笛、迪米特</li>
+        <li><span class="bold">结果</span>：
+            <ul>
+                <li>全体小精灵友好度+10</li>
+                <li>获得一个「放松茶的茶叶」</li>
+            </ul>
+        </li>
+    </ul>
 </body>
+
 </html>

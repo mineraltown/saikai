@@ -1,331 +1,1266 @@
+<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" href="/saikai/saikai.css">
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
     <title>农作道具和钓竿</title>
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            width: 6em;
+            cursor: default;
+        }
+
+        .not {
+            color: gray;
+        }
+
+        .flex_prop {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .prop {
+            width: 260px;
+            height: 400px;
+            padding: 0 20px 0 20px;
+            margin: 10px;
+            border: solid 2px #555;
+            border-radius: 6px;
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .scope {
+            flex-grow: 1;
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scope table {
+            width: auto;
+        }
+
+        .scope th {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        .mini {
+            font-size: 0.8em;
+        }
+
+        .invalid {
+            background-color: #eee;
+        }
+
+        .valid {
+            background-color: #ccc;
+        }
+    </style>
 </head>
+
 <body>
-<h1 id="农作道具和钓竿">农作道具和钓竿</h1>
-<h2 id="镰刀">镰刀</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>道具</th>
-<th>等级</th>
-<th>消耗体力</th>
-<th>效果范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>铜镰刀</td>
-<td>LV2</td>
-<td>3</td>
-<td>前1×横3</td>
-</tr>
-<tr>
-<td>银镰刀</td>
-<td>LV3</td>
-<td>5</td>
-<td>自身向前2×横3</td>
-</tr>
-<tr>
-<td>金镰刀</td>
-<td>LV4</td>
-<td>7</td>
-<td>自身周围3×3</td>
-</tr>
-<tr>
-<td>秘银镰刀</td>
-<td>LV5</td>
-<td>10</td>
-<td>自身周围5×5</td>
-</tr>
-<tr>
-<td>诅咒镰刀</td>
-<td rowspan="2">LV6</td>
-<td>10～100</td>
-<td rowspan="2">自身周围7×7</td>
-</tr>
-<tr>
-<td>祝福镰刀</td>
-<td>15</td>
-</tr>
-<tr>
-<td>贤者镰刀</td>
-<td>LV7</td>
-<td>20</td>
-<td>自身周围9×9</td>
-</tr>
-</tbody>
-</table>
-<h2 id="锄头">锄头</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>道具</th>
-<th>等级</th>
-<th>消耗体力</th>
-<th>效果范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>铜锄头</td>
-<td>LV2</td>
-<td>3</td>
-<td>前2</td>
-</tr>
-<tr>
-<td>银锄头</td>
-<td>LV3</td>
-<td>4</td>
-<td>前3</td>
-</tr>
-<tr>
-<td>金锄头</td>
-<td>LV4</td>
-<td>5</td>
-<td>前4</td>
-</tr>
-<tr>
-<td>秘银锄头</td>
-<td>LV5</td>
-<td>7</td>
-<td>前6</td>
-</tr>
-<tr>
-<td>诅咒锄头</td>
-<td rowspan="2">LV6</td>
-<td>10～100</td>
-<td rowspan="2">前6×横5</td>
-</tr>
-<tr>
-<td>祝福锄头</td>
-<td>15</td>
-</tr>
-<tr>
-<td>贤者锄头</td>
-<td>LV7</td>
-<td>40</td>
-<td>前9×横9</td>
-</tr>
-</tbody>
-</table>
-<h2 id="斧头">斧头</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>道具</th>
-<th>等级</th>
-<th>消耗体力</th>
-<th>攻击力</th>
-<th>效果范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>铜斧头</td>
-<td>LV2</td>
-<td>4</td>
-<td>2</td>
-<td rowspan="4">1</td>
-</tr>
-<tr>
-<td>银斧头</td>
-<td>LV3</td>
-<td>5</td>
-<td>3</td>
-</tr>
-<tr>
-<td>金斧头</td>
-<td>LV4</td>
-<td>8</td>
-<td>4</td>
-</tr>
-<tr>
-<td>秘银斧头</td>
-<td>LV5</td>
-<td>10</td>
-<td rowspan="4">8</td>
-</tr>
-<tr>
-<td>诅咒斧头</td>
-<td rowspan="2">LV6</td>
-<td>10～100</td>
-<td rowspan="3">全图</td>
-</tr>
-<tr>
-<td>祝福斧头</td>
-<td>20</td>
-</tr>
-<tr>
-<td>贤者斧头</td>
-<td>LV7</td>
-<td>10</td>
-</tr>
-</tbody>
-</table>
-<h2 id="锤子">锤子</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>道具</th>
-<th>等级</th>
-<th>消耗体力</th>
-<th>攻击力</th>
-<th>效果范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>铜锤子</td>
-<td>LV2</td>
-<td>4</td>
-<td>2</td>
-<td rowspan="4">1</td>
-</tr>
-<tr>
-<td>银锤子</td>
-<td>LV3</td>
-<td>5</td>
-<td>3</td>
-</tr>
-<tr>
-<td>金锤子</td>
-<td>LV4</td>
-<td>8</td>
-<td>4</td>
-</tr>
-<tr>
-<td>秘银锤子</td>
-<td>LV5</td>
-<td>10</td>
-<td rowspan="4">8</td>
-</tr>
-<tr>
-<td>诅咒锤子</td>
-<td rowspan="2">LV6</td>
-<td>10～100</td>
-<td rowspan="2">前9×横9</td>
-</tr>
-<tr>
-<td>祝福锤子</td>
-<td>15</td>
-</tr>
-<tr>
-<td>贤者锤子</td>
-<td>LV7</td>
-<td>20</td>
-<td>全图</td>
-</tr>
-</tbody>
-</table>
-<h2 id="浇水器">浇水器</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>道具</th>
-<th>等级</th>
-<th>消耗体力</th>
-<th>储水量</th>
-<th>效果范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>铜浇水器</td>
-<td>LV2</td>
-<td>4</td>
-<td>45</td>
-<td>前1×横3</td>
-</tr>
-<tr>
-<td>银浇水器</td>
-<td>LV3</td>
-<td>6</td>
-<td>60</td>
-<td>前2×横3</td>
-</tr>
-<tr>
-<td>金浇水器</td>
-<td>LV4</td>
-<td>8</td>
-<td>90</td>
-<td>前3×横3</td>
-</tr>
-<tr>
-<td>秘银浇水器</td>
-<td>LV5</td>
-<td>10</td>
-<td>150</td>
-<td>前3×横5</td>
-</tr>
-<tr>
-<td>诅咒浇水器</td>
-<td rowspan="2">LV6</td>
-<td>10～100</td>
-<td rowspan="3">255</td>
-<td rowspan="2">前6×横9</td>
-</tr>
-<tr>
-<td>祝福浇水器</td>
-<td>15</td>
-</tr>
-<tr>
-<td>贤者浇水器</td>
-<td>LV7</td>
-<td>20</td>
-<td>前9×横9</td>
-</tr>
-</tbody>
-</table>
-<h2 id="钓竿">钓竿</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>道具</th>
-<th>等级</th>
-<th>消耗体力</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>铜钓竿</td>
-<td>LV2</td>
-<td rowspan="4">2</td>
-<td rowspan="6">增加能钓上的鱼的种类</td>
-</tr>
-<tr>
-<td>银钓竿</td>
-<td>LV3</td>
-</tr>
-<tr>
-<td>金钓竿</td>
-<td>LV4</td>
-</tr>
-<tr>
-<td>秘银钓竿</td>
-<td>LV5</td>
-</tr>
-<tr>
-<td>诅咒钓竿</td>
-<td rowspan="2">LV6</td>
-<td>10～100</td>
-</tr>
-<tr>
-<td>祝福钓竿</td>
-<td rowspan="2">2</td>
-</tr>
-<tr>
-<td>贤者钓竿</td>
-<td>LV7</td>
-<td>鱼咬钩的几率+20%</td>
-</tr>
-</tbody>
-</table>
+    <div id="prop" v-cloak>
+        <h1 id="农作道具和钓竿">农作道具和钓竿</h1>
+        <p class="note">铁道具（初始道具）效果范围为面前1格。<br>诅咒道具的效果范围及蓄力等级与祝福道具一致，消耗体力为10~100的随机数。</p>
+        <ul class="link">
+            <li :class=" prop == '镰刀' ? '' : 'not'" @click="this.prop='镰刀'">镰刀</li>
+            <li :class=" prop == '锄头' ? '' : 'not'" @click="this.prop='锄头'">锄头</li>
+            <li :class=" prop == '斧头' ? '' : 'not'" @click="this.prop='斧头'">斧头</li>
+            <li :class=" prop == '锤子' ? '' : 'not'" @click="this.prop='锤子'">锤子</li>
+            <li :class=" prop == '洒水壶' ? '' : 'not'" @click="this.prop='洒水壶'">洒水壶</li>
+            <li :class=" prop == '钓竿' ? '' : 'not'" @click="this.prop='钓竿'">钓竿</li>
+        </ul>
+        <div class="flex_prop" v-if="prop == '镰刀'">
+            <div class="prop">
+                <h3>铜镰刀</h3>
+                <p class="mini">蓄力等级：LV2<br>消耗体力：3</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1×横3</p>
+            </div>
+            <div class="prop">
+                <h3>银镰刀</h3>
+                <p class="mini">蓄力等级：LV3<br>消耗体力：5</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：3×2</p>
+            </div>
+            <div class="prop">
+                <h3>金镰刀</h3>
+                <p class="mini">蓄力等级：LV4<br>消耗体力：7</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：周围3×3</p>
+            </div>
+            <div class="prop">
+                <h3>秘银镰刀</h3>
+                <p class="mini">蓄力等级：LV5<br>消耗体力：10</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：周围5×5</p>
+            </div>
+            <div class="prop">
+                <h3>祝福镰刀</h3>
+                <p class="mini">蓄力等级：LV6<br>消耗体力：15</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：周围7×7</p>
+            </div>
+            <div class="prop">
+                <h3>贤者镰刀</h3>
+                <p class="mini">蓄力等级：LV7<br>消耗体力：20</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：周围9×9</p>
+            </div>
+        </div>
+        <div class="flex_prop" v-if="prop == '锄头'">
+            <div class="prop">
+                <h3>铜锄头</h3>
+                <p class="mini">蓄力等级：LV2<br>消耗体力：3</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前2</p>
+            </div>
+            <div class="prop">
+                <h3>银锄头</h3>
+                <p class="mini">蓄力等级：LV3<br>消耗体力：4</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前3</p>
+            </div>
+            <div class="prop">
+                <h3>金锄头</h3>
+                <p class="mini">蓄力等级：LV4<br>消耗体力：5</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前4</p>
+            </div>
+            <div class="prop">
+                <h3>秘银锄头</h3>
+                <p class="mini">蓄力等级：LV5<br>消耗体力：7</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前6</p>
+            </div>
+            <div class="prop">
+                <h3>祝福锄头</h3>
+                <p class="mini">蓄力等级：LV6<br>消耗体力：15</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前6×横5</p>
+            </div>
+            <div class="prop">
+                <h3>贤者锄头</h3>
+                <p class="mini">蓄力等级：LV7<br>消耗体力：40</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前9×横9</p>
+            </div>
+        </div>
+        <div class="flex_prop" v-if="prop == '斧头'">
+            <div class="prop">
+                <h3>铜斧头</h3>
+                <p class="mini">蓄力等级：LV2<br>消耗体力：4<br>攻击力：2</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>银斧头</h3>
+                <p class="mini">蓄力等级：LV3<br>消耗体力：5<br>攻击力：3</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>金斧头</h3>
+                <p class="mini">蓄力等级：LV4<br>消耗体力：8<br>攻击力：4</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>秘银斧头</h3>
+                <p class="mini">蓄力等级：LV5<br>消耗体力：10<br>攻击力：8</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>祝福斧头</h3>
+                <p class="mini">蓄力等级：LV6<br>消耗体力：20<br>攻击力：8</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：全体</p>
+            </div>
+            <div class="prop">
+                <h3>贤者斧头</h3>
+                <p class="mini">蓄力等级：LV7<br>消耗体力：10<br>攻击力：8</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：全体</p>
+            </div>
+        </div>
+        <div class="flex_prop" v-if="prop == '锤子'">
+            <div class="prop">
+                <h3>铜锤子</h3>
+                <p class="mini">蓄力等级：LV2<br>消耗体力：4<br>攻击力：2</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>银锤子</h3>
+                <p class="mini">蓄力等级：LV3<br>消耗体力：5<br>攻击力：3</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>金锤子</h3>
+                <p class="mini">蓄力等级：LV4<br>消耗体力：8<br>攻击力：4</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>秘银锤子</h3>
+                <p class="mini">蓄力等级：LV5<br>消耗体力：10<br>攻击力：5</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1</p>
+            </div>
+            <div class="prop">
+                <h3>祝福锤子</h3>
+                <p class="mini">蓄力等级：LV6<br>消耗体力：20<br>攻击力：8</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前9×横9</p>
+            </div>
+            <div class="prop">
+                <h3>贤者锤子</h3>
+                <p class="mini">蓄力等级：LV7<br>消耗体力：10<br>攻击力：8</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：全体</p>
+            </div>
+        </div>
+        <div class="flex_prop" v-if="prop == '洒水壶'">
+            <div class="prop">
+                <h3>铜洒水壶</h3>
+                <p class="mini">蓄力等级：LV2<br>消耗体力：4<br>最大水量：45</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前1×横3</p>
+            </div>
+            <div class="prop">
+                <h3>银洒水壶</h3>
+                <p class="mini">蓄力等级：LV3<br>消耗体力：6<br>最大水量：60</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前2×横3</p>
+            </div>
+            <div class="prop">
+                <h3>金洒水壶</h3>
+                <p class="mini">蓄力等级：LV4<br>消耗体力：8<br>最大水量：90</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前3×横3</p>
+            </div>
+            <div class="prop">
+                <h3>秘银洒水壶</h3>
+                <p class="mini">蓄力等级：LV5<br>消耗体力：10<br>最大水量：150</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前3×横5</p>
+            </div>
+            <div class="prop">
+                <h3>祝福洒水壶</h3>
+                <p class="mini">蓄力等级：LV6<br>消耗体力：15<br>最大水量：255</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前6×横9</p>
+            </div>
+            <div class="prop">
+                <h3>祝福洒水壶</h3>
+                <p class="mini">蓄力等级：LV6<br>消耗体力：15<br>最大水量：255</p>
+                <div class="scope">
+                    <table>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"><img src="/icon/arrow-right-s-fill.svg"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                        <tr>
+                            <th class="invalid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                            <th class="valid"></th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="mini">效果范围：前6×横9</p>
+            </div>
+        </div>
+        <div class="flex_prop" v-if="prop == '钓竿'">
+            <div class="prop" style="height: 170px;">
+                <h3>铜钓竿</h3>
+                <p class="mini">蓄力等级：LV2<br>消耗体力：2<br>效果范围：能钓上的鱼的种类增加</p>
+                <p class="mini"></p>
+            </div>
+            <div class="prop" style="height: 170px;">
+                <h3>银钓竿</h3>
+                <p class="mini">蓄力等级：LV3<br>消耗体力：2<br>效果范围：能钓上的鱼的种类增加</p>
+                <p class="mini"></p>
+            </div>
+            <div class="prop" style="height: 170px;">
+                <h3>金钓竿</h3>
+                <p class="mini">蓄力等级：LV4<br>消耗体力：2<br>效果范围：能钓上的鱼的种类增加</p>
+                <p class="mini"></p>
+            </div>
+            <div class="prop" style="height: 170px;">
+                <h3>秘银钓竿</h3>
+                <p class="mini">蓄力等级：LV5<br>消耗体力：2<br>效果范围：能钓上的鱼的种类增加</p>
+                <p class="mini"></p>
+            </div>
+            <div class="prop" style="height: 170px;">
+                <h3>祝福钓竿</h3>
+                <p class="mini">蓄力等级：LV6<br>消耗体力：2<br>效果范围：能钓上的鱼的种类增加</p>
+                <p class="mini"></p>
+            </div>
+            <div class="prop" style="height: 170px;">
+                <h3>贤者钓竿</h3>
+                <p class="mini">蓄力等级：LV7<br>消耗体力：2<br>效果范围：钓到鱼的概率+20%</p>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    const App = {
+        data() {
+            return {
+                prop: "镰刀",
+            }
+        },
+        created() {},
+        methods: {}
+    }
+    const app = Vue.createApp(App)
+    const vm = app.mount("#prop")
+</script>
+
 </html>

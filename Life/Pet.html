@@ -1,150 +1,244 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" href="/saikai/saikai.css">
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
     <title>宠物</title>
+    <style>
+        @media only screen and (min-width: 801px) {
+            .pet {
+                width: auto;
+                max-width: 180px;
+            }
+
+            #horse {
+                width: auto;
+                max-width: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .pet {
+                width: auto;
+                max-width: 7em;
+            }
+
+            #horse {
+                width: auto;
+                max-width: 15em;
+            }
+        }
+
+        .remixicon {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left1em {
+            width: 4em;
+            margin-left: 1em;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 id="宠物">宠物</h1>
-<p>无法从宠物身上采取副产品，但可以让宠物出场赛马、入海祭等活动。<br>
-有5种类型的宠物：马、猫、企鹅、犬、水豚。<br>
-猫和犬有三种、企鹅和水豚有两种不同的颜色。<br>
-马通过事件获得，其他的宠物可以通过购买获得。</p>
-<h2>宠物的种类</h2>
-<h3>马</h3>
-<img src="horse.png" class="pet"  id="horse">
-<h3>猫</h3>
-<img src="amesho.png" class="pet">
-<img src="bengal.png" class="pet">
-<img src="mikeneko.png" class="pet">
-<h3>企鹅</h3>
-<img src="penguin.png" class="pet">
-<h3>狗</h3>
-<img src="momonosuke.png" class="pet">
-<img src="kuroshiba.png" class="pet">
-<img src="papiyon.png" class="pet">
-<h3>水豚</h3>
-<img src="kapipara.png" class="pet">
-<h2>获得方法</h2>
-<ul>
-<li>马：通过事件「放手马」或「获得马」获得。</li>
-<li>其他宠物：在帕的宠物商店购买
-<ul>
-<li>春：猫（美国短毛猫、孟加拉猫、花猫）</li>
-<li>夏：企鹅（企鹅、深蓝色企鹅）</li>
-<li>秋：狗（矿石镇犬、黑柴、蝴蝶犬）</li>
-<li>冬：水豚（水豚、白水豚）</li>
-</ul></li>
-</ul>
-<h2 id="宠物的成长天数">宠物的成长天数</h2>
-<p>和动物相同，宠物也需要经过一定的时间才能成年。<br>
-通过事件「寄养马」而被委托照料幼马，90天后，如果好感度不高的话（少于100），会进入「放手马」的分歧事件。<br>
-需要注意的是，进入这个分歧，获得马的时机会延迟一年。<br>
-除了马以外其他的宠物刚买入时也是幼年状态，经过60天之后长为成年状态。</p>
-<p>马以外，包括不同颜色的宠物最多只能饲养5只。<br>
-拥有第二只宠物以后，在饲养的宠物的好感度平均值到达8心以上前无法继续购买。<br>
-好感度的阶段与动物的好感度是一样的机制，通过不同方法能稍许提高。<br>
-动物点心能在宠物店购入，想要大量购入需要金钱。</p>
-<h2>提高宠物好感度的方法</h2>
-<ul>
-<li><b>对话</b>（成年马以外）：+1</li>
-<li><b>刷毛</b>（仅限马）：+1</li>
-<li><b>吹哨</b>（用 ZL 呼唤）：+1</li>
-<li><b>喂宠物点心</b>（成年马以外）：+1</li>
-</ul>
-<p>在「交流资讯」的宠物画面，三个图标分别为对话、点心、刷毛，拥有王冠标示在活动中获得优胜。<br>
-幼年时期可以通过图标知道是否已经喂点心。</p>
-<h2 id="宠物的训练度">宠物的训练度</h2>
-<p>宠物拥有训练度，可以通过不同方法提高。<br>
-绿色进度条代表训练度，通过对宠物进行特定的行动上升，到达右端则表示训练度已经到了最大值250。<br>
-赛马时训练度越高越容易获胜，所以每天都去提高一点马的训练度吧。<br>
-其他宠物的训练度会影响飞盘飞出的距离。</p>
-<h3 id="提高训练度的方法">提高训练度的方法</h3>
-<ul>
-<li><strong>骑乘</strong>（成年马）<br>
-骑乘马可以使训练度上升1，和骑乘马的时间无关，乘上去后马上下来也可以。1天上升1次。</li>
-<li><strong>投掷球</strong>（马以外）<br>
-从霍安那里可以买到「球」，拿着球在宠物附近投掷，宠物捡回球后训练度上升1，1天上升1次。<br>
-进行的场所在自宅和外面都可以，但夜里动物睡着后无法进行。</li>
-<li><strong>飞盘游戏</strong>（马以外）<br>
-从霍安那里买到「飞盘」可以在矿石镇海滩进行。<br>
-1次挑战中可以投掷的次数随好感度变化，在宠物厌倦的时候会结束。<br>
-宠物每追上飞盘一次，训练度上升1。</li>
-</ul>
-<h4 id="挑战的最大次数">挑战的最大次数</h4>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>好感度</th>
-<th>最大次数</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="remixicon"><imgheart-red.svg"span style="margin-left: 1em; width:4em; text-align: left;">0</span></td>
-<td>0次</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">1-2</span></td>
-<td>1次</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">3-4</span></td>
-<td>2次</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">5-7</span></td>
-<td>3次</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">8-9</span></td>
-<td>4次</td>
-</tr>
-<tr>
-<td class="remixicon"><img src="/saikai/svg/heart-red.svg"><span style="margin-left: 1em; width:4em; text-align: left;">10</span></td>
-<td>5次</td>
-</tr>
-</tbody>
-</table>
-<h3 id="饲育的动物宠物在活动中出场">饲育的动物、宠物在活动中出场</h3>
-<p>动物、宠物可以出场的活动有6个种类。<br>
-获胜能获得奖品，除此之外在斗鸡节、评牛节、软绵绵节获胜还能提高副产物的品质。<br>
-评牛节、软绵绵节在好感度8心以上时能够获胜。</p>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>活动</th>
-<th>对应的动物、宠物</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>斗鸡节</td>
-<td>鸡、茶色鸡</td>
-</tr>
-<tr>
-<td>评牛节</td>
-<td>牛、咖啡乳牛、草莓乳牛、水果乳牛</td>
-</tr>
-<tr>
-<td>软绵绵节</td>
-<td>安哥拉兔、羊、羊驼</td>
-</tr>
-<tr>
-<td>春季赛马</td>
-<td rowspan="2">马</td>
-</tr>
-<tr>
-<td>秋季赛马</td>
-</tr>
-<tr>
-<td>入海节（飞盘大赛）</td>
-<td>猫、企鹅、犬、水豚</td>
-</tr>
-</tbody>
-</table>
+    <h1>饲养宠物</h1>
+    <p>无法从宠物身上采取副产品，可以让宠物参加「赛马」、「入海节」等活动。<br>
+        有5种类型的宠物：马、猫、企鹅、犬、水豚。<br>
+        猫和犬各有三种、企鹅和水豚有两种不同的颜色。<br>
+        马通过事件获得，其他的宠物可以通过购买获得。</p>
+    <h2>宠物的种类</h2>
+    <h3>马</h3>
+    <img src="horse.png" class="pet" id="horse">
+    <h3>猫</h3>
+    <p>美国短毛猫、孟加拉猫、三花猫</p>
+    <img src="amesho.png" class="pet">
+    <img src="bengal.png" class="pet">
+    <img src="mikeneko.png" class="pet">
+    <h3>企鹅</h3>
+    <p>企鹅、深蓝色企鹅</p>
+    <img src="penguin.png" class="pet">
+    <h3>狗</h3>
+    <p>矿石镇犬、黑柴犬、蝴蝶犬</p>
+    <img src="momonosuke.png" class="pet">
+    <img src="kuroshiba.png" class="pet">
+    <img src="papiyon.png" class="pet">
+    <h3>水豚</h3>
+    <p>水豚、白水豚</p>
+    <img src="kapipara.png" class="pet">
+    <h2>获得方法</h2>
+    <ul>
+        <li>马：通过事件「放手马」或「获得马」获得。</li>
+        <li>其他宠物：在班的宠物商店购买</li>
+    </ul>
+    <h2>宠物的成长天数</h2>
+    <p>和动物相同，宠物也需要经过一定的时间才能成年。<br>
+        通过事件「寄养马」而被委托照料幼马，<strong>90天</strong>后，如果好感度不高的话（少于100），会进入「放手马」的支线事件。<br>
+        需要注意的是，进入这个支线，获得马的时机会延迟一年。<br>
+        除了马以外其他的宠物刚买入时也是幼年状态，经过<strong>60天</strong>之后长为成年状态。</p>
+    <p>马以外，包括不同颜色的宠物最多只能饲养5只。<br>
+        拥有第二只宠物以后，在饲养的宠物的好感度平均值到达8心以上前无法继续购买。<br>
+        好感度的阶段与动物的好感度是一样的机制，通过不同方法能稍许提高。<br>
+        「宠物点心」能在宠物店购入，想要大量购入需要金钱。</p>
+    <h2>提高宠物好感度的方法</h2>
+    <ul>
+        <li><span class="bold">对话</span>（成年马以外）：+1</li>
+        <li><span class="bold">刷毛</span>（仅限马）：+1</li>
+        <li>
+            <p class="gamepad"><span class="bold">吹哨</span>（用<img src="/icon/switch/ZL.png" alt="ZL键">呼唤）：+1</p>
+        </li>
+        <li><span class="bold">喂宠物点心</span>（成年马以外）：+1</li>
+    </ul>
+    <p>在「关系状况」的「宠物」画面，三个图标分别为「对话」「点心」「刷毛」。<br>
+        拥有「王冠」表示在活动中获得过优胜。<br>
+        幼年时期可以通过图标知道是否已经喂点心。</p>
+    <h2>宠物的训练度</h2>
+    <p>宠物拥有训练度，可以通过不同方法提高。<br>
+        绿色进度条代表训练度，通过对宠物进行特定的行动提升，到达右端则表示训练度已经到了最大值250点。<br>
+        赛马时训练度越高越容易获胜，所以每天都去提高一点马的训练度吧。<br>
+        其他宠物的训练度会影响飞盘的飞行距离。</p>
+    <h3>提高训练度的方法</h3>
+    <ul>
+        <li><span class="bold">骑乘</span>（成年马）<br>
+            骑乘马可以使训练度提升1，和骑马的时间无关，乘上去后马上下来也可以。1天可以提升1次。</li>
+        <li><span class="bold">投掷球</span>（马以外）<br>
+            从霍安那里可以买到「球」，拿着球在宠物附近投掷，宠物捡回球后训练度提升1，1天可以提升1次。<br>
+            训练的场所在自宅或外面都可以，但夜里动物睡着后无法进行。</li>
+        <li><span class="bold"><a href="Event.html#飞盘游戏">飞盘游戏</a></span>（马以外）<br>
+            从霍安那里买到「飞盘」可以在「矿石海滩」进行。<br>
+            1次挑战中可以投掷的次数随好感度变化，在宠物厌倦的时候会结束。<br>
+            宠物每追上飞盘一次，训练度提升1。</li>
+    </ul>
+    <h4>挑战的最大次数</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>好感度</th>
+                <th>最大次数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="remixicon">
+                        <img src="/icon/heart-red.svg">
+                        <span class="left1em">0</span>
+                    </div>
+                </td>
+                <td>0次</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="remixicon">
+                        <img src="/icon/heart-red.svg">
+                        <span class="left1em">1-2</span>
+                    </div>
+                </td>
+                <td>1次</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="remixicon">
+                        <img src="/icon/heart-red.svg">
+                        <span class="left1em">3-4</span>
+                    </div>
+                </td>
+                <td>2次</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="remixicon">
+                        <img src="/icon/heart-red.svg">
+                        <span class="left1em">5-7</span>
+                    </div>
+                </td>
+                <td>3次</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="remixicon">
+                        <img src="/icon/heart-red.svg">
+                        <span class="left1em">8-9</span>
+                    </div>
+                </td>
+                <td>4次</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="remixicon">
+                        <img src="/icon/heart-red.svg">
+                        <span class="left1em">10</span>
+                    </div>
+                </td>
+                <td>5次</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class="key">
+        <h3>在沙滩上挖坑可能会获得道具</h3>
+        <p>在海滩玩飞盘游戏的话，宠物说不定会在沙滩上挖坑。<br>
+            这个行为在满足下面的条件后会有一定几率发生。<br>
+            运气好的话能够发现道具。<br>
+            能够入手的道具有8种，甚至可能会获得「古代鱼化石」。</p>
+        <div class="gamepad">
+            <img src="./pet_game.png">
+            <div>
+                <h4>发现道具的条件</h4>
+                <ol>
+                    <li>持有物有1格以上的空位</li>
+                    <li>宠物的训练度在101以上</li>
+                    <li>把滑标停在②~③的范围内，并且飞盘的飞行距离在30m以上</li>
+                    <li>宠物去追飞盘了</li>
+                </ol>
+            </div>
+        </div>
+        <h4>可以被挖到的道具及概率</h4>
+        <ul>
+            <li><b>古代鱼化石</b>：3%</li>
+            <li><b>玛瑙</b>：10%</li>
+            <li><b>金</b>：10%</li>
+            <li><b>银</b>：15%</li>
+            <li><b>铜</b>：20%</li>
+            <li><b>树枝</b>：20%</li>
+            <li><b>鱼骨</b>：12%</li>
+            <li><b>空罐</b>：10%</li>
+        </ul>
+    </div>
+    <div class="key">
+        <h3>饲育的宠物在活动中出场</h3>
+        <p>宠物可以出场的活动有3种，获胜能获得奖品</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>活动</th>
+                    <th>对应的动物、宠物</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="Event.html#春季赛马">春季赛马</a></td>
+                    <td rowspan="2">马</td>
+                </tr>
+                <tr>
+                    <td><a href="Event.html#秋季赛马">秋季赛马</a></td>
+                </tr>
+                <tr>
+                    <td><a href="Event.html#入海节">入海节（飞盘大赛）</a></td>
+                    <td>猫、企鹅、犬、水豚</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
 </body>
+
 </html>

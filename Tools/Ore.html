@@ -1,226 +1,79 @@
+<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" href="/saikai/saikai.css">
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
     <title>矿石以及挖掘物</title>
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
 </head>
+
 <body>
-<h1 id="矿石以及挖掘物">矿石以及挖掘物</h1>
-<ul>
-    <li><b>「泉」</b>：泉之采矿场</li>
-    <li><b>「湖」</b>：湖之采矿场</li>
-</ul>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<tr>
-<th>矿石</th>
-<th>出货价格</th>
-<th>层数</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>废矿石</td>
-<td>1</td>
-<td>「泉」所有层、「湖」地上1层～地下199层</td>
-<td>没啥用处</td>
-</tr>
-<tr>
-<td>铜</td>
-<td>15</td>
-<td>「泉」所有层</td>
-<td>农具、钓竿升LV2的必要品</td>
-</tr>
-<tr>
-<td>银</td>
-<td>20</td>
-<td>「泉」所有层</td>
-<td>农具、钓竿升LV3的必要品</td>
-</tr>
-<tr>
-<td>金</td>
-<td>25</td>
-<td>「泉」地下6层以后</td>
-<td>农具、钓竿升LV4的必要品</td>
-</tr>
-<tr>
-<td>秘银</td>
-<td>40</td>
-<td>「泉」地下6层以后</td>
-<td>农具、钓竿升LV5的必要品</td>
-</tr>
-<tr>
-<td>奥利哈钢</td>
-<td>50</td>
-<td>「泉」地下10层以后</td>
-<td>制作首饰的必要品</td>
-</tr>
-<tr>
-<td>精金石</td>
-<td>50</td>
-<td>「泉」地下10层以后</td>
-<td>制造各种制造机的必要品</td>
-</tr>
-<tr>
-<td>月亮石</td>
-<td>55</td>
-<td>「湖」末尾数是8的层、地下255层</td>
-<td>无</td>
-</tr>
-<tr>
-<td>沙漠玫瑰石</td>
-<td>60</td>
-<td>「湖」末尾数是9的层、地下255层</td>
-<td>无</td>
-</tr>
-<tr>
-<td>粉红钻石</td>
-<td>10000</td>
-<td>「湖」地下255层、地下30、70、90、110、130、170、190层</td>
-<td>无</td>
-</tr>
-<tr>
-<td>亚历山大石</td>
-<td>10000</td>
-<td>「湖」地下251层以后、地下50、100、150层<br>超过200层后，就算末尾不是0的层也能出现</td>
-<td>改变家室内的颜色</td>
-</tr>
-<tr>
-<td>贤者之石</td>
-<td>20000</td>
-<td>「泉」地下60层以后</td>
-<td>农具、钓竿升LV7的必要品<br>只有在6种诅咒工具都变成祝福工具以后才能出现</td>
-</tr>
-<tr>
-<td>钻石</td>
-<td>100</td>
-<td>「湖」末尾是0的层<br>超过200层后，就算末尾不是0的层也能出现</td>
-<td>无</td>
-</tr>
-<tr>
-<td>祖母绿</td>
-<td>80</td>
-<td>「湖」末尾是5的层<br>超过200层后，就算末尾不是5的层也能出现</td>
-<td>无</td>
-</tr>
-<tr>
-<td>红宝石</td>
-<td>75</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>黄玉</td>
-<td>70</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>橄榄石</td>
-<td>68</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>萤石</td>
-<td>65</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>玛瑙</td>
-<td>62</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>紫水晶</td>
-<td>60</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>翡翠</td>
-<td>62</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>蓝宝石</td>
-<td>75</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>海蓝宝石</td>
-<td>60</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>石榴石</td>
-<td>75</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>绿松石</td>
-<td>50</td>
-<td>「湖」除了地下50、100、150、200层以外</td>
-<td>无</td>
-</tr>
-<tr>
-<td>黑草</td>
-<td>10</td>
-<td>「泉」1层～地下100层、地下250层以后<br>「湖」所有层</td>
-<td>挖掘矿场地面能够获得<br>吃了以后体力+5、消除度-5</td>
-</tr>
-<tr>
-<td>飞行石</td>
-<td>–</td>
-<td>「泉」地下255层</td>
-<td>第三年的春天1日以后破坏矿场的石头能够找到<br>能够瞬间移动到地图上的指定位置</td>
-</tr>
-<tr>
-<td>女神之玉</td>
-<td>–</td>
-<td>「泉」地下60、102、123、152、155、171、190、202、222层</td>
-<td>收集所有9个「女神的秘宝」以后获得</td>
-</tr>
-<tr>
-<td>河童之玉</td>
-<td>–</td>
-<td>「湖」地上1层、地下40、60、80、120、140、160、180、255层</td>
-<td>收集所有9个「河童的秘宝」以后获得</td>
-</tr>
-<tr>
-<td>谜之石板</td>
-<td>70000<br>（出售给霍安）</td>
-<td>「泉」地下255层</td>
-<td>获得「番茄酱」的料理的食谱以后可以得到<br>只能得到到一次</td>
-</tr>
-<tr>
-<td>河童的雕像</td>
-<td>–</td>
-<td>「湖」地下101～120层、地下201～220层</td>
-<td>只能获得一次</td>
-</tr>
-<tr>
-<td>女神的雕像</td>
-<td>–</td>
-<td>「泉」地下220～249层</td>
-<td>只能获得一次</td>
-</tr>
-<tr>
-<td>克鲁波克鲁的雕像</td>
-<td>–</td>
-<td>「泉」地下160～189层</td>
-<td>只能获得一次</td>
-</tr>
-</tbody>
-</table>
+    <div id="ore" v-cloak>
+        <h1>矿石以及挖掘物</h1>
+        <div class="lang_flex" @click="switch_langusge">
+            <img src="/icon/translate.svg">
+            <div class="lang" v-if="language == 'cn'">中文</div>
+            <div class="lang" v-if="language == 'jp'">日文</div>
+        </div>
+        <ul>
+            <li><b>「泉」</b>：泉之采矿场</li>
+            <li><b>「湖」</b>：湖之采矿场</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>价格</th>
+                    <th>层数</th>
+                    <th>说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template v-for="(item,index) in list">
+                    <tr>
+                        <td v-text="item['name'][language]"></td>
+                        <td v-text="item['price']"></td>
+                        <td v-html="item['floor']" style="text-align: left;"></td>
+                        <td v-html="item['explain']" style="text-align: left;"></td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+        <h3 id="每层可以挖到东西的概率">每层可以挖到东西的概率</h3>
+        <p>在「<a href="../Life/Mining_List.html">这个页面</a>」查看。</p>
+    </div>
 </body>
+<script>
+    const App = {
+        data() {
+            return {
+                language: "cn",
+                list: "",
+            }
+        },
+        created() {
+            axios.get('Ore.json')
+                .then((response) => {
+                    this.list = response.data
+                })
+        },
+        methods: {
+            switch_langusge() {
+                if (this.language == 'cn') {
+                    this.language = 'jp'
+                } else {
+                    this.language = 'cn'
+                }
+            }
+        }
+    }
+    const app = Vue.createApp(App)
+    const vm = app.mount("#ore")
+</script>
+
 </html>

@@ -1,0 +1,1367 @@
+[
+    {
+        "name": {
+            "cn": "大泷六线鱼",
+            "jp": "アイナメ"
+        },
+        "level": 3,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 40
+        },
+        "low_season": "夏秋冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "竹荚鱼",
+            "jp": "アジ"
+        },
+        "level": 3,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 40
+        },
+        "low_season": "冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "木叶鱼",
+            "jp": "アブラハヤ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "湖、上游、池",
+        "size": {
+            "range": "小型鱼",
+            "min": 10,
+            "max": 15
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "石川鲑鱼",
+            "jp": "アマゴ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "湖、上游",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 10,
+            "max": 25
+        },
+        "low_season": "春冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "三线矶鱼",
+            "jp": "イサキ"
+        },
+        "level": 3,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 40
+        },
+        "low_season": "秋冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "沙丁鱼",
+            "jp": "イワシ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 10,
+            "max": 25
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "红点鲑",
+            "jp": "イワナ"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "上游、池",
+        "size": {
+            "range": "小～大型鱼",
+            "min": 15,
+            "max": 50
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "珠星三块鱼",
+            "jp": "ウグイ"
+        },
+        "level": 2,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "泉、下游、池",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 15,
+            "max": 35
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鳗鱼",
+            "jp": "ウナギ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "下游",
+        "size": {
+            "range": "大型鱼",
+            "min": 50,
+            "max": 100
+        },
+        "low_season": "春冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "溪哥",
+            "jp": "オイカワ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "下游",
+        "size": {
+            "range": "小型鱼",
+            "min": 7,
+            "max": 15
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鲣鱼",
+            "jp": "カツオ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 70,
+            "max": 90
+        },
+        "low_season": "春",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鲽鱼",
+            "jp": "カレイ"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 40,
+            "max": 60
+        },
+        "low_season": "春夏",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鹿角鱼",
+            "jp": "カワハギ"
+        },
+        "level": 2,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 30
+        },
+        "low_season": "春秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "金鳞",
+            "jp": "ギンブナ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "泉、下游",
+        "size": {
+            "range": "小型鱼",
+            "min": 7,
+            "max": 20
+        },
+        "low_season": "冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "银鳞",
+            "jp": "ギンブナ"
+        },
+        "level": 2,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "泉、下游",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 10,
+            "max": 30
+        },
+        "low_season": "冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "褐石斑",
+            "jp": "クエ"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 50,
+            "max": 70
+        },
+        "low_season": "春",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鳙鱼",
+            "jp": "コクレン"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "下游",
+        "size": {
+            "range": "大型鱼",
+            "min": 50,
+            "max": 100
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鲑鱼",
+            "jp": "サケ"
+        },
+        "level": 4,
+        "season": {
+            "spring": false,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "下游",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 30,
+            "max": 70
+        },
+        "low_season": "夏",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "青花鱼",
+            "jp": "サバ"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 30,
+            "max": 50
+        },
+        "low_season": "春夏",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "马步鱼",
+            "jp": "サヨリ"
+        },
+        "level": 3,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 40
+        },
+        "low_season": "夏秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "马蛟鱼",
+            "jp": "サワラ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 80,
+            "max": 100
+        },
+        "low_season": "夏",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "秋刀鱼",
+            "jp": "サンマ"
+        },
+        "level": 3,
+        "season": {
+            "spring": false,
+            "summer": false,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 40
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鬼头刀",
+            "jp": "シイラ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 100,
+            "max": 180
+        },
+        "low_season": "秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鲷鱼",
+            "jp": "タイ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 80,
+            "max": 100
+        },
+        "low_season": "冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鳕鱼",
+            "jp": "タラ"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 30,
+            "max": 50
+        },
+        "low_season": "春",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "泥鳅",
+            "jp": "ドジョウ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "下游、池",
+        "size": {
+            "range": "小型鱼",
+            "min": 5,
+            "max": 12
+        },
+        "low_season": "夏",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "沙塘鳢",
+            "jp": "ドンコ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "下游、池",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 15,
+            "max": 25
+        },
+        "low_season": "秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "虹鳟",
+            "jp": "ニジマス"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "湖、上游",
+        "size": {
+            "range": "大型鱼",
+            "min": 50,
+            "max": 100
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鲱鱼",
+            "jp": "ニシン"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 15,
+            "max": 30
+        },
+        "low_season": "秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "鲢鱼",
+            "jp": "ハクレン"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "下游",
+        "size": {
+            "range": "大型鱼",
+            "min": 50,
+            "max": 100
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "叉牙鱼",
+            "jp": "ハタハタ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小型鱼",
+            "min": 10,
+            "max": 20
+        },
+        "low_season": "春秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "比目鱼",
+            "jp": "ヒラメ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 60,
+            "max": 80
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "河豚",
+            "jp": "フグ"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 40,
+            "max": 50
+        },
+        "low_season": "春",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "黑鲈",
+            "jp": "ブラックバス"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "湖、泉、上游、下游、池",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 30,
+            "max": 50
+        },
+        "low_season": "冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "青甘鱼",
+            "jp": "ブリ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 80,
+            "max": 100
+        },
+        "low_season": "春",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "蓝腮太阳鱼",
+            "jp": "ブルーギル"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "湖、泉、上游、下游、池",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 15,
+            "max": 25
+        },
+        "low_season": "冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "白鲫",
+            "jp": "ヘラブナ"
+        },
+        "level": 4,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "湖、泉",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 25,
+            "max": 50
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "远东多线鱼",
+            "jp": "ホッケ"
+        },
+        "level": 3,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 40
+        },
+        "low_season": "秋冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "金枪鱼",
+            "jp": "マグロ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 150,
+            "max": 250
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "曼波鱼",
+            "jp": "マンボウ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 150,
+            "max": 250
+        },
+        "low_season": "秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "狮子鱼",
+            "jp": "ミノカサゴ"
+        },
+        "level": 2,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 30
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "黑虎头鱼",
+            "jp": "メバル"
+        },
+        "level": 2,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 30
+        },
+        "low_season": "夏秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "山女鳟",
+            "jp": "ヤマメ"
+        },
+        "level": 2,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "上游",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 30
+        },
+        "low_season": "夏冬",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "雷鱼",
+            "jp": "ライギョ"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "泉、下游、池",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 40,
+            "max": 80
+        },
+        "low_season": "春",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "西太公鱼",
+            "jp": "ワカサギ"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "泉、下游、池",
+        "size": {
+            "range": "小型鱼",
+            "min": 10,
+            "max": 15
+        },
+        "low_season": "春秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "白带鱼",
+            "jp": "タチウオ"
+        },
+        "level": 5,
+        "season": {
+            "spring": false,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 100,
+            "max": 200
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "香鱼",
+            "jp": "アユ"
+        },
+        "level": 3,
+        "season": {
+            "spring": false,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "上游、下游",
+        "size": {
+            "range": "中～大型鱼",
+            "min": 10,
+            "max": 30
+        },
+        "low_season": "秋",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "沙肠仔",
+            "jp": "キス"
+        },
+        "level": 3,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": false,
+            "winter": false
+        },
+        "ground": "海、下游",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 30
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "海鳗",
+            "jp": "ハモ"
+        },
+        "level": 5,
+        "season": {
+            "spring": false,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "大型鱼",
+            "min": 100,
+            "max": 150
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "飞鱼",
+            "jp": "トビウオ"
+        },
+        "level": 2,
+        "season": {
+            "spring": false,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "小～中型鱼",
+            "min": 20,
+            "max": 30
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "伊富鱼（鱼王）",
+            "jp": "イトウ"
+        },
+        "level": 6,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "下游",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "获得「生鱼片」「烤鱼」「寿司」三个食谱后出现"
+    },
+    {
+        "name": {
+            "cn": "鮟鱇鱼（鱼王）",
+            "jp": "アンコウ"
+        },
+        "level": 6,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "PM10:00～AM8:00"
+    },
+    {
+        "name": {
+            "cn": "温泉鲇（鱼王）",
+            "jp": "温泉ナマズ"
+        },
+        "level": 6,
+        "season": {
+            "spring": false,
+            "summer": false,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "温泉",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "没什么特别的"
+    },
+    {
+        "name": {
+            "cn": "鲤鱼（鱼王）",
+            "jp": "コイ"
+        },
+        "level": 6,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "湖",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "鱼合计出货200条以上后出现"
+    },
+    {
+        "name": {
+            "cn": "腔棘鱼（鱼王）",
+            "jp": "シーラカンス"
+        },
+        "level": 6,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "地底湖",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "钓上5种以上的鱼王后出现"
+    },
+    {
+        "name": {
+            "cn": "乌贼（鱼王）",
+            "jp": "イカ"
+        },
+        "level": 6,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "AM9:00～PM12:00"
+    },
+    {
+        "name": {
+            "cn": "象鱼（鱼王）",
+            "jp": "ピラルク"
+        },
+        "level": 6,
+        "season": {
+            "spring": false,
+            "summer": true,
+            "autumn": false,
+            "winter": false
+        },
+        "ground": "池",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "包含鱼王，钓上50种以上的鱼以后出现"
+    },
+    {
+        "name": {
+            "cn": "力量果实",
+            "jp": "力の木の実"
+        },
+        "level": 5,
+        "season": {
+            "spring": false,
+            "summer": false,
+            "autumn": false,
+            "winter": true
+        },
+        "ground": "海",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": ""
+    },
+    {
+        "name": {
+            "cn": "装信的瓶子",
+            "jp": "手紙入りのビン"
+        },
+        "level": 5,
+        "season": {
+            "spring": true,
+            "summer": false,
+            "autumn": false,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "(60,000G)"
+    },
+    {
+        "name": {
+            "cn": "海盗宝藏",
+            "jp": "海賊の宝"
+        },
+        "level": 6,
+        "season": {
+            "spring": false,
+            "summer": true,
+            "autumn": false,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "10,000G"
+    },
+    {
+        "name": {
+            "cn": "古代鱼化石",
+            "jp": "古代魚の化石"
+        },
+        "level": 6,
+        "season": {
+            "spring": false,
+            "summer": false,
+            "autumn": true,
+            "winter": false
+        },
+        "ground": "海",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "5,000G"
+    },
+    {
+        "name": {
+            "cn": "树枝",
+            "jp": "枝"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "全部",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "1G"
+    },
+    {
+        "name": {
+            "cn": "空罐",
+            "jp": "空き缶"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "全部",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "1G"
+    },
+    {
+        "name": {
+            "cn": "鱼骨",
+            "jp": "魚の骨"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "全部",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "1G"
+    },
+    {
+        "name": {
+            "cn": "长靴",
+            "jp": "長靴"
+        },
+        "level": 1,
+        "season": {
+            "spring": true,
+            "summer": true,
+            "autumn": true,
+            "winter": true
+        },
+        "ground": "全部",
+        "size": {
+            "range": "–",
+            "min": "–",
+            "max": "–"
+        },
+        "low_season": "",
+        "other": "1G"
+    }
+]

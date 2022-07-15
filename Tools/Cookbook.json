@@ -1,0 +1,2261 @@
+[
+    {
+        "name": {
+            "cn": "S型蛋黄酱",
+            "jp": "マヨネーズS"
+        },
+        "price": 100,
+        "physical": 1,
+        "fatigue": 0,
+        "ingredients": [
+            "普通品质的蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "打蛋器",
+            "调味料套装"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "M型蛋黄酱",
+            "jp": "マヨネーズM"
+        },
+        "price": 150,
+        "physical": 2,
+        "fatigue": 0,
+        "ingredients": [
+            "高品质的蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "打蛋器",
+            "调味料套装"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "L型蛋黄酱",
+            "jp": "マヨネーズL"
+        },
+        "price": 230,
+        "physical": 3,
+        "fatigue": 0,
+        "ingredients": [
+            "优良品质的蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "打蛋器",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】高品质的蛋×13"
+    },
+    {
+        "name": {
+            "cn": "G型蛋黄酱",
+            "jp": "マヨネーズG"
+        },
+        "price": 300,
+        "physical": 4,
+        "fatigue": 0,
+        "ingredients": [
+            "金蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "打蛋器",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】优良品质的蛋×5"
+    },
+    {
+        "name": {
+            "cn": "P型蛋黄酱",
+            "jp": "マヨネーズP"
+        },
+        "price": 450,
+        "physical": 5,
+        "fatigue": 0,
+        "ingredients": [
+            "白金蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "打蛋器",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】金蛋×3"
+    },
+    {
+        "name": {
+            "cn": "X型蛋黄酱",
+            "jp": "マヨネーズX"
+        },
+        "price": 800,
+        "physical": 6,
+        "fatigue": 0,
+        "ingredients": [
+            "X型蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "打蛋器",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】白金蛋×1"
+    },
+    {
+        "name": {
+            "cn": "X型蛋",
+            "jp": "Xの卵"
+        },
+        "price": 350,
+        "physical": 6,
+        "fatigue": 0,
+        "ingredients": [
+            "普通品质的蛋",
+            "高品质的蛋",
+            "优良品质的蛋",
+            "金蛋",
+            "白金蛋"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】普通品质的蛋×50、高品质的蛋×25、优良品质的蛋×10"
+    },
+    {
+        "name": {
+            "cn": "X型牛奶",
+            "jp": "牛乳Xサイズ"
+        },
+        "price": 800,
+        "physical": 7,
+        "fatigue": 0,
+        "ingredients": [
+            "S型牛奶",
+            "M型牛奶",
+            "L型牛奶",
+            "G型牛奶",
+            "P型牛奶"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】S型牛奶×50、M型牛奶×25、L型牛奶×10"
+    },
+    {
+        "name": {
+            "cn": "X型芝士",
+            "jp": "チーズXサイズ"
+        },
+        "price": 1500,
+        "physical": 10,
+        "fatigue": 0,
+        "ingredients": [
+            "S型芝士",
+            "M型芝士",
+            "L型芝士",
+            "G型芝士",
+            "P型芝士"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】S型芝士×50、M型芝士×25、L型芝士×10"
+    },
+    {
+        "name": {
+            "cn": "山葡萄水",
+            "jp": "山ぶどう水"
+        },
+        "price": 250,
+        "physical": 5,
+        "fatigue": 0,
+        "ingredients": [
+            "山葡萄的果实",
+            "紫草"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【居民教学】露（获得食谱所需要的料理需要做出一种以上）"
+    },
+    {
+        "name": {
+            "cn": "沙拉",
+            "jp": "サラダ"
+        },
+        "price": 100,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "黄瓜",
+            "番茄",
+            "胡萝卜",
+            "卷心菜"
+        ],
+        "kitchenware": [
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】黄瓜×20、番茄×20、胡萝卜×20、卷心菜×20"
+    },
+    {
+        "name": {
+            "cn": "咖喱饭",
+            "jp": "カレーライス"
+        },
+        "price": 150,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "咖喱粉",
+            "饭团"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】饭团×5"
+    },
+    {
+        "name": {
+            "cn": "炖菜",
+            "jp": "シチュー"
+        },
+        "price": 150,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "牛奶"
+        ],
+        "kitchenware": [
+            "锅子",
+            "调味料套装"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "味噌汤",
+            "jp": "みそ汁"
+        },
+        "price": 100,
+        "physical": 5,
+        "fatigue": 0,
+        "ingredients": [
+            "菠菜",
+            "洋葱",
+            "鸡蛋",
+            "中型鱼"
+        ],
+        "kitchenware": [
+            "锅子",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】中鱼×5、洋葱×10"
+    },
+    {
+        "name": {
+            "cn": "炒蔬菜",
+            "jp": "野菜炒め"
+        },
+        "price": 120,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "油",
+            "卷心菜"
+        ],
+        "kitchenware": [
+            "菜刀",
+            "平底锅",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】卷心菜×5"
+    },
+    {
+        "name": {
+            "cn": "炒饭",
+            "jp": "チャーハン"
+        },
+        "price": 120,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "饭团",
+            "油",
+            "鸡蛋"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【居民教学】哈里斯<br>【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "大阪烧",
+            "jp": "お好み焼き"
+        },
+        "price": 120,
+        "physical": 50,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "卷心菜",
+            "油",
+            "鸡蛋",
+            "年糕"
+        ],
+        "kitchenware": [
+            "菜刀",
+            "平底锅"
+        ],
+        "how_to_get": "【居民教学】哥兹"
+    },
+    {
+        "name": {
+            "cn": "三明治",
+            "jp": "サンドウィッチ"
+        },
+        "price": 120,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "面包",
+            "黄瓜",
+            "番茄",
+            "水煮蛋"
+        ],
+        "kitchenware": [
+            "菜刀"
+        ],
+        "how_to_get": "【居民教学】爱莲"
+    },
+    {
+        "name": {
+            "cn": "果汁",
+            "jp": "フルーツジュース"
+        },
+        "price": 100,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "草莓",
+            "苹果",
+            "凤梨",
+            "山葡萄的果实"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "水果欧蕾",
+            "jp": "フルーツ・オレ"
+        },
+        "price": 300,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶",
+            "果汁"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【居民教学】巴吉尔<br>【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "蔬菜汁",
+            "jp": "野菜ジュース"
+        },
+        "price": 100,
+        "physical": 20,
+        "fatigue": -20,
+        "ingredients": [
+            "黄瓜",
+            "卷心菜",
+            "胡萝卜",
+            "番茄"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出2种以上）"
+    },
+    {
+        "name": {
+            "cn": "混合果汁",
+            "jp": "ミックスジュース"
+        },
+        "price": 180,
+        "physical": 50,
+        "fatigue": -20,
+        "ingredients": [
+            "果汁",
+            "蔬菜汁"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【居民教学】多特"
+    },
+    {
+        "name": {
+            "cn": "混合欧蕾",
+            "jp": "ミックス・オレ"
+        },
+        "price": 620,
+        "physical": 60,
+        "fatigue": -20,
+        "ingredients": [
+            "牛奶",
+            "果汁"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【灵光一闪】牛奶×5、果汁×5"
+    },
+    {
+        "name": {
+            "cn": "炸薯条",
+            "jp": "フライドポテト"
+        },
+        "price": 150,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "马铃薯",
+            "油"
+        ],
+        "kitchenware": [
+            "菜刀",
+            "平底锅"
+        ],
+        "how_to_get": "获得「装信的瓶子」时习得"
+    },
+    {
+        "name": {
+            "cn": "草莓牛奶",
+            "jp": "いちご牛乳"
+        },
+        "price": 250,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶",
+            "草莓"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【居民教学】卡特"
+    },
+    {
+        "name": {
+            "cn": "番茄酱",
+            "jp": "ケチャップ"
+        },
+        "price": 220,
+        "physical": 1,
+        "fatigue": 0,
+        "ingredients": [
+            "番茄",
+            "洋葱"
+        ],
+        "kitchenware": [
+            "榨汁机",
+            "调味料套装"
+        ],
+        "how_to_get": "获得「谜之石板」时习得"
+    },
+    {
+        "name": {
+            "cn": "爆米花",
+            "jp": "ポップコーン"
+        },
+        "price": 100,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "玉米"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【居民教学】凯"
+    },
+    {
+        "name": {
+            "cn": "烤玉米",
+            "jp": "焼きとうもろこし"
+        },
+        "price": 175,
+        "physical": 7,
+        "fatigue": 0,
+        "ingredients": [
+            "玉米"
+        ],
+        "kitchenware": [
+            "烤箱"
+        ],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出3种以上）"
+    },
+    {
+        "name": {
+            "cn": "凤梨汁",
+            "jp": "パインジュース"
+        },
+        "price": 700,
+        "physical": 5,
+        "fatigue": 0,
+        "ingredients": [
+            "凤梨"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【灵光一闪】凤梨×5"
+    },
+    {
+        "name": {
+            "cn": "甜蜜烤番薯",
+            "jp": "スイートポテト"
+        },
+        "price": 250,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "番薯",
+            "黄油"
+        ],
+        "kitchenware": [
+            "锅子",
+            "烤箱",
+            "调味料套装"
+        ],
+        "how_to_get": "【居民教学】谢夫涅"
+    },
+    {
+        "name": {
+            "cn": "烤番薯",
+            "jp": "焼きいも"
+        },
+        "price": 70,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "番薯"
+        ],
+        "kitchenware": [
+            "烤箱"
+        ],
+        "how_to_get": "【电视节目】超美味时间<br>【灵光一闪】番薯×2"
+    },
+    {
+        "name": {
+            "cn": "玉子烧",
+            "jp": "卵焼き"
+        },
+        "price": 180,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【居民教学】莉莉娅"
+    },
+    {
+        "name": {
+            "cn": "蛋包饭",
+            "jp": "オムライス"
+        },
+        "price": 250,
+        "physical": 60,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "牛奶",
+            "饭团",
+            "油"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】鸡蛋×5、饭团×5"
+    },
+    {
+        "name": {
+            "cn": "水煮蛋",
+            "jp": "ゆで卵"
+        },
+        "price": 100,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】鸡蛋×1"
+    },
+    {
+        "name": {
+            "cn": "布丁",
+            "jp": "プリン"
+        },
+        "price": 200,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "牛奶"
+        ],
+        "kitchenware": [
+            "锅子",
+            "烤箱",
+            "调味料套装"
+        ],
+        "how_to_get": "【居民教学】安娜"
+    },
+    {
+        "name": {
+            "cn": "黄油",
+            "jp": "バター"
+        },
+        "price": 150,
+        "physical": 1,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【灵光一闪】牛奶×5"
+    },
+    {
+        "name": {
+            "cn": "芝士蛋糕",
+            "jp": "チーズケーキ"
+        },
+        "price": 560,
+        "physical": 50,
+        "fatigue": 0,
+        "ingredients": [
+            "芝士",
+            "鸡蛋",
+            "牛奶"
+        ],
+        "kitchenware": [
+            "锅子",
+            "打蛋器",
+            "烤箱"
+        ],
+        "how_to_get": "【居民教学】安娜"
+    },
+    {
+        "name": {
+            "cn": "芝士锅",
+            "jp": "チーズフォンデュ"
+        },
+        "price": 600,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "芝士",
+            "面包",
+            "茄子",
+            "胡萝卜"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【居民教学】达特"
+    },
+    {
+        "name": {
+            "cn": "苹果派",
+            "jp": "アップルパイ"
+        },
+        "price": 500,
+        "physical": 50,
+        "fatigue": 0,
+        "ingredients": [
+            "苹果",
+            "鸡蛋",
+            "黄油",
+            "小麦粉"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "菜刀",
+            "锅子",
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【居民教学】安娜"
+    },
+    {
+        "name": {
+            "cn": "烤苹果",
+            "jp": "焼きりんご"
+        },
+        "price": 200,
+        "physical": 8,
+        "fatigue": 0,
+        "ingredients": [
+            "苹果"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出4种以上）"
+    },
+    {
+        "name": {
+            "cn": "竹笋饭",
+            "jp": "たけのこごはん"
+        },
+        "price": 230,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "竹笋",
+            "饭团"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】饭团×1"
+    },
+    {
+        "name": {
+            "cn": "蘑菇饭",
+            "jp": "きのこごはん"
+        },
+        "price": 250,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "蘑菇",
+            "饭团"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "松茸饭",
+            "jp": "まつたけごはん"
+        },
+        "price": 700,
+        "physical": 60,
+        "fatigue": 0,
+        "ingredients": [
+            "松茸",
+            "饭团"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "寿司",
+            "jp": "お寿司"
+        },
+        "price": 420,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "饭团",
+            "生鱼片"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】饭团×1、小鱼×1、中鱼×1、大鱼×1"
+    },
+    {
+        "name": {
+            "cn": "葡萄面包",
+            "jp": "ぶどうパン"
+        },
+        "price": 200,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "面包",
+            "山葡萄的果实"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【电视节目】超美味时间<br>【灵光一闪】山葡萄的果实×5"
+    },
+    {
+        "name": {
+            "cn": "咖喱面包",
+            "jp": "カレーパン"
+        },
+        "price": 250,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "面包",
+            "咖喱粉",
+            "油"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出5种以上）"
+    },
+    {
+        "name": {
+            "cn": "法式吐司",
+            "jp": "フレンチトースト"
+        },
+        "price": 350,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "面包",
+            "油"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】鸡蛋×10、面包×3"
+    },
+    {
+        "name": {
+            "cn": "生鱼片",
+            "jp": "刺身"
+        },
+        "price": 230,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "小型鱼",
+            "中型鱼",
+            "大型鱼"
+        ],
+        "kitchenware": [
+            "菜刀"
+        ],
+        "how_to_get": "从游戏开始就能获得"
+    },
+    {
+        "name": {
+            "cn": "烤鱼",
+            "jp": "焼き魚"
+        },
+        "price": 230,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "中型鱼"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】中型鱼"
+    },
+    {
+        "name": {
+            "cn": "乌冬面",
+            "jp": "うどん"
+        },
+        "price": 120,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉"
+        ],
+        "kitchenware": [
+            "擀面棍",
+            "锅子",
+            "菜刀"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "咖哩乌冬面",
+            "jp": "カレーうどん"
+        },
+        "price": 200,
+        "physical": 60,
+        "fatigue": 0,
+        "ingredients": [
+            "乌冬面",
+            "咖喱粉"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "天妇罗乌冬面",
+            "jp": "天ぷらうどん"
+        },
+        "price": 420,
+        "physical": 60,
+        "fatigue": 0,
+        "ingredients": [
+            "乌冬面",
+            "天妇罗"
+        ],
+        "kitchenware": [
+            "擀面棍",
+            "锅子",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】乌冬面×3"
+    },
+    {
+        "name": {
+            "cn": "荞麦面",
+            "jp": "ざるそば"
+        },
+        "price": 300,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "荞麦粉"
+        ],
+        "kitchenware": [
+            "擀面棍",
+            "锅子",
+            "菜刀"
+        ],
+        "how_to_get": "从游戏开始就能取得"
+    },
+    {
+        "name": {
+            "cn": "天妇罗荞麦面",
+            "jp": "天ぷらそば"
+        },
+        "price": 600,
+        "physical": 60,
+        "fatigue": 0,
+        "ingredients": [
+            "荞麦面",
+            "天妇罗"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】荞麦粉×3"
+    },
+    {
+        "name": {
+            "cn": "天妇罗",
+            "jp": "天ぷら"
+        },
+        "price": 300,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "小麦粉",
+            "油",
+            "茄子",
+            "番薯",
+            "南瓜"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】鸡蛋×3、小麦粉×3、油×3"
+    },
+    {
+        "name": {
+            "cn": "赏月丸子",
+            "jp": "月見だんご"
+        },
+        "price": 150,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "丸子粉"
+        ],
+        "kitchenware": [
+            "调味料套装"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "曲奇",
+            "jp": "クッキー"
+        },
+        "price": 300,
+        "physical": 15,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "小麦粉",
+            "黄油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【居民教学】安娜"
+    },
+    {
+        "name": {
+            "cn": "巧克力曲奇",
+            "jp": "チョコクッキー"
+        },
+        "price": 500,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "小麦粉",
+            "黄油",
+            "巧克力"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【居民教学】莎夏"
+    },
+    {
+        "name": {
+            "cn": "冰淇淋",
+            "jp": "アイスクリーム"
+        },
+        "price": 300,
+        "physical": 30,
+        "fatigue": -20,
+        "ingredients": [
+            "鸡蛋",
+            "牛奶"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "打蛋器",
+            "锅子"
+        ],
+        "how_to_get": "【居民教学】安娜<br>【居民教学】穆奇"
+    },
+    {
+        "name": {
+            "cn": "蛋糕",
+            "jp": "ケーキ"
+        },
+        "price": 400,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "小麦粉",
+            "黄油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "打蛋器",
+            "烤箱"
+        ],
+        "how_to_get": "【居民教学】安娜<br>【灵光一闪】鸡蛋×10、小麦粉×10、黄油×10"
+    },
+    {
+        "name": {
+            "cn": "松饼",
+            "jp": "ホットケーキ"
+        },
+        "price": 550,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "油",
+            "鸡蛋",
+            "牛奶",
+            "黄油",
+            "蜂蜜"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×5、鸡蛋×5、牛奶×5、黄油×5"
+    },
+    {
+        "name": {
+            "cn": "放松茶",
+            "jp": "リラックスティー"
+        },
+        "price": 1500,
+        "physical": 50,
+        "fatigue": -50,
+        "ingredients": [
+            "放松茶的茶叶"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出6种以上）"
+    },
+    {
+        "name": {
+            "cn": "SUGDW苹果",
+            "jp": "SUGDWりんご"
+        },
+        "price": 50,
+        "physical": 2,
+        "fatigue": 0,
+        "ingredients": [
+            "苹果",
+            "HWSGB苹果",
+            "AEPFE苹果"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】苹果×20"
+    },
+    {
+        "name": {
+            "cn": "HWSGB苹果",
+            "jp": "HMSGBりんご"
+        },
+        "price": 50,
+        "physical": 2,
+        "fatigue": 0,
+        "ingredients": [
+            "苹果",
+            "SUGDW苹果",
+            "AEPFE苹果"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】苹果×20"
+    },
+    {
+        "name": {
+            "cn": "AEPFE苹果",
+            "jp": "APEFEりんご"
+        },
+        "price": 50,
+        "physical": 2,
+        "fatigue": 0,
+        "ingredients": [
+            "苹果",
+            "HWSGB苹果",
+            "SUGDW苹果"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】苹果×20"
+    },
+    {
+        "name": {
+            "cn": "体力药",
+            "jp": "ちからでーる"
+        },
+        "price": 250,
+        "physical": 50,
+        "fatigue": 0,
+        "ingredients": [
+            "蜂蜜",
+            "橙草",
+            "黑草",
+            "红色奇幻朱草"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】蜂蜜×20"
+    },
+    {
+        "name": {
+            "cn": "超强体力药",
+            "jp": "かなりちからでーる"
+        },
+        "price": 500,
+        "physical": 100,
+        "fatigue": 0,
+        "ingredients": [
+            "体力药",
+            "蓝草"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "消除疲劳药",
+            "jp": "つかれとーる"
+        },
+        "price": 500,
+        "physical": 0,
+        "fatigue": -20,
+        "ingredients": [
+            "蜂蜜",
+            "橙草",
+            "白草",
+            "红色奇幻朱草"
+        ],
+        "kitchenware": [
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】蜂蜜×20"
+    },
+    {
+        "name": {
+            "cn": "强力消除疲劳药",
+            "jp": "かなりつかれとーる"
+        },
+        "price": 1000,
+        "physical": 0,
+        "fatigue": -50,
+        "ingredients": [
+            "消除疲劳药",
+            "绿草"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出7种以上）"
+    },
+    {
+        "name": {
+            "cn": "放松茶的茶叶",
+            "jp": "リラックス茶の葉"
+        },
+        "price": 1000,
+        "physical": 2,
+        "fatigue": 0,
+        "ingredients": [
+            "蓝草",
+            "绿草",
+            "红草",
+            "黄草",
+            "橙草",
+            "紫草",
+            "靛草",
+            "杂草"
+        ],
+        "kitchenware": [
+            "菜刀",
+            "平底锅"
+        ],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出8种以上）"
+    },
+    {
+        "name": {
+            "cn": "艾利草",
+            "jp": "エリ草"
+        },
+        "price": 5000,
+        "physical": 100,
+        "fatigue": -50,
+        "ingredients": [
+            "放松茶的茶叶",
+            "超强体力药",
+            "超强消除疲劳药"
+        ],
+        "kitchenware": [
+            "菜刀",
+            "平底锅",
+            "锅子",
+            "烤箱",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】放松茶的茶叶×10"
+    },
+    {
+        "name": {
+            "cn": "春之太阳",
+            "jp": "春の太陽"
+        },
+        "price": 3000,
+        "physical": "-",
+        "fatigue": "-",
+        "ingredients": [
+            "月落草",
+            "粉色猫薄荷",
+            "蓝色奇幻朱草",
+            "红色奇幻朱草",
+            "三色花",
+            "橙色维纳斯"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出9种以上）"
+    },
+    {
+        "name": {
+            "cn": "夏之太阳",
+            "jp": "夏の太陽"
+        },
+        "price": 20000,
+        "physical": "-",
+        "fatigue": "-",
+        "ingredients": [
+            "小型鱼",
+            "中型鱼",
+            "大型鱼",
+            "海贼宝藏",
+            "古代鱼的化石"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【居民教学】札克"
+    },
+    {
+        "name": {
+            "cn": "秋之太阳",
+            "jp": "秋の太陽"
+        },
+        "price": 30000,
+        "physical": "-",
+        "fatigue": "-",
+        "ingredients": [
+            "X型蛋",
+            "X型蛋黄酱",
+            "X型牛奶",
+            "X型芝士",
+            "X型羊毛",
+            "X型毛线团"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【居民教学】露（获取食谱所需要的料理需要做出全部10种）"
+    },
+    {
+        "name": {
+            "cn": "冬之太阳",
+            "jp": "冬の太陽"
+        },
+        "price": 100000,
+        "physical": "-",
+        "fatigue": "-",
+        "ingredients": [
+            "月亮石",
+            "沙漠玫瑰石",
+            "粉红钻石",
+            "亚历山大石",
+            "贤者之石",
+            "钻石",
+            "祖母绿"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【居民教学】塞巴拉"
+    },
+    {
+        "name": {
+            "cn": "马铃薯泥",
+            "jp": "マッシュポテト"
+        },
+        "price": 300,
+        "physical": 5,
+        "fatigue": 0,
+        "ingredients": [
+            "马铃薯",
+            "黄油",
+            "牛奶",
+            "蛋黄酱"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子",
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【居民教学】玛娜"
+    },
+    {
+        "name": {
+            "cn": "年轮蛋糕",
+            "jp": "バウムクーヘン"
+        },
+        "price": 400,
+        "physical": 25,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "牛奶",
+            "小麦粉",
+            "黄油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "烤箱",
+            "打蛋器"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "意式水煮鱼",
+            "jp": "アクアパッツァ"
+        },
+        "price": 500,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "中型鱼",
+            "洋葱",
+            "卷心菜",
+            "番茄",
+            "油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】中型鱼×5、油×10"
+    },
+    {
+        "name": {
+            "cn": "西班牙香蒜料理",
+            "jp": "アヒージョ"
+        },
+        "price": 500,
+        "physical": 15,
+        "fatigue": 0,
+        "ingredients": [
+            "油",
+            "蘑菇",
+            "青椒",
+            "洋葱",
+            "马铃薯"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】油×5、蘑菇×5"
+    },
+    {
+        "name": {
+            "cn": "吉拿棒",
+            "jp": "チュロス"
+        },
+        "price": 200,
+        "physical": 5,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "鸡蛋"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【电视节目】超美味时间"
+    },
+    {
+        "name": {
+            "cn": "西班牙海鲜饭",
+            "jp": "パエリア"
+        },
+        "price": 400,
+        "physical": 25,
+        "fatigue": 0,
+        "ingredients": [
+            "洋葱",
+            "番茄",
+            "油",
+            "饭团"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】饭团×10、洋葱×5、番茄×5"
+    },
+    {
+        "name": {
+            "cn": "海鲜汤",
+            "jp": "フカヒレスープ"
+        },
+        "price": 400,
+        "physical": 10,
+        "fatigue": 0,
+        "ingredients": [
+            "大型鱼",
+            "胡萝卜",
+            "蘑菇",
+            "竹笋"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】大型鱼×5"
+    },
+    {
+        "name": {
+            "cn": "杏仁豆腐",
+            "jp": "杏仁豆腐"
+        },
+        "price": 100,
+        "physical": 2,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】牛奶×30"
+    },
+    {
+        "name": {
+            "cn": "八宝菜",
+            "jp": "八宝菜"
+        },
+        "price": 400,
+        "physical": 15,
+        "fatigue": 0,
+        "ingredients": [
+            "洋葱",
+            "胡萝卜",
+            "蘑菇",
+            "油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】洋葱×3、胡萝卜×3、蘑菇×3、油×3"
+    },
+    {
+        "name": {
+            "cn": "青椒肉丝",
+            "jp": "チンジャオロース"
+        },
+        "price": 200,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "竹笋",
+            "青椒",
+            "油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】竹笋×5、青椒×5、油×5"
+    },
+    {
+        "name": {
+            "cn": "海鲜盖饭",
+            "jp": "海鮮丼"
+        },
+        "price": 300,
+        "physical": 40,
+        "fatigue": 0,
+        "ingredients": [
+            "中型鱼",
+            "大型鱼",
+            "饭团"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】中型鱼×10、大型鱼×10"
+    },
+    {
+        "name": {
+            "cn": "关东煮",
+            "jp": "おでん"
+        },
+        "price": 400,
+        "physical": 12,
+        "fatigue": 0,
+        "ingredients": [
+            "芜菁",
+            "马铃薯",
+            "年糕",
+            "鸡蛋"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子"
+        ],
+        "how_to_get": "【灵光一闪】芜菁×20、马铃薯×20、鸡蛋×20"
+    },
+    {
+        "name": {
+            "cn": "那不勒斯意面",
+            "jp": "ナポリタン"
+        },
+        "price": 600,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "洋葱",
+            "青椒",
+            "蘑菇",
+            "油",
+            "番茄"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅",
+            "菜刀",
+            "擀面棍"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×10、洋葱×10、青椒×10"
+    },
+    {
+        "name": {
+            "cn": "班尼迪克蛋",
+            "jp": "エッグベネディクト"
+        },
+        "price": 400,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "鸡蛋",
+            "蛋黄酱",
+            "黄油"
+        ],
+        "kitchenware": [
+            "烤箱",
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】鸡蛋×30、蛋黄酱×30"
+    },
+    {
+        "name": {
+            "cn": "南瓜浓汤",
+            "jp": "かぼちゃのポタージュ"
+        },
+        "price": 500,
+        "physical": 3,
+        "fatigue": 0,
+        "ingredients": [
+            "南瓜",
+            "洋葱",
+            "牛奶",
+            "黄油",
+            "小麦粉"
+        ],
+        "kitchenware": [
+            "锅子",
+            "搅拌器",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】南瓜×3、牛奶×10"
+    },
+    {
+        "name": {
+            "cn": "蔬菜浓汤",
+            "jp": "ポトフ"
+        },
+        "price": 500,
+        "physical": 10,
+        "fatigue": 0,
+        "ingredients": [
+            "马铃薯",
+            "洋葱",
+            "胡萝卜",
+            "芜菁",
+            "卷心菜"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "锅子",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】胡萝卜×5、芜菁×10"
+    },
+    {
+        "name": {
+            "cn": "冷盘",
+            "jp": "カルパッチョ"
+        },
+        "price": 300,
+        "physical": 35,
+        "fatigue": 0,
+        "ingredients": [
+            "中型鱼",
+            "蘑菇",
+            "番茄"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】中型鱼×30"
+    },
+    {
+        "name": {
+            "cn": "咸派",
+            "jp": "キッシュ"
+        },
+        "price": 500,
+        "physical": 4,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶",
+            "鸡蛋",
+            "蘑菇",
+            "洋葱",
+            "芝士"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】牛奶×30、鸡蛋×30"
+    },
+    {
+        "name": {
+            "cn": "芝士舒芙蕾",
+            "jp": "チーズスフレ"
+        },
+        "price": 400,
+        "physical": 6,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶",
+            "鸡蛋",
+            "芝士",
+            "小麦粉"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "烤箱",
+            "擀面棍"
+        ],
+        "how_to_get": "【灵光一闪】芝士×10"
+    },
+    {
+        "name": {
+            "cn": "意大利蔬菜锅",
+            "jp": "バーニャカウダ"
+        },
+        "price": 600,
+        "physical": 5,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶",
+            "蛋黄酱",
+            "油",
+            "芜菁",
+            "蘑菇",
+            "青椒"
+        ],
+        "kitchenware": [
+            "榨汁机"
+        ],
+        "how_to_get": "【灵光一闪】蛋黄酱×5"
+    },
+    {
+        "name": {
+            "cn": "培根蛋面",
+            "jp": "カルボナーラ"
+        },
+        "price": 500,
+        "physical": 15,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "洋葱",
+            "油",
+            "牛奶",
+            "芝士"
+        ],
+        "kitchenware": [
+            "锅子",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×3、牛奶×3、芝士×3"
+    },
+    {
+        "name": {
+            "cn": "玛格丽特披萨",
+            "jp": "マルゲリータ"
+        },
+        "price": 400,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "黄油",
+            "番茄",
+            "芝士"
+        ],
+        "kitchenware": [
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×15、芝士×15"
+    },
+    {
+        "name": {
+            "cn": "芝士炖饭",
+            "jp": "チーズリゾット"
+        },
+        "price": 600,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "饭团",
+            "洋葱",
+            "胡萝卜",
+            "芝士",
+            "牛奶",
+            "油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】饭团×20、芝士×20"
+    },
+    {
+        "name": {
+            "cn": "西式酥炸鱼",
+            "jp": "魚のフリッター"
+        },
+        "price": 400,
+        "physical": 12,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "小型鱼",
+            "鸡蛋",
+            "油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】小型鱼×10"
+    },
+    {
+        "name": {
+            "cn": "印尼炒饭",
+            "jp": "ナシゴレン"
+        },
+        "price": 400,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "洋葱",
+            "青椒",
+            "饭团",
+            "番茄酱"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】洋葱×8、青椒×8、饭团×8"
+    },
+    {
+        "name": {
+            "cn": "玛德莲蛋糕",
+            "jp": "マドレーヌ"
+        },
+        "price": 400,
+        "physical": 8,
+        "fatigue": 0,
+        "ingredients": [
+            "鸡蛋",
+            "小麦粉",
+            "蜂蜜",
+            "黄油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "打蛋器",
+            "烤箱"
+        ],
+        "how_to_get": "【灵光一闪】鸡蛋×5、小麦粉×5"
+    },
+    {
+        "name": {
+            "cn": "草莓蛋糕",
+            "jp": "いちごのケーキ"
+        },
+        "price": 400,
+        "physical": 45,
+        "fatigue": 0,
+        "ingredients": [
+            "草莓",
+            "鸡蛋",
+            "牛奶",
+            "黄油"
+        ],
+        "kitchenware": [
+            "锅子",
+            "打蛋器",
+            "烤箱",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】草莓×5、鸡蛋×14、牛奶×14、黄油×14"
+    },
+    {
+        "name": {
+            "cn": "石锅拌饭",
+            "jp": "ビビンバ"
+        },
+        "price": 400,
+        "physical": 25,
+        "fatigue": 0,
+        "ingredients": [
+            "饭团",
+            "温泉蛋",
+            "胡萝卜",
+            "油"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】饭团×5、鸡蛋×10"
+    },
+    {
+        "name": {
+            "cn": "蔬菜披萨",
+            "jp": "ベジタブルピザ"
+        },
+        "price": 700,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "番茄",
+            "番薯",
+            "马铃薯",
+            "蘑菇",
+            "鸡蛋",
+            "芝士"
+        ],
+        "kitchenware": [
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×15、番茄×10、芝士×20、蘑菇×5"
+    },
+    {
+        "name": {
+            "cn": "焙烤蘑菇",
+            "jp": "きのこグラタン"
+        },
+        "price": 700,
+        "physical": 32,
+        "fatigue": 0,
+        "ingredients": [
+            "牛奶",
+            "芝士",
+            "黄油",
+            "蘑菇",
+            "松茸"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "烤箱"
+        ],
+        "how_to_get": "【灵光一闪】牛奶×12、芝士×12、蘑菇×5"
+    },
+    {
+        "name": {
+            "cn": "拉面",
+            "jp": "ラーメン"
+        },
+        "price": 400,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "鸡蛋",
+            "竹笋",
+            "小型鱼"
+        ],
+        "kitchenware": [
+            "锅子",
+            "擀面棍",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×20、鸡蛋×25、小型鱼×20"
+    },
+    {
+        "name": {
+            "cn": "大福",
+            "jp": "大福"
+        },
+        "price": 200,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "年糕",
+            "红豆"
+        ],
+        "kitchenware": [
+            "锅子",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】年糕×2"
+    },
+    {
+        "name": {
+            "cn": "铜锣烧",
+            "jp": "どら焼き"
+        },
+        "price": 500,
+        "physical": 15,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "红豆",
+            "鸡蛋",
+            "牛奶",
+            "蜂蜜"
+        ],
+        "kitchenware": [
+            "锅子",
+            "调味料套装",
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】红豆×3"
+    },
+    {
+        "name": {
+            "cn": "蜜渍橙片巧克力",
+            "jp": "オランジェット"
+        },
+        "price": 200,
+        "physical": 10,
+        "fatigue": 0,
+        "ingredients": [
+            "巧克力",
+            "橘子"
+        ],
+        "kitchenware": [
+            "锅子",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】巧克力×5"
+    },
+    {
+        "name": {
+            "cn": "蜜渍柑橘皮",
+            "jp": "みかんピール"
+        },
+        "price": 100,
+        "physical": 8,
+        "fatigue": 0,
+        "ingredients": [
+            "橘子"
+        ],
+        "kitchenware": [
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】橘子×3"
+    },
+    {
+        "name": {
+            "cn": "橘子面包",
+            "jp": "みかんパン"
+        },
+        "price": 200,
+        "physical": 27,
+        "fatigue": 0,
+        "ingredients": [
+            "面包",
+            "橘子"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】面包×5、橘子×5"
+    },
+    {
+        "name": {
+            "cn": "红豆年糕汤",
+            "jp": "ぜんざい"
+        },
+        "price": 200,
+        "physical": 30,
+        "fatigue": 0,
+        "ingredients": [
+            "年糕",
+            "红豆"
+        ],
+        "kitchenware": [
+            "锅子",
+            "调味料套装"
+        ],
+        "how_to_get": "【电视节目】新年特别节目厨艺EX<br>【灵光一闪】年糕×5、红豆×20"
+    },
+    {
+        "name": {
+            "cn": "栗子饭",
+            "jp": "栗ごはん"
+        },
+        "price": 200,
+        "physical": 20,
+        "fatigue": 0,
+        "ingredients": [
+            "饭团",
+            "栗子"
+        ],
+        "kitchenware": [],
+        "how_to_get": "【灵光一闪】饭团×30"
+    },
+    {
+        "name": {
+            "cn": "烤栗子",
+            "jp": "焼き栗"
+        },
+        "price": 100,
+        "physical": 15,
+        "fatigue": 0,
+        "ingredients": [
+            "栗子"
+        ],
+        "kitchenware": [
+            "平底锅"
+        ],
+        "how_to_get": "【灵光一闪】栗子×3"
+    },
+    {
+        "name": {
+            "cn": "蒙布朗蛋糕",
+            "jp": "モンブラン"
+        },
+        "price": 400,
+        "physical": 9,
+        "fatigue": 0,
+        "ingredients": [
+            "小麦粉",
+            "牛奶",
+            "鸡蛋",
+            "栗子"
+        ],
+        "kitchenware": [
+            "锅子",
+            "打蛋器",
+            "烤箱",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】牛奶×5、鸡蛋×5、栗子×5"
+    },
+    {
+        "name": {
+            "cn": "超辣青椒炒肉丝",
+            "jp": "激辛チンジャオロース"
+        },
+        "price": 400,
+        "physical": 20,
+        "fatigue": -20,
+        "ingredients": [
+            "竹笋",
+            "青椒",
+            "油",
+            "辣椒"
+        ],
+        "kitchenware": [
+            "调味料套装",
+            "平底锅",
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】竹笋×10、青椒×10、油×10"
+    },
+    {
+        "name": {
+            "cn": "超辣拉面",
+            "jp": "激辛ラーメン"
+        },
+        "price": 500,
+        "physical": 20,
+        "fatigue": -20,
+        "ingredients": [
+            "小麦粉",
+            "鸡蛋",
+            "竹笋",
+            "小型鱼",
+            "辣椒"
+        ],
+        "kitchenware": [
+            "锅子",
+            "擀面棍",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×5、鸡蛋×5、竹笋×5、小型鱼×5"
+    },
+    {
+        "name": {
+            "cn": "超辣炒蔬菜",
+            "jp": "激辛野菜いため"
+        },
+        "price": 300,
+        "physical": 40,
+        "fatigue": -20,
+        "ingredients": [
+            "油",
+            "卷心菜",
+            "辣椒"
+        ],
+        "kitchenware": [
+            "菜刀",
+            "平底锅",
+            "调味料套装"
+        ],
+        "how_to_get": "【灵光一闪】油×10、卷心菜×10"
+    },
+    {
+        "name": {
+            "cn": "超辣三明治",
+            "jp": "激辛サンドウィッチ"
+        },
+        "price": 500,
+        "physical": 40,
+        "fatigue": -20,
+        "ingredients": [
+            "面包",
+            "黄瓜",
+            "番茄",
+            "水煮蛋",
+            "辣椒"
+        ],
+        "kitchenware": [
+            "菜刀"
+        ],
+        "how_to_get": "【灵光一闪】面包×5、黄瓜×5、番茄×5、水煮蛋×5"
+    },
+    {
+        "name": {
+            "cn": "超辣玛格丽特披萨",
+            "jp": "激辛マルゲリータ"
+        },
+        "price": 500,
+        "physical": 30,
+        "fatigue": -20,
+        "ingredients": [
+            "小麦粉",
+            "黄油",
+            "番茄",
+            "芝士",
+            "辣椒"
+        ],
+        "kitchenware": [
+            "擀面棍",
+            "烤箱"
+        ],
+        "how_to_get": "【灵光一闪】小麦粉×20、芝士×20"
+    }
+]

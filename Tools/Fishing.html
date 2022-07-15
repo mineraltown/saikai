@@ -1,594 +1,202 @@
+<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" href="/saikai/saikai.css">
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
     <title>能钓到的东西</title>
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
+    <style>
+        @media only screen and (max-width: 800px) {
+
+            th,
+            td {
+                height: 1.5em;
+                line-height: 1.5em;
+                padding: 3px;
+                text-align: center;
+            }
+        }
+
+        ul {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        li {
+            width: 4em;
+            margin-left: 1em;
+            cursor: default;
+        }
+
+        .title {
+            font-weight: bold;
+            width: 4em;
+            text-align: center;
+            border: solid 2px #666;
+            background-color: #ccc;
+            padding: 5px;
+        }
+
+        .not {
+            color: gray;
+        }
+    </style>
 </head>
+
 <body>
-<h1 id="能钓到的东西">能钓到的东西</h1>
-<h2 id="地点">地点</h2>
-<ul>
-    <li>海边 → 海</li>
-    <li>牧场或小镇南部 → 下游</li>
-    <li>女神之泉 →泉 </li>
-    <li>池 → 池</li>
-    <li>圣母山脉的湖 → 湖</li>
-    <li>湖边上的桥下面的水流 → 上游</li>
-    <li>温泉 → 温泉</li>
-</ul>
-<h2 id="能钓到的东西">能钓到的东西</h2>
-<table cellspacing="0" border="0" cellpadding="5" rules="all">
-<thead>
-<th>名称</th>
-<th>体长</th>
-<th>大小</th>
-<th>钓竿蓄力</th>
-<th>季节</th>
-<th>地点</th>
-<th>其他</th>
-</thead>
-<tbody>
-<tr>
-<td>大泷六线鱼</td>
-<td>20～40</td>
-<td>小鱼、中鱼</td>
-<td>LV3</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>夏秋冬难钓</td>
-</tr>
-<tr>
-<td>竹荚鱼</td>
-<td>20～40</td>
-<td>小鱼、中鱼</td>
-<td>LV3</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>冬难钓</td>
-</tr>
-<tr>
-<td>拉氏大吻鱥</td>
-<td>10～15</td>
-<td>小鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>海、上游、池</td>
-<td>无</td>
-</tr>
-<tr>
-<td>马苏钩吻鲑</td>
-<td>10～25</td>
-<td>小鱼、中鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>上游、湖、池</td>
-<td>春秋难钓</td>
-</tr>
-<tr>
-<td>黄鸡鱼</td>
-<td>20～40</td>
-<td>小鱼、中鱼</td>
-<td>LV3</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>秋冬难钓</td>
-</tr>
-<tr>
-<td>沙丁鱼</td>
-<td>10～25</td>
-<td>小鱼、中鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>无</td>
-</tr>
-<tr>
-<td>鳟鱼</td>
-<td>15～50</td>
-<td>小鱼、中鱼、大鱼</td>
-<td>LV4</td>
-<td>春夏秋</td>
-<td>上游、池</td>
-<td>无</td>
-</tr>
-<tr>
-<td>珠星三块鱼</td>
-<td>15～35</td>
-<td>小鱼、中鱼</td>
-<td>LV2</td>
-<td>春夏秋冬</td>
-<td>泉、池、下游</td>
-<td>无</td>
-</tr>
-<tr>
-<td>鳗鱼</td>
-<td>50～100</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>下游</td>
-<td>春冬难钓</td>
-</tr>
-<tr>
-<td>日本溪哥</td>
-<td>7～15</td>
-<td>小鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>下游</td>
-<td>无</td>
-</tr>
-<tr>
-<td>鲣鱼</td>
-<td>70～90</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋</td>
-<td>海</td>
-<td>春天难钓</td>
-</tr>
-<tr>
-<td>鲽鱼</td>
-<td>40～60</td>
-<td>中鱼、大鱼</td>
-<td>LV4</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>春夏难钓</td>
-</tr>
-<tr>
-<td>剥皮鱼</td>
-<td>20～30</td>
-<td>小鱼、中鱼</td>
-<td>LV2</td>
-<td>春秋冬</td>
-<td>海</td>
-<td>春秋难钓</td>
-</tr>
-<tr>
-<td>鲫鱼</td>
-<td>7～20</td>
-<td>小鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>泉、下游</td>
-<td>冬难钓</td>
-</tr>
-<tr>
-<td>兰氏鲫</td>
-<td>10～30</td>
-<td>小鱼、中鱼</td>
-<td>LV2</td>
-<td>春夏秋冬</td>
-<td>泉、下游</td>
-<td>冬难钓</td>
-</tr>
-<tr>
-<td>褐带石斑鱼</td>
-<td>50～70</td>
-<td>大鱼</td>
-<td>LV4</td>
-<td>春秋冬</td>
-<td>海</td>
-<td>春难钓</td>
-</tr>
-<tr>
-<td>大头鱼</td>
-<td>50～100</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>下游</td>
-<td></td>
-</tr>
-<tr>
-<td>鲑鱼</td>
-<td>30～70</td>
-<td>中鱼、大鱼</td>
-<td>LV4</td>
-<td>夏秋</td>
-<td>下游</td>
-<td>夏</td>
-</tr>
-<tr>
-<td>青花鱼</td>
-<td>30～50</td>
-<td>中鱼、大鱼</td>
-<td>LV4</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>春夏难钓</td>
-</tr>
-<tr>
-<td>水针鱼</td>
-<td>20～40</td>
-<td>小鱼、中鱼</td>
-<td>LV3</td>
-<td>春夏秋</td>
-<td>海</td>
-<td>夏秋难钓</td>
-</tr>
-<tr>
-<td>马蛟鱼</td>
-<td>80～100</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏冬</td>
-<td>海</td>
-<td>夏天难钓</td>
-</tr>
-<tr>
-<td>秋刀鱼</td>
-<td>20～40</td>
-<td>小鱼、中鱼</td>
-<td>LV3</td>
-<td>秋</td>
-<td>海</td>
-<td>无</td>
-</tr>
-<tr>
-<td>鬼头刀</td>
-<td>100～180</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋</td>
-<td>海</td>
-<td>秋难钓</td>
-</tr>
-<tr>
-<td>鲷鱼</td>
-<td>80～100</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>冬难钓</td>
-</tr>
-<tr>
-<td>鳕鱼</td>
-<td>30～50</td>
-<td>中鱼、大鱼</td>
-<td>LV4</td>
-<td>春冬</td>
-<td>海</td>
-<td>春难钓</td>
-</tr>
-<tr>
-<td>泥鳅</td>
-<td>5～12</td>
-<td>小鱼</td>
-<td>LV1</td>
-<td>春夏秋</td>
-<td>池、下游</td>
-<td>夏难钓</td>
-</tr>
-<tr>
-<td>沙塘鳢</td>
-<td>15～25</td>
-<td>小鱼、中鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>池、下游</td>
-<td>秋难钓</td>
-</tr>
-<tr>
-<td>虹鳟</td>
-<td>50～100</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>上游、湖</td>
-<td>无</td>
-</tr>
-<tr>
-<td>鲱鱼</td>
-<td>15～30</td>
-<td>小鱼、中鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>秋难钓</td>
-</tr>
-<tr>
-<td>鲢鱼</td>
-<td>50～100</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>下游</td>
-<td>无</td>
-</tr>
-<tr>
-<td>日本叉牙鱼</td>
-<td>10～20</td>
-<td>小鱼</td>
-<td>LV1</td>
-<td>春秋冬</td>
-<td>海</td>
-<td>春秋难钓</td>
-</tr>
-<tr>
-<td>比目鱼</td>
-<td>60～80</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>无</td>
-</tr>
-<tr>
-<td>河豚</td>
-<td>40～50</td>
-<td>中鱼、大鱼</td>
-<td>LV4</td>
-<td>春冬</td>
-<td>海</td>
-<td>春难钓</td>
-</tr>
-<tr>
-<td>黑鲈鱼</td>
-<td>30～50</td>
-<td>中鱼、大鱼</td>
-<td>LV4</td>
-<td>春夏秋冬</td>
-<td>上游、泉、池、湖、下游</td>
-<td>冬难钓</td>
-</tr>
-<tr>
-<td>鰤鱼</td>
-<td>80～100</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春冬</td>
-<td>海</td>
-<td>春难钓</td>
-</tr>
-<tr>
-<td>蓝腮太阳鱼</td>
-<td>15～25</td>
-<td>小鱼、中鱼</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>上游、泉、池、湖、下游</td>
-<td>冬难钓</td>
-</tr>
-<tr>
-<td>日本白鲫</td>
-<td>25～50</td>
-<td>中鱼、大鱼</td>
-<td>LV4</td>
-<td>春夏秋冬</td>
-<td>泉、湖</td>
-<td>无</td>
-</tr>
-<tr>
-<td>远东多线鱼</td>
-<td>20～40</td>
-<td>小鱼、中鱼</td>
-<td>LV3</td>
-<td>春秋冬</td>
-<td>海</td>
-<td>秋冬难钓</td>
-</tr>
-<tr>
-<td>黑鲔鱼</td>
-<td>150～250</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>无</td>
-</tr>
-<tr>
-<td>曼波鱼</td>
-<td>150～250</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>春夏秋</td>
-<td>海</td>
-<td>秋难钓</td>
-</tr>
-<tr>
-<td>狮子鱼</td>
-<td>20～30</td>
-<td>小鱼、中鱼</td>
-<td>LV2</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>无</td>
-</tr>
-<tr>
-<td>无备平鮋</td>
-<td>20～30</td>
-<td>小鱼、中鱼</td>
-<td>LV2</td>
-<td>春夏秋</td>
-<td>海</td>
-<td>夏秋难钓</td>
-</tr>
-<tr>
-<td>山女鳟</td>
-<td>20～30</td>
-<td>小鱼、中鱼</td>
-<td>LV2</td>
-<td>春夏秋冬</td>
-<td>上游</td>
-<td>夏冬难钓</td>
-</tr>
-<tr>
-<td>雷鱼</td>
-<td>40～80</td>
-<td>中鱼、大鱼</td>
-<td>LV5</td>
-<td>春夏秋</td>
-<td>泉、池、下游</td>
-<td>春难钓</td>
-</tr>
-<tr>
-<td>西太公鱼</td>
-<td>10～15</td>
-<td>小鱼</td>
-<td>LV1</td>
-<td>春秋冬</td>
-<td>泉、池、下游</td>
-<td>春秋难钓</td>
-</tr>
-<tr>
-<td>白带鱼</td>
-<td>100～200</td>
-<td>中鱼、大鱼</td>
-<td>LV5</td>
-<td>夏秋</td>
-<td>海</td>
-<td>无</td>
-</tr>
-<tr>
-<td>香鱼</td>
-<td>10～30</td>
-<td>中鱼、大鱼</td>
-<td>LV3</td>
-<td>夏秋</td>
-<td>上游、下游</td>
-<td>秋难钓</td>
-</tr>
-<tr>
-<td>沙鮻</td>
-<td>20～30</td>
-<td>小鱼、中鱼</td>
-<td>LV3</td>
-<td>春夏</td>
-<td>海、下游</td>
-<td>无</td>
-</tr>
-<tr>
-<td>狼牙鳝</td>
-<td>100～150</td>
-<td>大鱼</td>
-<td>LV5</td>
-<td>夏秋</td>
-<td>海</td>
-<td>无</td>
-</tr>
-<tr>
-<td>鮟鱇鱼（鱼王）</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>春冬</td>
-<td>海</td>
-<td>PM10:00～AM8:00</td>
-</tr>
-<tr>
-<td>乌贼（鱼王）</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>春冬</td>
-<td>海</td>
-<td>PM9:00～AM12:00</td>
-</tr>
-<tr>
-<td>伊富鱼（鱼王）</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>春夏秋</td>
-<td>下游</td>
-<td>「生鱼片」「烤鱼」「寿司」<br>三个菜谱获得后出现</td>
-</tr>
-<tr>
-<td>温泉鲇鱼（鱼王）</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>冬</td>
-<td>温泉</td>
-<td>无</td>
-</tr>
-<tr>
-<td>鲤鱼（鱼王）</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>春夏秋</td>
-<td>湖</td>
-<td>鱼合计出货200条以上后出现</td>
-</tr>
-<tr>
-<td>腔棘鱼（鱼王）</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>春夏秋冬</td>
-<td>地底湖</td>
-<td>钓上5条以上的鱼王后出现</td>
-</tr>
-<tr>
-<td>巨骨舌鱼（鱼王）</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>夏</td>
-<td>池</td>
-<td>包含鱼王钓上50种以上的鱼以后出现</td>
-</tr>
-<tr>
-<td>海贼宝藏</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>出货金额 1000G</td>
-</tr>
-<tr>
-<td>古代鱼化石</td>
-<td>–</td>
-<td>–</td>
-<td>LV6</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>出货金额 5000G</td>
-</tr>
-<tr>
-<td>装有信的瓶子</td>
-<td>–</td>
-<td>–</td>
-<td>LV5</td>
-<td>春夏秋冬</td>
-<td>海</td>
-<td>出货金额 6000G</td>
-</tr>
-<tr>
-<td>空罐子</td>
-<td>–</td>
-<td>–</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>海、上游、泉、湖、下游、地底湖</td>
-<td>出货金额 1G</td>
-</tr>
-<tr>
-<td>鱼骨头</td>
-<td>–</td>
-<td>–</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>海、上游、泉、湖、下游、地底湖</td>
-<td>出货金额 1G</td>
-</tr>
-<tr>
-<td>长靴</td>
-<td>–</td>
-<td>–</td>
-<td>LV1</td>
-<td>春夏秋冬</td>
-<td>海、上游、泉、湖、下游、地底湖</td>
-<td>出货金额 1G</td>
-</tr>
-</tbody>
-</table>
+    <div id="fish" v-cloak>
+        <h1>能钓到的东西</h1>
+        <div class="lang_flex" @click="switch_langusge">
+            <img src="/icon/translate.svg">
+            <div class="lang" v-if="language == 'cn'">中文</div>
+            <div class="lang" v-if="language == 'jp'">日文</div>
+        </div>
+        <div class="gamepad">
+            <div class="title">季节</div>
+            <ul class="link">
+                <li :class="season=='all'? '' : 'not'" @click="this.season = 'all';screening();">全部</li>
+                <li :class="season!=i[0] ? 'not' : ''" @click="this.season = i[0];screening();"
+                    v-for="i in season_list">
+                    {{ i[1] }}</li>
+            </ul>
+        </div>
+        <div class="gamepad">
+            <div class="title">场所</div>
+            <ul class="link">
+                <li :class="ground=='全部'? '' : 'not'" @click="this.ground = '全部';screening();">全部</li>
+                <li :class="ground!=i ? 'not' : ''" @click="this.ground = i;screening();" v-for="i in ground_list">
+                    {{ i }}
+                </li>
+            </ul>
+        </div>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">名称</th>
+                    <th rowspan="2">蓄力</th>
+                    <th colspan="4">季节</th>
+                    <th rowspan="2">地点</th>
+                    <th rowspan="2">大小</th>
+                    <th colspan="2">体长</th>
+                    <th rowspan="2">其他</th>
+                </tr>
+                <tr>
+                    <th>春</th>
+                    <th>夏</th>
+                    <th>秋</th>
+                    <th>冬</th>
+                    <th>最小</th>
+                    <th>最大</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template v-for="(item,index) in list">
+                    <tr>
+                        <td>{{ item['name'][language] }}</td>
+                        <td>{{ item['level'] }}</td>
+
+                        <template v-for="i in season_list">
+                            <template v-if="item['season'][i[0]]">
+                                <td v-if="check(item['low_season'],i[1])">&#11096;</td>
+                                <td v-else>&#8420;</td>
+                            </template>
+                            <td v-else>&#10005;</td>
+                        </template>
+                        <td>{{ item['ground'] }}</td>
+                        <td>{{ item['size']['range'] }}</td>
+                        <td>{{ item['size']['min'] }}</td>
+                        <td>{{ item['size']['max'] }}</td>
+                        <td style="max-width: 10em;">{{ item['other'] }}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+        <p class="note">
+            <span style="padding: 0 0.5em 0 2em;">&#11096;</span>：高概率钓到
+            <span style="padding: 0 0.5em 0 2em;">&#8420;</span>：低概率钓到
+            <span style="padding: 0 0.5em 0 2em;">&#10005;</span>：无法钓到
+        </p>
+    </div>
 </body>
+<script>
+    const App = {
+        data() {
+            return {
+                language: "cn",
+                season: "all",
+                season_list: [
+                    ["spring", "春"],
+                    ["summer", "夏"],
+                    ["autumn", "秋"],
+                    ["winter", "冬"]
+                ],
+                ground: "全部",
+                ground_list: ["海", "湖", "泉", "上游", "下游", "池", "温泉", "地底湖"],
+                list: "",
+                read_only: ""
+            }
+        },
+        created() {
+            axios.get('Fish.json')
+                .then((response) => {
+                    this.list = response.data
+                    this.read_only = response.data
+                })
+        },
+        methods: {
+            switch_langusge() {
+                if (this.language == 'cn') {
+                    this.language = 'jp'
+                } else {
+                    this.language = 'cn'
+                }
+            },
+            check(e, o) {
+                return (e.indexOf(o) == -1)
+            },
+            screening() {
+                let new_data = new Array()
+                if (this.season != "all") {
+                    for (let i in this.read_only) {
+                        if (this.read_only[i]['season'][this.season]) {
+                            new_data.push(this.read_only[i])
+                        }
+                    }
+                } else {
+                    new_data = this.read_only
+                }
+                if (this.ground != "全部") {
+                    let new_data_2 = new Array()
+                    for (let i in new_data) {
+                        if (new_data[i]['ground'].indexOf(this.ground) != -1) {
+                            if (this.ground == "泉" || this.ground == "湖") {
+                                if (new_data[i]['ground'] != "温泉" && new_data[i]['ground'] != "地底湖") {
+                                    new_data_2.push(new_data[i])
+                                }
+                            } else {
+                                new_data_2.push(new_data[i])
+                            }
+                        }
+                    }
+                    this.list = new_data_2
+                } else {
+                    this.list = new_data
+                }
+
+            }
+        }
+    }
+    const app = Vue.createApp(App)
+    const vm = app.mount("#fish")
+</script>
+
 </html>

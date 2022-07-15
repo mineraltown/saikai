@@ -1,0 +1,217 @@
+[{
+        "重聚矿石镇": [{
+                "name": "游戏概要",
+                "href": "Knowledge/Summary.html"
+            },
+            {
+                "name": "基础知识",
+                "href": "Knowledge/Basic.html"
+            },
+            {
+                "name": "年度日历",
+                "href": "Event/calendar.html"
+            },
+            {
+                "name": "牧场生活指南",
+                "href": "Knowledge/Guide.html"
+            },
+            {
+                "name": "居民喜好速查",
+                "href": "Tools/Quick_reference.html"
+            }
+        ],
+        "牧场生活": [{
+                "name": "牧场",
+                "href": "Life/Pasture.html"
+            },
+            {
+                "name": "自宅",
+                "href": "Life/Home.html"
+            },
+            {
+                "name": "扩建",
+                "href": "Life/Expansion.html"
+            },
+            {
+                "name": "农作",
+                "href": "Life/Farm.html"
+            },
+            {
+                "name": "动物",
+                "href": "Life/Breeding.html"
+            },
+            {
+                "name": "宠物",
+                "href": "Life/Pet.html"
+            },
+            {
+                "name": "采矿",
+                "href": "Life/Mining.html"
+            },
+            {
+                "name": "钓鱼",
+                "href": "Life/Fishing.html"
+            },
+            {
+                "name": "道具改造",
+                "href": "Life/Level_up.html"
+            }
+        ],
+        "村庄居民": [{
+                "name": "地图",
+                "href": "Life/Map.html"
+            },
+            {
+                "name": "别墅",
+                "href": "Life/Villa.html"
+            },
+            {
+                "name": "商店",
+                "href": "Life/Store.html"
+            },
+
+            {
+                "name": "居民交流",
+                "href": "Life/Communicate.html"
+            },
+            {
+                "name": "恋爱结婚",
+                "href": "Life/Love.html"
+            },
+            {
+                "name": "村民介绍",
+                "href": "resident.html"
+            }
+        ],
+        "活动事件": [{
+                "name": "年度节日",
+                "href": "Life/Event.html"
+            },
+            {
+                "name": "居民事件",
+                "href": "Event/Resident.html"
+            },
+            {
+                "name": "情敌事件",
+                "href": "Event/Love_enemy.html"
+            },
+            {
+                "name": "婚后事件",
+                "href": "Event/Marriage.html"
+            },
+            {
+                "name": "其他事件",
+                "href": "Event/Other.html"
+            }
+        ],
+        "道具说明": [{
+                "name": "农作道具",
+                "href": "Tools/Farm_implements.html"
+            },
+            {
+                "name": "动物用品",
+                "href": "Tools/Animal_implements.html"
+            },
+            {
+                "name": "作物",
+                "href": "Tools/Crop.html"
+            },
+            {
+                "name": "副产品",
+                "href": "Tools/Sideline.html"
+            },
+            {
+                "name": "钓鱼",
+                "href": "Tools/Fishing.html"
+            },
+            {
+                "name": "矿石",
+                "href": "Tools/Ore.html"
+            },
+            {
+                "name": "山货",
+                "href": "Tools/Collection.html"
+            },
+            {
+                "name": "其他物品",
+                "href": "Tools/Other.html"
+            },
+            {
+                "name": "定情信物",
+                "href": "Tools/Affirmation.html"
+            },
+            {
+                "name": "唱片",
+                "href": "Tools/Valuables.html"
+            }
+        ],
+        "烹饪料理": [{
+                "name": "料理基础",
+                "href": "Life/Cuisine.html"
+            },
+            {
+                "name": "料理食谱",
+                "href": "Tools/Cookbook.html"
+            },
+            {
+                "name": "料理道具",
+                "href": "Tools/Kitchenware.html"
+            },
+            {
+                "name": "购买食材",
+                "href": "Tools/Ingredients.html"
+            }
+        ],
+        "其他": [{
+                "name": "成就与称号",
+                "href": "Life/Designation.html"
+            },
+            {
+                "name": "戒指",
+                "href": "Tools/Ring.html"
+            },
+            {
+                "name": "猜谜书",
+                "href": "Event/Riddle_Book.html"
+            },
+            {
+                "name": "霍安的迷你游戏",
+                "href": "Event/Apple.html"
+            },
+            {
+                "name": "玛丽的图书馆",
+                "href": "mary's_library.html"
+            },
+            {
+                "name": "更新日志",
+                "href": "Update/update.html"
+            },
+            {
+                "name": "矿石镇Plus",
+                "href": "Plus/index.html"
+            }
+        ]
+    },
+    {
+        "牧场": {
+            "icon": "seedling-fill.svg",
+            "href": "pasture.html"
+        },
+        "居民": {
+            "icon": "user-2-line.svg",
+            "href": "resident.html"
+        },
+        "村庄": {
+            "icon": "home-3-line.svg",
+            "href": "town.html"
+        },
+        "事件": {
+            "icon": "calendar-line.svg",
+            "href": "event.html"
+        },
+        "其他": {
+            "icon": "more-fill.svg",
+            "href": "other.html"
+        }
+    }
+]

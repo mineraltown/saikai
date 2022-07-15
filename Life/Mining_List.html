@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <link rel="stylesheet" href="/css/iframe.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9202929133026434" crossorigin="anonymous"></script>
+    <title>采矿场</title>
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.prod.js"></script>
+    <script src="https://unpkg.com/axios@0.27.2/dist/axios.min.js"></script>
+    <style>
+        th,
+        td {
+            padding: 5px;
+        }
+
+        ul {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            width: 9em;
+            cursor: default;
+        }
+
+        .not {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mine" v-cloak>
+        <h1>{{ name[mode] }}</h1>
+        <ul class="link">
+            <li :class="mode == 'Spring_Mining' ? '' : 'not'" @click="switch_mining('Spring_Mining')">泉之采矿场</li>
+            <li :class="mode == 'Lake_Mining' ? '' : 'not'" @click="switch_mining('Lake_Mining')">湖之采矿场</li>
+        </ul>
+        <table>
+            <thead>
+                <template v-for="(item,index) in list">
+                    <tr v-if="index == '层级'">
+                        <th>{{ index }}</th>
+                        <td v-for="i in item">{{ i }}</td>
+                    </tr>
+                </template>
+            </thead>
+            <tbody>
+                <template v-for="(item,index) in list">
+                    <tr v-if="index != '层级'">
+                        <th>{{ index }}</th>
+                        <td v-for="i in item">{{ i }}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+    const App = {
+        data() {
+            return {
+                mode: "Spring_Mining",
+                name: {
+                    "Spring_Mining": "泉之采矿场",
+                    "Lake_Mining": "湖之采矿场"
+                },
+                list: ""
+            }
+        },
+        created() {
+            axios.get(this.mode + '.json')
+                .then((response) => {
+                    this.list = response.data
+                })
+        },
+        methods: {
+            switch_mining(e) {
+                console.log(e)
+                this.mode = e
+                axios.get(e + '.json')
+                    .then((response) => {
+                        this.list = response.data
+                    })
+            }
+        }
+    }
+    const app = Vue.createApp(App)
+    const vm = app.mount("#mine")
+</script>
+
+</html>
