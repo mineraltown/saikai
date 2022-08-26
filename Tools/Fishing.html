@@ -105,10 +105,10 @@
 
                         <template v-for="i in season_list">
                             <template v-if="item['season'][i[0]]">
-                                <td v-if="check(item['low_season'],i[1])">&#11096;</td>
-                                <td v-else>&#8420;</td>
+                                <td v-if="check(item['low_season'],i[1])">○</td>
+                                <td v-else>△</td>
                             </template>
-                            <td v-else>&#10005;</td>
+                            <td v-else>×</td>
                         </template>
                         <td>{{ item['ground'] }}</td>
                         <td>{{ item['size']['range'] }}</td>
@@ -120,9 +120,9 @@
             </tbody>
         </table>
         <p class="note">
-            <span style="padding: 0 0.5em 0 2em;">&#11096;</span>：高概率钓到
-            <span style="padding: 0 0.5em 0 2em;">&#8420;</span>：低概率钓到
-            <span style="padding: 0 0.5em 0 2em;">&#10005;</span>：无法钓到
+            <span style="padding: 0 0.5em 0 2em;">○</span>：高概率钓到
+            <span style="padding: 0 0.5em 0 2em;">△</span>：低概率钓到
+            <span style="padding: 0 0.5em 0 2em;">×</span>：无法钓到
         </p>
     </div>
 </body>
